@@ -1,8 +1,34 @@
-% Basic LaTeX template
+% Comprehensive LaTeX template
 \documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath,amssymb}
-\usepackage{geometry}
+
+% --- Encoding and font packages ---
+\usepackage[utf8]{inputenc} % allow UTF-8 characters
+\usepackage[T1]{fontenc}    % use T1 font encoding
+\usepackage{lmodern}        % improved default Latin fonts
+
+% --- Mathematics packages ---
+\usepackage{amsmath, amssymb} % enhanced math features
+
+% --- Graphics and drawing packages ---
+\usepackage{graphicx} % include external images
+\usepackage{tikz}     % create drawings and diagrams
+\usepackage{pgfplots} % plot data with TikZ
+\pgfplotsset{compat=1.18}
+
+% --- Color and styling ---
+\usepackage{xcolor} % define and use colors
+
+% --- Reference and hyperlink packages ---
+\usepackage{hyperref}          % hyperlinks in the document
+\usepackage{cleveref}          % smart cross-referencing
+\usepackage[numbers]{natbib}   % flexible bibliography support
+
+% --- Units and quotations ---
+\usepackage{siunitx} % consistent typesetting of units
+\usepackage{csquotes} % context-aware quotes
+
+% --- Page geometry ---
+\usepackage{geometry} % easily adjust page margins
 \geometry{margin=1in}
 
 \title{Sample Document}
@@ -26,7 +52,7 @@ Expand upon the main content.
 \section{Conclusion}
 Summarize the findings.
 
-\bibliographystyle{plain}
+\bibliographystyle{plainnat}
 \bibliography{references}
 
 \end{document}
