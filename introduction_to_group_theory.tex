@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Introduction to Group Theory}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Groups}
+A \emph{group} $(G,\cdot)$ consists of a set $G$ equipped with a binary operation $\cdot$ such that the following axioms hold:
+\begin{enumerate}
+  \item \textbf{Associativity:} $(a\cdot b)\cdot c = a\cdot(b\cdot c)$ for all $a,b,c\in G$.
+  \item \textbf{Identity:} There exists an element $e\in G$ such that $e\cdot a = a\cdot e = a$ for all $a\in G$.
+  \item \textbf{Inverse:} For each $a\in G$ there exists $b\in G$ such that $a\cdot b = b\cdot a = e$.
+\end{enumerate}
+
+\section{Examples}
+\begin{itemize}
+  \item The integers $(\mathbb{Z}, +)$ form a group under addition with identity element $0$.
+  \item The set of $n\times n$ invertible real matrices $\mathrm{GL}_n(\mathbb{R})$ is a group under matrix multiplication.
+  \item The symmetric group $S_3$ consists of all permutations of three objects.
+\end{itemize}
+
+\section{Subgroups}
+A \emph{subgroup} $H$ of a group $G$ is a subset of $G$ that is itself a group under the operation of $G$.
+\end{document}
