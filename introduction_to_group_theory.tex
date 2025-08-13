@@ -1,226 +1,196 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{xcolor}
-\usepackage{tcolorbox}
 \usepackage{hyperref}
-\tcbset{colback=white,colframe=black}
-\newtcolorbox{definitionbox}[1]{colback=blue!5!white,colframe=blue!75!black,title=\textbf{#1}}
-\newtcolorbox{examplebox}[1]{colback=green!5!white,colframe=green!60!black,title=\textbf{#1}}
-\newtcolorbox{warnbox}[1]{colback=red!5!white,colframe=red!60!black,title=\textbf{#1}}
 
-\title{From Zero to Lagrange\\\small A Friendly Introduction to Group Theory}
+\title{From Zero to Lagrange\\\small Lecture Notes on Group Theory}
 \author{}
 \date{}
 
 \begin{document}
 \maketitle
 
-\section*{Introduction: What You Need}
-\begin{definitionbox}{Starting Point}
-To talk about groups, you begin with:
-\begin{itemize}
-  \item a set $G$,
-  \item a binary rule $\star$ that takes $a,b$ in $G$ and returns $a\star b$ in $G$,
-  \item four checks: \textcolor{blue}{closure}, \textcolor{blue}{associativity}, \textcolor{blue}{identity}, and \textcolor{blue}{inverses}.
-\end{itemize}
-\end{definitionbox}
+\section*{1. Getting Started}
+To study groups we need a set $G$ together with a way to combine any two of its elements.
+Throughout these notes the operation will be denoted by $\star$.
+Before calling $(G,\star)$ a \textcolor{blue}{group} we must check four requirements: \textcolor{blue}{closure}, \textcolor{blue}{associativity}, the presence of an \textcolor{blue}{identity} element, and the existence of \textcolor{blue}{inverses}.
 
-\section*{Definition: Group}
-\begin{definitionbox}{What is a Group?}
-A pair $(G,\star)$ is a \textcolor{blue}{group} if for all $a,b,c\in G$:
+\section*{2. Definition of a Group}
+\textcolor{blue}{\textbf{Definition.}} A pair $(G,\star)$ is a group if for all $a,b,c\in G$:
 \begin{enumerate}
-  \item \textbf{Closure:} $a\star b$ is in $G$.
+  \item \textbf{Closure:} $a\star b$ lies in $G$.
   \item \textbf{Associativity:} $(a\star b)\star c = a\star(b\star c)$.
-  \item \textbf{Identity:} there exists $e$ with $e\star a = a\star e = a$.
-  \item \textbf{Inverse:} each $a$ has $a^{-1}$ with $a\star a^{-1} = a^{-1}\star a = e$.
+  \item \textbf{Identity:} there exists $e\in G$ with $e\star a=a\star e=a$ for every $a$.
+  \item \textbf{Inverses:} each $a$ has $a^{-1}$ in $G$ such that $a\star a^{-1}=a^{-1}\star a=e$.
 \end{enumerate}
-The group is \textcolor{purple}{abelian} if $a\star b = b\star a$ for all $a,b$.
-\end{definitionbox}
+If $a\star b=b\star a$ for all $a,b$, the group is called \textcolor{purple}{abelian}.
 
-\section*{How to Prove ``This is a Group"}
-\begin{examplebox}{Group Proof Recipe}
-\begin{enumerate}
-  \item Describe $G$ and the operation $\star$.
-  \item Show \textcolor{blue}{closure}.
-  \item Use known \textcolor{blue}{associativity} (for $+$ or $\times$) or compute directly.
-  \item Give the \textcolor{blue}{identity} element.
-  \item For any $a$, find $a^{-1}$ and check it works.
-\end{enumerate}
-\end{examplebox}
+\section*{3. Verifying a Group}
+When presenting a new structure, begin by describing the set and the operation.
+Check closure by combining generic elements, appeal to known associativity when possible, identify the element that leaves others unchanged, and finally produce an inverse for a typical element.
 
-\section*{Worked Examples: Groups and Non-Examples}
-\begin{examplebox}{1. $(\mathbb{Z}, +)$}
-Closure: $m+n$ is an integer. Identity: $0$. Inverse of $m$ is $-m$. This group is abelian.
-\end{examplebox}
+\section*{4. Examples and Non-examples}
+\subsection*{Example: $(\mathbb{Z},+)$}
+Given integers $m$ and $n$, their sum $m+n$ is an integer, so the set is closed under addition.
+Addition of integers is associative, $0$ acts as the identity, and $m+(-m)=0$ shows that $-m$ is the inverse of $m$.
+The operation is commutative, hence $\mathbb{Z}$ is abelian.
 
-\begin{examplebox}{2. $(\mathbb{Z}_n, +\ \text{mod}\ n)$}
-Elements: $\{0,1,\dots,n-1\}$. Operation: addition mod $n$. Identity: $0$. Inverse of $k$ is $n-k$. Abelian.
-\textit{Example:} in $\mathbb{Z}_6$, $4+5\equiv3$ and the inverse of $4$ is $2$.
-\end{examplebox}
+\subsection*{Example: $(\mathbb{Z}_n,+ \text{ mod } n)$}
+The set $\mathbb{Z}_n=\{0,1,\ldots,n-1\}$ is closed under addition modulo $n$.
+For instance in $\mathbb{Z}_6$,
+\[
+4+5=9\equiv 3 \pmod 6.
+\]
+The class $0$ serves as identity and the inverse of $k$ is $n-k$.
 
-\begin{examplebox}{3. $(\mathbb{Q}^*,\times)$ and $(\mathbb{R}^*,\times)$}
-Identity: $1$. Inverse of $a/b$ is $b/a$. Both are abelian.
-\end{examplebox}
+\subsection*{Example: $(\mathbb{Q}^*,\times)$ and $(\mathbb{R}^*,\times)$}
+Multiplication of nonzero rationals or reals is associative and closed.
+The number $1$ is the identity and the inverse of $\frac{a}{b}$ is $\frac{b}{a}$.
+Both groups are abelian.
 
-\begin{examplebox}{4. $\mathrm{GL}_2(\mathbb{R})$}
-$2\times2$ invertible real matrices under multiplication. Identity is $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$. Inverses are usual matrix inverses. Generally non-abelian. For example,\[\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}1&0\\1&1\end{bmatrix}=\begin{bmatrix}2&1\\1&1\end{bmatrix} \neq \begin{bmatrix}1&0\\1&1\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}=\begin{bmatrix}1&1\\1&2\end{bmatrix}.\]
-\end{examplebox}
+\subsection*{Example: $\mathrm{GL}_2(\mathbb{R})$}
+This group consists of all invertible $2\times2$ real matrices under multiplication.
+Closure follows because the product of invertible matrices is invertible.
+For
+\[
+A=\begin{bmatrix}1&1\\0&1\end{bmatrix},\quad
+B=\begin{bmatrix}1&0\\1&1\end{bmatrix},
+\]
+we compute
+\[
+AB=\begin{bmatrix}2&1\\1&1\end{bmatrix},\qquad
+BA=\begin{bmatrix}1&1\\1&2\end{bmatrix},
+\]
+so $AB\neq BA$ and the group is not abelian.
 
-\begin{examplebox}{5. Symmetric Group $S_3$}
-Six permutations of $\{1,2,3\}$ with composition. Non-abelian: $(12)\circ(23) \neq (23)\circ(12)$. Example: $(12)(23)=(123)$.
-\end{examplebox}
+\subsection*{Example: Symmetric Group $S_3$}
+$S_3$ contains the six permutations of $\{1,2,3\}$.
+Composition of permutations is associative and the identity map fixes each number.
+The permutation $(12)(23)$ sends $1\mapsto2\mapsto3$, $2\mapsto3\mapsto1$, and $3\mapsto1\mapsto2$, giving $(123)$.
+Because $(12)(23)\neq(23)(12)$ the group is non-abelian.
 
-\begin{examplebox}{6. Dihedral Group $D_4$}
-Symmetries of a square: four rotations and four reflections. Non-abelian.
-\end{examplebox}
+\subsection*{Example: Dihedral Group $D_4$}
+$D_4$ records symmetries of a square: four rotations and four reflections.
+Rotation by $90^{\circ}$ composed four times returns the square to its original position, while reflections reverse orientation; the operation is composition of these symmetries.
+The group fails to be abelian because, for example, reflecting then rotating is different from rotating then reflecting.
 
-\begin{examplebox}{7. Klein Four Group $V_4$}
-Elements $\{e,a,b,c\}$ with $a^2=b^2=c^2=e$ and $ab=c$, $bc=a$, $ca=b$. Abelian but not cyclic.
-\end{examplebox}
+\subsection*{Example: Klein Four Group $V_4$}
+The set $\{e,a,b,c\}$ with relations $a^2=b^2=c^2=e$ and $ab=c$, $bc=a$, $ca=b$ forms a group.
+Each element is its own inverse and the operation is commutative, but no single element generates the entire group.
 
-\begin{warnbox}{Non-Examples}
+\subsection*{Non-examples}
+The natural numbers under addition lack inverses, the integers under multiplication lack inverses for most elements, and real numbers with subtraction violate associativity.
+
+\section*{5. Fundamental Notions}
+The \textcolor{blue}{order} of an element $a$ is the smallest positive integer $k$ with $a^k=e$ (or $k\cdot a=0$ in additive notation).
+A group is \textcolor{blue}{cyclic} if one element generates all others: $G=\langle g\rangle=\{\ldots,g^{-1},e,g,g^{2},\ldots\}$.
+The \textcolor{blue}{order of the group} is the number of elements it contains.
+
+\section*{6. Subgroups}
+\textcolor{blue}{\textbf{Definition.}} A nonempty subset $H$ of $G$ is a subgroup, written $H\leq G$, if for all $a,b\in H$ the element $ab^{-1}$ also lies in $H$.
+In additive groups we test closure under subtraction.
+
+\subsection*{Useful Facts}
 \begin{itemize}
-  \item $(\mathbb{N},+)$ fails inverses.
-  \item $(\mathbb{Z},\times)$ fails inverses for most elements.
-  \item $(\mathbb{R},-)$ fails associativity.
-\end{itemize}
-\end{warnbox}
-
-\section*{Basic Concepts You Will Use Soon}
-\begin{definitionbox}{Key Ideas}
-\begin{itemize}
-  \item \textbf{Order of an element} $a$: smallest $k>0$ with $a^k=e$ (or $k\cdot a=0$ in additive groups).
-  \item \textbf{Cyclic group:} a group generated by one element $g$.
-  \item \textbf{Order of a group:} number of elements $|G|$ if finite.
-\end{itemize}
-\end{definitionbox}
-
-\section*{Subgroups}
-\begin{definitionbox}{What is a Subgroup?}
-A nonempty subset $H$ of $G$ is a \textcolor{blue}{subgroup} if for all $a,b\in H$, the element $a\star b^{-1}$ is also in $H$. For additive groups replace $a\star b^{-1}$ by $a-b$.
-\end{definitionbox}
-
-\subsection*{Quick Subgroup Facts}
-\begin{itemize}
-  \item The identity $e$ lies in every subgroup.
+  \item The identity of $G$ is always in $H$.
   \item If $a\in H$ then $a^{-1}\in H$.
   \item Intersections of subgroups are subgroups.
-  \item The subgroup generated by $S$ is $\langle S\rangle$.
+  \item The subgroup generated by a set $S$ is the smallest subgroup containing $S$ and is denoted $\langle S\rangle$.
 \end{itemize}
 
-\subsection*{Worked Examples: Subgroups}
-\begin{examplebox}{1. $k\mathbb{Z} \leq \mathbb{Z}$}
-$k\mathbb{Z}=\{\ldots,-2k,-k,0,k,2k,\ldots\}$ is closed under subtraction, so it is a subgroup. Examples include even integers $2\mathbb{Z}$.
-\end{examplebox}
+\subsection*{Examples}
+\paragraph{1. $k\mathbb{Z}$ inside $\mathbb{Z}$.}
+For an integer $k$, the set $k\mathbb{Z}=\{\ldots,-2k,-k,0,k,2k,\ldots\}$ is closed under subtraction, hence forms a subgroup.
 
-\begin{examplebox}{2. Subgroups of $\mathbb{Z}_6$ under $+$}
-Every subgroup is $\langle d\rangle$ where $d$ divides $6$. They are $\{0\}$, $\{0,3\}$, $\{0,2,4\}$, and $\mathbb{Z}_6$. The subset $T=\{0,2\}$ fails because $2+2=4\notin T$.
-\end{examplebox}
+\paragraph{2. Subgroups of $\mathbb{Z}_6$.}
+Every subgroup is generated by a divisor of $6$:
+\[
+\{0\},\quad \{0,3\},\quad \{0,2,4\},\quad \mathbb{Z}_6.
+\]
+The subset $\{0,2\}$ is not a subgroup since $2+2=4\notin\{0,2\}$.
 
-\begin{examplebox}{3. Subgroups of $S_3$}
-Possible sizes: $1,2,3,6$. Subgroups: $\{e\}$; three generated by transpositions $\langle(12)\rangle$, $\langle(13)\rangle$, $\langle(23)\rangle$; the order-3 subgroup $A_3=\langle(123)\rangle$; and $S_3$ itself.
-\end{examplebox}
+\paragraph{3. Subgroups of $S_3$.}
+They have sizes $1,2,3,$ or $6$.
+Besides the trivial subgroup and $S_3$ itself, there are three subgroups generated by transpositions and a three-element subgroup $\{e,(123),(132)\}$.
 
-\begin{examplebox}{4. Center $Z(G)$}
-$Z(G)=\{g\in G: gx=xg \text{ for all } x\in G\}$ is a subgroup.
-\end{examplebox}
+\paragraph{4. The center $Z(G)$.}
+$Z(G)=\{g\in G: gx=xg \text{ for all } x\in G\}$ is a subgroup because products and inverses of commuting elements also commute.
 
-\begin{examplebox}{5. Rotation Subgroup of $D_4$}
-$R=\{e,r,r^2,r^3\}$ with $r$ a $90^\circ$ rotation is a subgroup of order $4$.
-\end{examplebox}
+\paragraph{5. Rotations in $D_4$.}
+The set $\{e,r,r^2,r^3\}$ of rotations is a subgroup of order $4$.
 
-\begin{examplebox}{6. Upper Triangular Matrices}
-Invertible upper triangular matrices form a subgroup of $\mathrm{GL}_2(\mathbb{R})$.
-\end{examplebox}
+\paragraph{6. Upper triangular matrices.}
+The invertible upper triangular matrices form a subgroup of $\mathrm{GL}_2(\mathbb{R})$ since the product and inverse of such matrices remain upper triangular.
 
-\section*{Cosets and Index}
-\begin{definitionbox}{Cosets}
-For $H\leq G$ and $g\in G$:
+\section*{7. Cosets and Index}
+Given $H\leq G$ and $g\in G$, the \textcolor{blue}{left coset} $gH$ is $\{gh:h\in H\}$ and the \textcolor{blue}{right coset} $Hg$ is $\{hg:h\in H\}$.
+All cosets have the same size as $H$; two cosets are either identical or disjoint, and the left cosets partition $G$.
+The number of distinct left cosets is called the \textcolor{blue}{index} and is written $[G:H]$.
+
+\subsection*{Examples}
+\paragraph{$\mathbb{Z}_6$ with $H=\{0,3\}$.}
+The cosets are
+\[
+0+H=\{0,3\},\quad 1+H=\{1,4\},\quad 2+H=\{2,5\},
+\]
+so $[\mathbb{Z}_6:H]=3$.
+
+\paragraph{$S_3$ with $H=\langle(12)\rangle$.}
+We obtain three cosets:
+\[
+H=\{e,(12)\},\quad (13)H=\{(13),(132)\},\quad (23)H=\{(23),(123)\}.
+\]
+Each coset has two elements, hence the index is $3$.
+
+\section*{8. Lagrange's Theorem}
+\textcolor{blue}{\textbf{Theorem.}} If $G$ is finite and $H\leq G$, then $|G|=[G:H]\cdot|H|$.
+\textcolor{blue}{\textbf{Proof sketch.}} Distinct left cosets of $H$ partition $G$ and each coset has $|H|$ elements, so the order of $G$ is a multiple of the order of $H$.
+
+\subsection*{Corollaries}
 \begin{itemize}
-  \item Left coset: $gH=\{g\star h: h\in H\}$.
-  \item Right coset: $Hg=\{h\star g: h\in H\}$.
-\end{itemize}
-Cosets are the same size as $H$, either equal or disjoint, and they partition $G$. The \textbf{index} $[G:H]$ counts the left cosets.
-\end{definitionbox}
-
-\subsection*{Coset Examples}
-\begin{examplebox}{1. $\mathbb{Z}_6$ with $H=\{0,3\}$}
-Cosets: $\{0,3\}$, $\{1,4\}$, $\{2,5\}$. Each has two elements, so $[\mathbb{Z}_6:H]=3$.
-\end{examplebox}
-
-\begin{examplebox}{2. $S_3$ with $H=\langle(12)\rangle$}
-Cosets: $H$, $(13)H=\{(13),(132)\}$, $(23)H=\{(23),(123)\}$. Again $[S_3:H]=3$.
-\end{examplebox}
-
-\section*{Lagrange's Theorem}
-\begin{definitionbox}{Statement}
-If $G$ is finite and $H\leq G$, then $|G|=[G:H]\cdot|H|$. Hence $|H|$ divides $|G|$.
-\end{definitionbox}
-
-\begin{examplebox}{Why It Works}
-$G$ breaks into disjoint cosets $g_1H,\dots,g_kH$. Each has $|H|$ elements, so $|G|=k\cdot|H|$ with $k=[G:H]$.
-\end{examplebox}
-
-\subsection*{Key Corollaries}
-\begin{itemize}
-  \item \textbf{Order of an element divides $|G|$.} If $a\in G$, then $|\langle a\rangle|$ divides $|G|$, so $a^{|G|}=e$ in finite groups.
-  \item \textbf{Groups of prime order are cyclic.}
-  \item \textbf{Fermat's little theorem:} in $U_p=\{1,2,\dots,p-1\}$ under multiplication mod $p$, $a^{p-1}\equiv1\pmod p$.
+  \item The order of an element divides the order of the group; consequently $a^{|G|}=e$ for all $a$ in a finite group.
+  \item A group of prime order is cyclic.
+  \item Fermat's little theorem: for prime $p$ and $a$ not divisible by $p$, $a^{p-1}\equiv1\pmod p$.
 \end{itemize}
 
-\subsection*{Worked Applications}
-\begin{examplebox}{1. Subgroup Sizes of $S_3$}
-Divisors of $6$ are $1,2,3,6$; no subgroup of size $4$ or $5$ exists.
-\end{examplebox}
+\subsection*{Applications}
+\paragraph{Subgroup sizes of $S_3$.}
+Possible sizes are the divisors of $6$, namely $1,2,3,$ and $6$.
 
-\begin{examplebox}{2. Orders in $\mathbb{Z}_{12}$ under $+$}
-Orders divide $12$: $\operatorname{ord}(1)=12$, $\operatorname{ord}(2)=6$, $\operatorname{ord}(3)=4$, $\operatorname{ord}(4)=3$, $\operatorname{ord}(6)=2$, $\operatorname{ord}(0)=1$.
-\end{examplebox}
+\paragraph{Orders in $\mathbb{Z}_{12}$.}
+The element $4$ has order $3$ because $4+4+4=12\equiv0$, and similarly $2$ has order $6$ and $6$ has order $2$.
 
-\begin{examplebox}{3. No element of order $6$ in $S_3$}
-Allowed by Lagrange, but actual element orders are only $1,2,$ or $3$.
-\end{examplebox}
+\paragraph{No element of order $6$ in $S_3$.}
+Although $6$ divides $|S_3|$, the elements of $S_3$ have orders $1,2,$ or $3$ only.
 
-\begin{examplebox}{4. Index in $\mathbb{Z}_{12}$}
-For $H=\langle4\rangle=\{0,4,8\}$, $|H|=3$ and $[\mathbb{Z}_{12}:H]=4$. Cosets are $\{0,4,8\}$, $\{1,5,9\}$, $\{2,6,10\}$, $\{3,7,11\}$.
-\end{examplebox}
+\paragraph{Index in $\mathbb{Z}_{12}$.}
+With $H=\langle4\rangle=\{0,4,8\}$ we have four distinct cosets
+\[
+\{0,4,8\},\quad \{1,5,9\},\quad \{2,6,10\},\quad \{3,7,11\},
+\]
+so $[\mathbb{Z}_{12}:H]=4$.
 
-\section*{Common Pitfalls}
-\begin{warnbox}{Be Careful!}
+\section*{9. Common Pitfalls}
 \begin{itemize}
-  \item Closure is more than being nonempty.
-  \item Many groups are not abelian.
-  \item ``Divides" does not guarantee existence.
-  \item Every subgroup must contain the identity.
+  \item Closure means results stay in the set; it is not automatic from non-emptiness.
+  \item Many groups are not abelian—never assume commutativity.
+  \item Lagrange's theorem gives a necessary divisibility condition but does not guarantee the existence of elements of a given order.
+  \item Every subgroup must contain the identity element of the ambient group.
 \end{itemize}
-\end{warnbox}
 
-\section*{Mini Checklists}
-\begin{examplebox}{Testing a Subgroup}
+\section*{10. Practice Problems}
 \begin{itemize}
-  \item Nonempty?
-  \item For all $a,b\in H$, is $ab^{-1}$ in $H$?
-\end{itemize}
-\end{examplebox}
-
-\begin{examplebox}{Computing Cosets}
-\begin{itemize}
-  \item Pick a representative $g$.
-  \item Form $gH=\{gh:h\in H\}$.
-  \item Repeat with elements not yet used.
-\end{itemize}
-\end{examplebox}
-
-\section*{Quick Practice}
-\begin{itemize}
-  \item Is $\{0,3,6,9\}$ a subgroup of $\mathbb{Z}_{12}$ under $+$?
+  \item Is $\{0,3,6,9\}$ a subgroup of $\mathbb{Z}_{12}$ under addition?
   \item List all cosets of $H=\{0,2,4\}$ in $\mathbb{Z}_6$.
   \item In $S_3$, why is $\{(12),(13)\}$ not a subgroup?
-  \item Find $\operatorname{ord}(2)$ in $\mathbb{Z}_8$ and list $\langle2\rangle$.
-  \item Show every finite subgroup of $(\mathbb{R}^*,\times)$ is cyclic.
+  \item Find the order of $2$ in $\mathbb{Z}_8$ and describe $\langle2\rangle$.
+  \item Prove that any finite subgroup of $(\mathbb{R}^*,\times)$ is cyclic.
 \end{itemize}
 
 \section*{Summary}
-Groups require \textcolor{blue}{closure}, \textcolor{blue}{associativity}, an \textcolor{blue}{identity}, and \textcolor{blue}{inverses}. Subgroups pass the test $ab^{-1}\in H$. Cosets split the group into equal pieces, leading to \textcolor{purple}{Lagrange's Theorem}: $|G|=[G:H]\cdot|H|$. These tools classify small groups, compute orders, and prove number theory facts.
+Groups combine elements through a binary operation obeying closure, associativity, an identity, and inverses.
+Subgroups satisfy the same rules and can be tested with the single condition $ab^{-1}\in H$.
+Cosets partition a group into equal-sized pieces, leading to Lagrange's theorem that the order of a subgroup divides the order of the whole group.
+These tools let us compute element orders, classify small groups, and apply group theory to number theory.
 
 \end{document}
