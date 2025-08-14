@@ -1,4 +1,33 @@
-\section{Cyclotomic and Basic Kummer Theory}
-\label{sec:cyclotomic-kummer}
+\section{Cyclotomic fields and basic Kummer theory}\label{sec:cyclotomic-kummer}
 
-Cyclotomic fields and Kummer theory require roots of unity.
+\subsection{Cyclotomic polynomials}
+\begin{definition}
+For a primitive $n$th root of unity $\zeta_n$, the \emph{cyclotomic polynomial} is
+\[
+\Phi_n(x)=\prod_{\substack{1\le a\le n\\ \gcd(a,n)=1}}\bigl(x-\zeta_n^{\,a}\bigr)\in\Z[x].
+\]
+\end{definition}
+\begin{theorem}
+$x^n-1=\prod_{d\mid n}\Phi_d(x)$, $\deg\Phi_n=\varphi(n)$, and $\Phi_n$ is irreducible over $\Q$.
+\end{theorem}
+References: \cite[\S13]{DF}, \cite[Ch.~VIII]{Lang}.
+
+\subsection{Cyclotomic fields}
+\begin{definition}
+The \emph{cyclotomic field} $\Q(\zeta_n)$ is the splitting field of $x^n-1$ over $\Q$.
+\end{definition}
+\begin{theorem}
+Restriction induces
+\[
+\Gal\bigl(\Q(\zeta_n)/\Q\bigr)\ \cong\ (\Z/n\Z)^\times,\qquad \sigma_a(\zeta_n)=\zeta_n^{\,a}.
+\]
+\end{theorem}
+
+\subsection{Basic Kummer theory}
+Assume $\mathrm{char}\,F\nmid n$ and $\mu_n\subset F$.
+\begin{theorem}[Kummer]
+Cyclic degree-$n$ extensions of $F$ correspond to cosets in $F^\times/F^{\times n}$ via $a\mapsto F(\sqrt[n]{a})$; the extension has degree $n$ iff $a\notin F^{\times n}$.
+\end{theorem}
+\begin{remark}[Kronecker–Weber]
+Every finite abelian extension of $\Q$ is contained in some $\Q(\zeta_n)$ \cite{Neukirch}.
+\end{remark}

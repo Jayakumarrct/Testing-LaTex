@@ -1,17 +1,19 @@
-\section{Figures and Diagrams}
-\label{sec:figures-diagrams}
+\section{Figures and diagrams}
 
-This section collects figures and commutative diagrams.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics{example-image}
-  \caption{An example image placeholder.}
-\end{figure}
-
-\begin{center}
+\subsection{Fundamental Theorem lattice (schematic)}
+\[
 \begin{tikzcd}
-A \arrow{r}{f} \arrow{d}{g} & B \arrow{d}{h} \\
-C \arrow{r}{k} & D
+& E \arrow[dash]{dl}[swap]{H} \arrow[dash]{dr}{G} & \\
+E^{H} \arrow[dash]{dr} & & E^{G} \arrow[dash]{dl} \\
+& F &
 \end{tikzcd}
-\end{center}
+\]
+
+\subsection{Field tower}
+\[
+\begin{tikzcd}
+K \arrow[dash]{d}{[K\!:\!F]} \\
+F
+\end{tikzcd}
+\]
+Place external images in \texttt{figures/} and include with \verb|\includegraphics|.

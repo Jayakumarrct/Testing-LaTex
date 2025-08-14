@@ -1,4 +1,44 @@
-\section{Fields and Polynomials}
-\label{sec:fields-polynomials}
+\section{Fields and polynomials}\label{sec:fields-polynomials}
 
-These notes review basic field theory and polynomial rings.
+\subsection{Fields, characteristic, prime fields}
+\begin{definition}
+A \emph{field} is a commutative ring $F\neq 0$ in which every nonzero element has a multiplicative inverse.
+\end{definition}
+\begin{proposition}[Characteristic]\label{prop:char}
+The characteristic of a field is either $0$ or a prime $p$; in the latter case $F$ contains a copy of $\mathbb{F}_p$.
+\end{proposition}
+\begin{proof}
+If $\operatorname{char}F=n>0$ and $n=ab$ with $1<a,b<n$, then $(a\cdot1_F)(b\cdot1_F)=0$ gives a zero divisor. Fields have none, so $n$ is prime.
+\end{proof}
+\begin{proposition}[Prime field]
+Every field contains a smallest subfield (the \emph{prime field}), isomorphic to $\Q$ when $\operatorname{char}F=0$ and to $\mathbb{F}_p$ when $\operatorname{char}F=p$.
+\end{proposition}
+References: \cite[\S13]{DF}, \cite[Ch.~I]{Artin}.
+
+\subsection{Polynomials over a field}
+\begin{proposition}[Division algorithm; Euclidean domain]\label{prop:division}
+If $f,g\in F[x]$ with $g\neq0$, there exist unique $q,r\in F[x]$ such that $f=qg+r$ and $\deg r<\deg g$. Hence $F[x]$ is a Euclidean domain with measure $\deg$ and thus a PID and a UFD.
+\end{proposition}
+\begin{corollary}[Bezout identity]
+There exist $a,b\in F[x]$ with $a f + b g = \gcd(f,g)$.
+\end{corollary}
+
+\subsection{Irreducibility criteria}
+\begin{proposition}[Degree $2$ or $3$]
+If $\deg f\in\{2,3\}$ then $f$ is irreducible over $F$ iff it has no root in $F$.
+\end{proposition}
+\begin{theorem}[Eisenstein]\label{thm:eisenstein}
+Let $R$ be a UFD with prime $p$. If $f(x)=a_nx^n+\cdots+a_0\in R[x]$ satisfies $p\nmid a_n$, $p\mid a_i$ for $i<n$, and $p^2\nmid a_0$, then $f$ is irreducible in $R[x]$ and in $\operatorname{Frac}(R)[x]$.
+\end{theorem}
+\begin{example}
+$x^5-10x+5$ is irreducible over $\Q$ after the shift $x\mapsto x+1$ by \cref{thm:eisenstein} with $p=5$.
+\end{example}
+References: \cite[\S9--11]{DF}, \cite[Ch.~II]{Lang}.
+
+\subsection{Evaluation, roots, and factorization}
+\begin{definition}
+If $E/F$ is an extension and $\alpha\in E$, then $\alpha$ is a \emph{root} of $f\in F[x]$ if $f(\alpha)=0$ (evaluate in $E$).
+\end{definition}
+\begin{remark}
+Factorization in $F[x]$ vs.\ in an extension differs by adjoining roots; this motivates splitting fields, treated in \cref{sec:splitting-fields}.
+\end{remark}

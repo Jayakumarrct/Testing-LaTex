@@ -1,4 +1,44 @@
-\section{Separable and Normal Extensions}
-\label{sec:separable-normal}
+\section{Separable and normal extensions}\label{sec:sep-normal}
 
-Key properties include separability and normality.
+\subsection{Formal derivative and separability}
+\begin{definition}
+For $f(x)=\sum a_i x^i\in F[x]$, the \emph{formal derivative} is $f'(x)=\sum i\,a_i x^{i-1}$.
+\end{definition}
+\begin{proposition}[Multiplicity]
+In a splitting field, a root $\alpha$ has multiplicity $>1$ iff $f(\alpha)=f'(\alpha)=0$.
+\end{proposition}
+\begin{theorem}[Separability criteria]\label{thm:sep-criteria}
+For irreducible $f\in F[x]$ the following are equivalent:
+\begin{enumerate}[label=(\alph*)]
+\item $f$ has no multiple roots in a splitting field;
+\item $\gcd(f,f')=1$ in $F[x]$;
+\item the $F$-algebra $F[x]/(f)$ has exactly $\deg f$ embeddings into $\overline{F}$.
+\end{enumerate}
+A root of such $f$ is \emph{separable}. An algebraic extension is \emph{separable} if each of its elements is separable.
+\end{theorem}
+\begin{corollary}[Perfect fields]
+If $\operatorname{char}F=0$ or $F$ is finite then every algebraic extension of $F$ is separable.
+\end{corollary}
+References: \cite[\S13--14]{DF}, \cite[Ch.~VIII]{Lang}.
+
+\subsection{Normal extensions}
+\begin{definition}
+An algebraic extension $E/F$ is \emph{normal} if every irreducible $f\in F[x]$ having a root in $E$ splits completely over $E$.
+\end{definition}
+\begin{theorem}[Equivalent characterizations]\label{thm:normal}
+For algebraic $E/F$ the following are equivalent:
+\begin{enumerate}[label=(\alph*)]
+\item $E/F$ is normal;
+\item $E$ is a splitting field of a family of polynomials in $F[x]$;
+\item every $F$-embedding $\sigma:E\hookrightarrow\overline{F}$ satisfies $\sigma(E)=E$.
+\end{enumerate}
+\end{theorem}
+
+\subsection{Primitive element theorem}
+\begin{theorem}[Primitive element]\label{thm:PET}
+If $E/F$ is finite and separable then $E=F(\alpha)$ for some $\alpha\in E$.
+\end{theorem}
+\begin{example}
+$\Q(\sqrt2,\sqrt3)=\Q(\sqrt2+\sqrt3)$ since the extension is finite and separable.
+\end{example}
+References: \cite[\S14]{DF}, \cite[Ch.~VI]{Artin}.

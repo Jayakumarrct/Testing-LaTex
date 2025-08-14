@@ -1,4 +1,31 @@
-\section{Automorphisms and Fixed Fields}
-\label{sec:automorphisms-fixedfields}
+\section{Automorphisms and fixed fields}\label{sec:autos-fixed}
 
-Galois theory studies automorphisms and their fixed fields.
+\subsection{$F$-automorphisms and fixed fields}
+\begin{definition}
+An \emph{$F$-automorphism} of $E/F$ is a field automorphism of $E$ fixing $F$ pointwise. The group is $\Aut_F(E)$.
+\end{definition}
+\begin{definition}
+For $G\le \Aut_F(E)$ the \emph{fixed field} is $E^G=\{x\in E:\sigma(x)=x\ \forall\sigma\in G\}$.
+\end{definition}
+
+\subsection{Action on roots}
+\begin{proposition}\label{prop:permute-roots}
+If $E$ contains a splitting field of $f\in F[x]$, then each $\sigma\in\Aut_F(E)$ permutes the roots of $f$.
+\end{proposition}
+\begin{proof}
+If $f(\alpha)=0$, then $0=\sigma(f(\alpha))=f(\sigma(\alpha))$ because $\sigma$ fixes coefficients in $F$.
+\end{proof}
+
+\subsection{Embedding bound}
+\begin{theorem}\label{thm:autobound}
+For any finite extension $E/F$, $\#\Aut_F(E)\le [E\!:\!F]$, with equality iff $E/F$ is Galois; see \cref{sec:galois-ft}.
+\end{theorem}
+References: \cite[\S14]{DF}, \cite[Ch.~V]{Artin}.
+
+\subsection{Examples}
+\begin{example}[Quadratic]
+For squarefree $d$, $\Aut_\Q(\Q(\sqrt d))=\{\,\mathrm{id},\ \sqrt d\mapsto-\sqrt d\,\}$.
+\end{example}
+\begin{example}[Pure cubic]
+If $E=\Q(\root3\of2)$ then $\Aut_\Q(E)=\{\mathrm{id}\}$ since $x^3-2$ has one real root.
+\end{example}
