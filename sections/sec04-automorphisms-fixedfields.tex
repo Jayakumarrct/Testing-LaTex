@@ -1,0 +1,43 @@
+\section{Automorphisms and fixed fields}
+
+\subsection{$F$-automorphisms and fixed fields}
+\begin{definition}
+An \emph{$F$-automorphism} of an extension $E/F$ is a field automorphism of $E$ fixing $F$ pointwise. The group is $\Aut_F(E)$.
+\end{definition}
+\begin{definition}
+For $G\le \Aut_F(E)$ the \emph{fixed field} is $E^G=\{x\in E:\sigma(x)=x\ \forall\sigma\in G\}$.
+\end{definition}
+
+\subsection{Action on roots}
+\begin{proposition}\label{prop:permute-roots}
+Let $E$ contain a splitting field of $f\in F[x]$. Then each $\sigma\in\Aut_F(E)$ permutes the roots of $f$.
+\end{proposition}
+\begin{proof}
+If $f(\alpha)=0$, then $0=\sigma(f(\alpha))=f(\sigma(\alpha))$ since $\sigma$ fixes coefficients in $F$.
+\end{proof}
+\begin{proposition}[Orbit size bound]
+If $\alpha\in E$ is algebraic over $F$, the orbit $\{\sigma(\alpha):\sigma\in\Aut_F(E)\}$ has size $\le \deg m_{\alpha,F}$.
+\end{proposition}
+
+\subsection{Embeddings and a basic inequality}
+\begin{theorem}\label{thm:auto-bound}
+For any finite extension $E/F$,
+\[
+\#\Aut_F(E)\ \le\ [E\!:\!F].
+\]
+\end{theorem}
+\begin{proof}[Idea]
+Extend elements of $\Aut_F(E)$ to $F$-embeddings into an algebraic closure and use linear independence of characters $\sigma:E\to \overline{F}$ as $F$-linear maps.
+\end{proof}
+
+\subsection{Examples}
+\begin{example}[Quadratic]
+For $d$ squarefree, $\Aut_\Q(\Q(\sqrt d))=\{\,\mathrm{id},\ \sqrt d\mapsto -\sqrt d\,\}$, so the group has order $2$.
+\end{example}
+\begin{example}[Pure cubic]
+If $E=\Q(\root3\of 2)$ then $\Aut_\Q(E)=\{\mathrm{id}\}$ since $m_{\root3\of 2,\Q}(x)=x^3-2$ has only one real root.
+\end{example}
+
+\bigskip
+\noindent\textbf{Preview.}
+In \S\ref{sec:splitting-fields} and the next sections we relate $\Aut_F(E)$ to intermediate fields and derive the Fundamental Theorem of Galois Theory.

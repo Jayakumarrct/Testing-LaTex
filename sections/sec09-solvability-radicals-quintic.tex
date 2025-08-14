@@ -1,0 +1,49 @@
+\section{Solvability by radicals and the quintic}\label{sec:radicals-quintic}
+
+\subsection{Radical extensions}
+\begin{definition}
+An extension $E/F$ is \emph{radical} if there is a tower
+\[
+F=F_0\subset F_1\subset\cdots\subset F_m=E,\qquad
+F_{i}=F_{i-1}\bigl(\sqrt[n_i]{a_i}\bigr)
+\]
+with $n_i\ge2$ and $a_i\in F_{i-1}^\times$. A polynomial $f\in F[x]$ is \emph{solvable by radicals} if its roots lie in some radical extension of $F$.
+\end{definition}
+
+\subsection{Solvable groups}
+\begin{definition}
+A finite group $G$ is \emph{solvable} if it admits a subnormal series
+\[
+1=G_0\trianglelefteq G_1\trianglelefteq\cdots\trianglelefteq G_r=G
+\]
+with abelian quotients $G_{i}/G_{i-1}$.
+\end{definition}
+
+\subsection{Galois-theoretic criterion}
+\begin{theorem}
+Assume $\operatorname{char}F=0$ and let $f\in F[x]$ be separable. Then $f$ is solvable by radicals over $F$ iff its Galois group
+$G=\Gal(E/F)$ over the splitting field $E$ is solvable.
+\end{theorem}
+\begin{proof}[Idea]
+($\Rightarrow$) Take the normal closure of a radical tower and use Kummer theory (after adjoining the needed roots of unity) to obtain a series with abelian quotients. ($\Leftarrow$) Induct along a solvable series and adjoin radicals realizing the abelian steps.
+\end{proof}
+
+\subsection{Consequences}
+\begin{corollary}
+Quadratics and cubics are solvable by radicals; quartics are solvable by radicals via Ferrari's method; the general quintic is not.
+\end{corollary}
+\begin{theorem}[Abel--Ruffini]
+The generic polynomial of degree $5$ over $\Q$ is not solvable by radicals.
+\end{theorem}
+
+\subsection{Detecting $S_n$}
+\begin{proposition}
+Let $f\in\Q[x]$ be irreducible of prime degree $p$ with exactly two nonreal roots. Then $\Gal(f)\cong S_p$.
+\end{proposition}
+\begin{proof}[Idea]
+Complex conjugation is a transposition in the Galois group. Irreducibility forces a transitive subgroup of $S_p$ containing a transposition, hence $S_p$.
+\end{proof}
+\begin{example}
+Many quintics of the form $x^5+ax+b$ have Galois group $S_5$; such polynomials are not solvable by radicals.
+\end{example}
+

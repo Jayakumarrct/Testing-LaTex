@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{graphicx}
+\usepackage{mwe}
+\usepackage{hyperref}
+
+% ---------- Theorem environments ----------
+\usepackage{amsthm} % ensure loaded
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+% ---------- End theorem environments ----------
+
+% ---------- Shortcuts ----------
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Norm}{N}
+
+\title{Galois Theory --- Graduate Notes}
+\author{Anonymous}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\input{sections/sec01-fields-polynomials}
+\input{sections/sec02-extensions-minimal}
+\input{sections/sec03-splitting-algebraic-closure}
+\input{sections/sec04-automorphisms-fixedfields}
+\input{sections/sec05-separable-normal}
+\input{sections/sec06-galois-fundamental-theorem}
+\input{sections/sec07-finite-fields}
+\input{sections/sec08-cyclotomic-kummer}
+\input{sections/sec09-solvability-radicals-quintic}
+\input{sections/sec10-worked-examples}
+\input{sections/sec11-infinite-galois}
+\input{sections/sec12-constructible-geometry}
+\input{sections/sec99-figures-diagrams}
+
+\end{document}

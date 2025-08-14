@@ -1,0 +1,40 @@
+\section{Classical geometric constructibility}\label{sec:constructibility}
+
+\subsection{Constructible numbers}
+\begin{definition}
+A complex number $\alpha$ is \emph{constructible} if it can be obtained from $0,1$ using a finite sequence of straightedge-and-compass constructions.
+\end{definition}
+\begin{theorem}
+$\alpha$ is constructible iff there exists a tower
+\[
+\Q=K_0\subset K_1\subset\cdots\subset K_m\ni \alpha,\qquad
+[K_i\!:\!K_{i-1}]=2.
+\]
+In particular, every constructible $\alpha$ is algebraic over $\Q$ of degree a power of $2$.
+\end{theorem}
+
+\subsection{Regular polygons}
+\begin{theorem}[Gauss--Wantzel]
+A regular $n$-gon is constructible iff
+\[
+n=2^{k} \prod_{j=1}^r p_j,
+\]
+where the $p_j$ are distinct Fermat primes $3,5,17,257,65537$.
+\end{theorem}
+\begin{example}
+The $17$-gon is constructible, while the $7$-gon and $9$-gon are not.
+\end{example}
+
+\subsection{Classical impossibilities}
+\begin{corollary}[Doubling the cube]
+There is no straightedge-and-compass construction of $\sqrt[3]{2}$; the degree is $3\not=2^k$.
+\end{corollary}
+\begin{corollary}[Angle trisection]
+A general angle cannot be trisected; e.g.\ $\cos(20^\circ)$ has minimal polynomial of degree $3$ over $\Q$.
+\end{corollary}
+
+\subsection{Galois viewpoint}
+\begin{remark}
+Constructible numbers lie in the compositum of quadratic extensions of $\Q$; thus their splitting fields have Galois groups that are $2$-groups. Nonconstructibility follows by showing the relevant Galois group has odd prime divisors.
+\end{remark}
+

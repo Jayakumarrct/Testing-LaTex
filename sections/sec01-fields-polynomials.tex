@@ -1,0 +1,53 @@
+\section{Fields and polynomials}
+
+\subsection{Fields, characteristic, prime fields}
+\begin{definition}
+A \emph{field} is a commutative ring $F\neq 0$ in which every nonzero element has a multiplicative inverse.
+\end{definition}
+\begin{proposition}[Characteristic is $0$ or prime]
+If $\operatorname{char}F=n>0$, then $n$ is prime; otherwise $\operatorname{char}F=0$.
+\end{proposition}
+\begin{proof}
+If $n=ab$ with $1<a,b<n$, then $(a\cdot 1_F)(b\cdot 1_F)=n\cdot 1_F=0$. In a field there are no zero divisors, so one factor must be $0$, contradicting minimality of $n$.
+\end{proof}
+\begin{proposition}[Prime field]
+Every field $F$ contains a smallest subfield, its \emph{prime field}, isomorphic to $\Q$ if $\operatorname{char}F=0$ and to $\mathbb{F}_p$ if $\operatorname{char}F=p$.
+\end{proposition}
+
+\subsection{Polynomials over a field}
+\begin{definition}
+$F[x]$ denotes the ring of polynomials in one indeterminate over $F$. For $f\in F[x]$ the \emph{degree} is $\deg f$.
+\end{definition}
+\begin{proposition}[Division algorithm]
+If $f,g\in F[x]$ with $g\neq 0$, there exist unique $q,r\in F[x]$ with $f=qg+r$ and $\deg r<\deg g$.
+\end{proposition}
+\begin{corollary}[Euclidean algorithm, gcd]
+$F[x]$ is a Euclidean domain (measure $=\deg$). Hence $\gcd(f,g)$ exists, is unique up to $F^\times$, and there are $a,b\in F[x]$ with $af+bg=\gcd(f,g)$.
+\end{corollary}
+\begin{proposition}
+$F[x]$ is a PID and hence a UFD.
+\end{proposition}
+
+\subsection{Irreducibility criteria}
+\begin{definition}
+A nonconstant $f\in F[x]$ is \emph{irreducible} if $f=gh$ implies $\deg g=0$ or $\deg h=0$.
+\end{definition}
+\begin{proposition}[Degree $\le 3$ test]
+If $\deg f\in\{2,3\}$ then $f$ is irreducible over $F$ iff it has no root in $F$.
+\end{proposition}
+\begin{theorem}[Eisenstein]
+Let $R$ be a UFD with prime $p$. If $f(x)=a_nx^n+\cdots+a_0\in R[x]$ satisfies
+$p\mid a_i$ for $i<n$, $p\nmid a_n$, and $p^2\nmid a_0$, then $f$ is irreducible in $R[x]$ and hence in $\operatorname{Frac}(R)[x]$.
+\end{theorem}
+\begin{example}
+$x^5-10x+5$ is irreducible over $\Q$ by Eisenstein with $p=5$ after the shift $x\mapsto x+1$.
+\end{example}
+
+\subsection{Evaluation and roots}
+\begin{definition}
+If $E/F$ is a field extension and $\alpha\in E$, a \emph{root} of $f\in F[x]$ is $\alpha$ with $f(\alpha)=0$ (evaluation in $E$).
+\end{definition}
+
+\bigskip
+\noindent\textbf{Checklist for later:}
+Division, gcd, irreducible tests, and evaluation will be used in \cref{sec:extensions-minimal,sec:splitting-fields}.

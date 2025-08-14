@@ -1,0 +1,46 @@
+\section{Field extensions and minimal polynomials}\label{sec:extensions-minimal}
+
+\subsection{Extensions and degree}
+\begin{definition}
+An \emph{extension} $E/F$ is a field $E$ containing $F$ as a subfield. Its \emph{degree} is $[E\!:\!F]=\dim_F E$.
+\end{definition}
+\begin{theorem}[Tower law]\label{thm:tower-law}
+If $K/E/F$, then $[K\!:\!F]=[K\!:\!E]\,[E\!:\!F]$.
+\end{theorem}
+\begin{proof}
+Choose an $F$-basis $\{e_i\}$ of $E$ and an $E$-basis $\{k_j\}$ of $K$. Then $\{e_i k_j\}$ is an $F$-basis of $K$.
+\end{proof}
+
+\subsection{Algebraic and transcendental elements}
+\begin{definition}
+$\alpha\in E$ is \emph{algebraic over $F$} if it satisfies a nonzero $f\in F[x]$; otherwise it is \emph{transcendental}.
+\end{definition}
+\begin{proposition}
+If $\alpha$ is algebraic, then $F[\alpha]=F(\alpha)$ is finite over $F$.
+\end{proposition}
+
+\subsection{Minimal polynomials and simple extensions}
+\begin{definition}
+For algebraic $\alpha$, its \emph{minimal polynomial} $m_{\alpha,F}\in F[x]$ is the unique monic irreducible with $m_{\alpha,F}(\alpha)=0$.
+\end{definition}
+\begin{proposition}[Structure of $F(\alpha)$]\label{prop:simple}
+Let $n=\deg m_{\alpha,F}$. Then
+\[
+F(\alpha)\cong F[x]/(m_{\alpha,F}),\qquad
+\{1,\alpha,\dots,\alpha^{n-1}\}\ \text{is an $F$-basis, and } [F(\alpha)\!:\!F]=n.
+\]
+\end{proposition}
+\begin{proof}
+The evaluation map $F[x]\to F(\alpha)$ has kernel $(m_{\alpha,F})$; apply the first isomorphism theorem and linear independence.
+\end{proof}
+\begin{remark}[Conjugates]
+Any $F$-embedding $\sigma:F(\alpha)\hookrightarrow \overline{F}$ sends $\alpha$ to a root of $m_{\alpha,F}$; there are at most $n$ such embeddings.
+\end{remark}
+
+\subsection{Examples}
+\begin{example}
+For $d\in\Z$ squarefree, $m_{\sqrt d,\Q}=x^2-d$; hence $[\Q(\sqrt d):\Q]=2$.
+\end{example}
+\begin{example}
+Let $\alpha=\sqrt2+\sqrt3$. Then $m_{\alpha,\Q}(x)=x^4-10x^2+1$ and $[\Q(\alpha):\Q]=4$.
+\end{example}
