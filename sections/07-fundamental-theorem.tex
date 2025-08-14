@@ -1,0 +1,59 @@
+\section{Fundamental Theorem of Galois Theory}
+
+Let $L/K$ be a finite Galois extension with group $G=\Gal(L/K)$.
+
+\subsection{Statement}
+
+\begin{theorem}[FTGT]
+The maps
+\[
+\Phi:\{\text{subgroups }H\le G\}\to\{\text{intermediate fields }E,\ K\subseteq E\subseteq L\},\quad H\mapsto L^{H},
+\]
+\[
+\Psi:\{E\}\to\{H\},\quad E\mapsto \Gal(L/E),
+\]
+are inclusion-reversing inverses. Moreover:
+\begin{enumerate}
+\item $[E:K]=|G:\Gal(L/E)|$ and $[L:E]=|\Gal(L/E)|$.
+\item $E/K$ is Galois $\iff$ $\Gal(L/E)\trianglelefteq G$, and then
+\[
+\Gal(E/K)\cong G/\Gal(L/E).
+\]
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+Artin's theorem gives $K=L^{G}$. If $H\le G$, then $L/L^{H}$ is Galois with group $H$, hence $|\Gal(L/L^H)|=|H|$ and indices match degrees. For any intermediate $E$, clearly $E\subseteq L^{\Gal(L/E)}$ and equality follows by counting degrees. Normality of $E/K$ corresponds to conjugation-stability of $\Gal(L/E)$.
+\end{proof}
+
+\subsection{Consequences}
+
+\begin{corollary}[Galois correspondence algebra]
+The lattice of subgroups of $G$ is anti-isomorphic to the lattice of intermediate fields of $L/K$. Intersections and joins correspond to composita and intersections of fields.
+\end{corollary}
+
+\begin{corollary}[Fixed field of a normal subgroup]
+If $N\trianglelefteq G$, then $L^{N}/K$ is Galois with group $G/N$.
+\end{corollary}
+
+\subsection{Worked example: $x^3-2$}
+
+Let $E$ be the splitting field of $x^3-2$ over $\Q$. Then $E=\Q(\sqrt[3]{2},\omega)$ and $G\cong S_3$.
+\[
+\begin{tikzcd}
+& E \arrow[-]{dl} \arrow[-]{d} \arrow[-]{dr} & \\
+\Q(\sqrt[3]{2}) \arrow[-]{dr} & \Q(\omega) \arrow[-]{d} & \Q(\sqrt[3]{2}\omega) \arrow[-]{dl} \\
+& \Q &
+\end{tikzcd}
+\]
+The three index-$2$ subgroups of $S_3$ fix the three quadratic subfields, while the three index-$3$ subgroups fix the three cubic subfields. Complex conjugation corresponds to a transposition.
+
+\subsection{Another example: a quartic with dihedral group}
+
+For $f=x^4-2$ over $\Q$, the splitting field $E=\Q(\sqrt[4]{2},i)$ has $G\cong D_4$ of order $8$. The unique Klein $V_4\trianglelefteq D_4$ fixes $\Q(\sqrt{2})$, hence $\Q(\sqrt{2})/\Q$ is Galois with group $C_2$, and $E/\Q(\sqrt{2})$ is a biquadratic extension.
+
+\subsection{Remarks}
+
+\begin{remark}
+The correspondence fails without separability or normality: in general, taking fixed fields of subgroups of \emph{all} automorphisms of $L$ over $K$ still yields intermediate fields, but surjectivity and index-degree equalities can fail.
+\end{remark}

@@ -1,0 +1,550 @@
+\begin{filecontents*}{crossing example 7 element.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 100 100
+newpath
+0 0 moveto
+100 0 lineto
+100 100 lineto
+0 100 lineto
+closepath
+stroke
+\end{filecontents*}
+\begin{filecontents*}{nc example 7 element.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 100 100
+newpath
+0 0 moveto
+100 100 lineto
+stroke
+\end{filecontents*}
+\begin{filecontents*}{pi tilda example.eps}
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 100 100
+newpath
+0 0 moveto
+50 100 lineto
+100 0 lineto
+closepath
+stroke
+\end{filecontents*}
+\documentclass{book}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,graphicx,grffile,epstopdf,hyperref,comment}
+\usepackage[margin=1in]{geometry}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\begin{document}
+\chapter{Preliminaries from Free Probability Theory}\label{ch:1}
+
+This chapter is divided into four sections that collect together the concepts of free probability theory and interpolated free group factors, which are essential for our research objectives. In Section \ref{sec:NCPS}, we introduce non-commutative probability spaces (NCPS). These include four main types: algebraic, $*$-algebraic, $C^*$-algebraic, and von Neumann algebraic NCPS. We then explore the concept of freeness within these spaces, focusing particularly on $*$-NCPS.
+ Free products and generating new NCPS from old, are discussed, focusing on algebraic and $*$-free products and their role in decomposing larger NCPS. We extend this to $C^*$-NCPS and von Neumann NCPS.
+
+In Section \ref{sec:NC-partition}, we delve into non-crossing partitions, combinatorial structures pivotal in free probability, particularly in defining and analyzing free cumulants.
+
+Section \ref{sec:Mobius-inversion} introduces M"{o}bius inversion, a key tool that connects moments and free cumulants within the lattice of non-crossing partitions, providing a deeper understanding of freeness in NCPS.
+
+Finally, Section \ref{sec:gp-von} recalls the construction of group von Neumann algebras for countable groups. We also discuss interpolated free group factors, which generalize free group factors to non-integer dimensions, and introduce essential notations and conventions for further analysis.
+
+
+The essential concepts of free probability are drawn from \cite{mingo2017}, \cite{nicaspec}, and \cite{voiculescu1992free}. The discussion on interpolated free group factors is primarily based on \cite{LFdyk}, \cite{mingo2017} and \cite{Radulesc}.
+
+
+
+\section{Non-Commutative Probability Spaces}\label{sec:NCPS}
+
+This section outlines the foundational concepts of non-commutative probability spaces (NCPS), which form the backbone of free probability theory discussed in this chapter. We will explore various types of NCPS, each crucial for understanding the algebraic structures and their applications in subsequent sections.
+
+
+\begin{definition}[Algebraic NCPS]
+An algebraic NCPS is defined as a pair $(A, \varphi)$, where $A$ is a unital algebra and $\varphi: A \rightarrow \mathbb{C}$ is a linear functional satisfying $\varphi(1) = 1$.
+        The elements of $A$ are often called random variables.
+\end{definition}
+
+\begin{definition}[$*$-NCPS]
+A $*$-NCPS is defined as a triple $(A,\varphi)$, where
+\begin{itemize}
+    \item $A$ is a unital $*$-algebra,
+    \item $\varphi: A \rightarrow \mathbb{C}$ is a linear functional such that $\varphi(1) = 1$, and
+    \item $\varphi$ is positive, i.e., $\varphi(a^*a) \geq 0$ for all $a \in A$.
+\end{itemize}
+\end{definition}
+
+\begin{definition}[$C^*$-NCPS]
+A $C^*$-NCPS is a $*$-NCPS $(A, *, \varphi)$ where $A$ is a unital $C^*$-algebra, and $\varphi: A \rightarrow \mathbb{C}$ is a state.
+\end{definition}
+
+\begin{definition}[von Neumann NCPS]
+A von Neumann NCPS is a $*$-NCPS $(A, *, \varphi)$ where $A$ is a von Neumann algebra, and $\varphi: A \rightarrow \mathbb{C}$ is a faithful normal state.
+\end{definition}
+
+While the formal definitions do not need $\varphi$ to be tracial, for all our applications $\varphi$ will be a trace.
+
+\begin{definition}[Freeness in NCPS]
+Let $(A, \varphi)$ be an NCPS.
+\begin{enumerate}
+\item \textbf{Freeness of subalgebras:}  A family $\{A_i : i \in I\}$ of unital subalgebras of $A$ is free if, for any positive integer $q$, distinct indices $i_1, i_2, \ldots, i_q \in I$ with $i_1 \neq i_2 \neq \ldots \neq i_q$, and centred elements $a_j \in A_{i_j}$ (i.e., $\varphi(a_j) = 0$), we have:
+\[
+\varphi(a_1 a_2 \cdots a_q) = 0.
+\]
+The value $\varphi(a)$ is often called the expectation or mean of $a$. Elements with zero expectation are called centered elements.
+
+    \item \textbf{Freeness of random variables:} 
+    A family of elements $\{a_i: i\in I\} \subset A$ is said to be free or freely independent if the unital subalgebras $A_i = \text{alg}(1, a_i)$ $(i\in I)$ are free.
+    
+
+     
+    \item \textbf{$*$-Freeness of random variables:} 
+    If $(A, \varphi)$ is a $*$-probability space, then $\{a_i: i\in I\} \subset A$ are $*$-free if the unital $*$-subalgebras $B_i = \text{alg}(1, a_i, a_i^*)$ $(i\in I)$ are free.
+\end{enumerate}
+\end{definition}
+
+Intuitively, `freeness' means that the behavior of the elements or subalgebras in the NCPS is independent when considered together. 
+Having established the concept of freeness in NCPS, we now explore how free products serve as a fundamental construction to generate new NCPS, further analyzing their structures.
+
+\subsection*{Free Products of Non-Commutative Probability Spaces}
+
+Free products are essential constructions in free probability theory, enabling the generation of new NCPS from existing ones. While both algebraic and $*$-free products are considered, our primary focus is on decomposing larger $*$-NCPS and von Neumann NCPS into simpler, smaller components via free products. This method facilitates the analysis of the structure of a larger space by breaking it down into its more manageable parts. The formal definition of free products is introduced as follows:
+
+\subsubsection{Algebraic free product}
+
+Let $\{(A_i, \varphi_i) : i \in I\}$ be a family of NCPS. The algebraic free product $(A, \varphi) = *_{i \in I} (A_i, \varphi_i)$ is defined as the following:
+
+\begin{enumerate}
+    \item $A = *_{i \in I} A_i$ is the free product of algebras.
+    
+    \item The functional $\varphi : A \to \mathbb{C}$ is uniquely determined by:
+        \begin{itemize}
+            \item $\varphi|_{A_i} = \varphi_i$ for all $i \in I$,
+            \item $\varphi(a_1 \cdots a_n) = 0$ for all $n \geq 1$, $a_j \in A_{i_j}^{\circ}$ with $i_1 \neq \cdots \neq i_n$.
+        \end{itemize}
+\end{enumerate}
+
+Here, $A_i^{\circ} = \{a \in A_i : \varphi_i(a) = 0\}$ denotes the set of centred elements in $A_i$. When $\{(A_i, \varphi_i)\}$ are $*$-probability spaces, the functional $\varphi$ is positive.
+
+\begin{comment}
+\subsubsection{$*$-free product}
+
+For $*$-probability spaces $\{(A_i, \varphi_i) : i \in I\}$, the $*$-free product $(A, \varphi) = *_{i \in I} (A_i, \varphi_i)$ is constructed as follows:
+
+\begin{enumerate}
+    \item $A = *_{i \in I} A_i$, the free product of $*$-algebras.
+    \item The state $\varphi : A \to \mathbb{C}$ is defined similarly to the algebraic case. An additional property of $\varphi$ is its positivity, which arises naturally given that each $\varphi_i$ is positive.
+\end{enumerate}
+\end{comment}
+
+\begin{remark}
+The construction of free products for $C^*$-NCPS and von Neumann NCPS involves more intricate and careful considerations. We will utilize these concepts without further elaboration here and direct the reader to Chapter 3 of \cite{voiculescu1992free} for a comprehensive explanation.
+\end{remark}
+
+\subsubsection{Internal decomposition}
+
+Consider an NCPS $A$ that is generated by a family of unital subalgebras $\{(A_i, \varphi_i)\}$, which are free. This means that $A$ can be expressed as a free product of these subalgebras, formally stated as:
+\[
+A = *_{i\in I} (A_i,\varphi_i).
+\]
+
+This concept extends naturally to other specific types of NCPS:
+\begin{itemize}
+    \item For \textbf{$*$-NCPS:} The decomposition is applied to unital $*$-subalgebras of $A$, where $A$ can be expressed as the free product of these $*$-subalgebras.
+    \item For \textbf{$C^*$-NCPS:} The focus is on  unital $C^*$-subalgebras that are free. These subalgebras allow $A$ to be decomposed as a free product in the $C^*$-algebraic framework.
+    \item For \textbf{von Neumann NCPS:} The decomposition is considered for von Neumann subalgebras that are free. In this case, $A$ is decomposed as the free product of these subalgebras.
+\end{itemize}
+
+In this thesis, we will primarily focus on von Neumann algebraic decompositions, as these are most relevant to our study.
+
+
+\section{Non-Crossing Partitions}\label{sec:NC-partition}
+
+As we delve deeper into the structure of NCPS, non-crossing partitions emerge as a crucial combinatorial tool. These partitions, which underpin the concept of free cumulants, allow us to precisely characterize the interactions within free products of NCPS.
+
+The analysis of free products is greatly facilitated by free cumulants, which provide a combinatorial framework for understanding the interactions among components. Free cumulants characterize the freeness of a family and are defined in terms of non-crossing partitions and M"{o}bius inversion, concepts that will be explored in subsequent sections.
+
+\begin{definition}
+Let $S$ be a totally ordered finite set. A \textit{partition} of $S$ is a collection of disjoint subsets, called \textit{blocks}, whose union equals $S$. A partition is said to be \textit{non-crossing} if, for any two blocks, whenever two elements $i < j$ belong to the same block and $k < l$ belong to a different block, it is not the case that $k < i < l < j$.
+\end{definition}
+
+In simpler terms, a non-crossing partition preserves the order within and between blocks, ensuring no ``crossing" of elements across different blocks.
+
+\textbf{Example of a crossing partition:} Consider the set $S = \{1, 2, 3, 4, 5, 6, 7\}$. A crossing partition could be $\{\{1, 5\}, \{2, 4, 6\}, \{3, 7\}\}$ because the blocks intersect across the ordering of the elements, creating  crossings.
+
+\begin{figure}[ht!]
+    \centering
+     \includegraphics[width=0.4\textwidth]{"crossing example 7 element.eps"}
+    \caption{An example of a crossing partition.}
+    \label{fig:Crossing partition example}
+\end{figure}
+
+\textbf{Example of a non-crossing partition:} Consider the set $S = \{1, 2, 3, 4, 5, 6, 7\}$. A non-crossing partition may have blocks that are nested. For example, consider the partition $\{\{1, 3\}, \{2\}, \{4, 7\}, \{5, 6\}\}$ which is non-crossing. Figure \ref{fig:Non-crossing partition example} illustrates this concept visually.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{"nc example 7 element.eps"}
+    \caption{An example of a non-crossing partition.}
+    \label{fig:Non-crossing partition example}
+\end{figure}
+
+We now go deeper into additional properties of non-crossing partitions crucial for studying free probability and planar algebras. These include the lattice structure, intervals within partitions, and combining partitions.
+
+\subsubsection{Lattice structure of non-crossing partitions}
+
+Define $NC(S)$ to be the set of all non-crossing partitions of $S$.
+We will often use $S = [q] = \{1,\ldots,q\}$.
+The set $NC(S)$ forms a lattice under the refinement order, which can be described as follows:
+\begin{definition}
+For partitions $\pi$ and $\rho$ in $NC(S)$, we say that $\rho \leq \pi$ if every block of $\rho$ is contained within a block of $\pi$. This relation is known as the \textit{refinement order}. That is, $\rho$ refines $\pi$. In other words, we say $\pi$ is \textit{coarser} than $\rho$, meaning $\pi$ has fewer but larger blocks.
+\end{definition}
+
+With respect to the refinement order, the following proposition, which we do not prove, explores the structure of $NC(S)$.
+
+\begin{proposition}
+The set $(NC(S), \leq)$ forms a lattice. This means that for any $\pi, \rho \in (NC(S), \leq)$, there exists a unique greatest lower bound (meet) $\pi \wedge \rho$ and a unique least upper bound (join) $\pi \vee \rho$ within $NC(S)$.
+\end{proposition}
+
+In this lattice, the minimum element is the partition where each block is a singleton, denoted by $0_S$, and the maximum element is the partition where all elements are in a single block, denoted by $1_S$.
+
+\subsubsection{Intervals in non-crossing partitions}
+
+Intervals are fundamental in the study of non-crossing partitions and serve as the foundation for several significant results in free probability theory. We formally define an interval in a finite totally ordered set. 
+
+\begin{definition}
+Let $S$ be a finite totally ordered set. A subset $I \subseteq S$ is defined as an interval if, for any elements $i, j, k \in S$ satisfying $i < k < j$, the following condition holds:
+if $i, j \in I$, then $k \in I$.
+We denote an interval with minimal element $i$ and maximal element $j$ as $[i,j]$.
+\end{definition}
+
+\begin{proposition}
+Every non-crossing partition $\pi$ of a totally ordered set $S$ has at least one block that is an interval.
+\end{proposition}
+
+\begin{proof}
+This proposition is proved by induction on the size of $S$.
+
+Base case: If $|S| = 1$, the only partition possible is $\{S\}$, which is trivially an interval.
+
+Inductive step: Assume the proposition holds for all sets of size less than $|S|$. Let $\pi$ be a non-crossing partition of $S$.
+
+Consider the smallest element $i \in S$ and the block $B \in \pi$ containing $i$. Let $j$ be the largest element in $B$. We have two cases:
+
+1) If $[i,j] \subseteq B$, then $B$ is an interval and we are done.
+
+2) If $[i,j] \not\subseteq B$, there exists at least one element $k \in [i,j]$ that is not in $B$. Let $C$ be the block containing $k$. Due to the non-crossing property, all elements of $C$ must lie between consecutive elements of $B$.
+
+Now, consider the subset $S' \subset S$ consisting of all elements of $C$ and those between them. The partition $\pi$ induces a non-crossing partition $\pi'$ on $S'$. Since $|S'| < |S|$ (as $S'$ excludes at least $i$ and $j$), by our inductive hypothesis, $\pi'$ contains an interval block.
+
+This interval block in $\pi'$ is also an interval block in our original partition $\pi$.
+
+Therefore, by induction, every non-crossing partition of a finite totally ordered set contains at least one interval block.
+\end{proof}
+
+While this proposition shows the existence of an interval, uniqueness is not guaranteed; a partition may contain multiple intervals. For example, in the partition $0_S$, every block is an interval.
+
+\begin{lemma}\label{pi-tilde-lemma}
+For any $q \in \mathbb{N}$, let $[q] = D \sqcup E$ and suppose we are given $\pi \in NC(D)$. Then, there exists a unique non-crossing partition $\tilde{\pi} \in NC(E)$ such that:
+\begin{itemize}
+    \item The partitions $\pi$ and $\tilde{\pi}$ together form a non-crossing partition of $[q]$, denoted by $\pi \sqcup \tilde{\pi} \in NC([q])$.
+    \item For any partition $\rho \in NC(E)$ that satisfies $\pi \sqcup \rho \in NC([q])$, we have $\rho \leq \tilde{\pi}$. This means that $\tilde{\pi}$ is the coarsest non-crossing partition of $E$ that satisfies this condition.
+\end{itemize}
+\end{lemma}
+
+\begin{proof}
+Consider a regular $q$-gon and label its vertices from 1 to $q$ in a clockwise direction. For each block $C$ of $\pi$, draw a simple, closed, non-crossing curve that starts at the smallest number in $C$, passes through the other numbers in $C$ in order, and returns to the starting point. After removing all these curves, the $q$-gon is divided into various connected components. We define $\tilde{\pi}$ by assigning the numbers in each connected component to the same block. Clearly, $\tilde{\pi}$ is in $NC(E)$, and the partition $\pi \sqcup \tilde{\pi}$ is in $NC([q])$.
+
+If there exists a partition $\rho \in NC(E)$ such that $\pi \sqcup \rho \in NC([q])$, and if $\rho$ contained a block with elements from distinct blocks of $\tilde{\pi}$, then $\pi \sqcup \rho$ would be crossing. Hence, each block of $\rho$ must be contained in a block of $\tilde{\pi}$, meaning $\rho \leq \tilde{\pi}$.
+\end{proof}
+
+Consider the following illustration for Lemma \ref{pi-tilde-lemma}. Let $q = 18$, $D = \{2, 5, 8, 11, 13, 14, 17\}$, and $E = \{1, 3, 4, 6, 7, 9, 10, 12, 15, 16, 18\}$. Also, let $\pi = \{\{2, 8, 11\}, \{5\}, \{13, 14, 17\}\}$. In Figure \ref{fig:pi tilda example}, each of the three bold black curves represents one of the classes of $\pi$. Thus, $\tilde{\pi} = \{\{1, 12, 18\}, \{3, 4, 6, 7\}, \{9, 10\}, \{15, 16\}\}$, and the dashed curves represent the classes of $\tilde{\pi}$.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{"pi tilda example.eps"}
+    \caption{A $q$-gon representation of $\pi$ and $\tilde{\pi}$.}
+    \label{fig:pi tilda example}
+\end{figure}
+
+
+\section{M"{o}bius Inversion}\label{sec:Mobius-inversion}
+
+Building on the combinatorial structures provided by non-crossing partitions, we now examine how these concepts integrate with algebraic operations through M"{o}bius inversion, a tool that connects moments and free cumulants in NCPS.
+
+\begin{definition}
+Given an NCPS $(A, \varphi)$, the \textit{moments} $\varphi_q: A^q \rightarrow {\mathbb C}$ are defined as:
+\[
+\varphi_q(a_1, a_2, \ldots, a_q) = \varphi(a_1 a_2 \cdots a_q),
+\]
+where $q\in \mathbb{N},\text{ and } a_1, a_2, \dots, a_q \in A$.
+\end{definition}
+
+To understand the relationship between moments and free cumulants, we use a tool called M"{o}bius inversion. This mathematical operation, defined on the lattice of non-crossing partitions $NC([q])$, allows us to switch between these two key concepts.
+
+The M"{o}bius function $\mu(.)$ is crucial in connecting the lattice structure of non-crossing partitions to free probability theory. For $\pi, \sigma \in NC([q])$ the M"{o}bius function for this pair $\mu(\pi, \sigma)$ is defined recursively as:
+\[
+\mu(\pi, \sigma) = \begin{cases}
+1 & \text{if } \pi = \sigma, \\
+-\sum_{\pi \leq \tau < \sigma} \mu(\pi, \tau) & \text{if } \pi < \sigma, \\
+0 & \text{otherwise}.
+\end{cases}
+\]
+
+The \textit{free cumulants} $\kappa_q$ are defined by the following formula using moments:
+\[
+\kappa_q = \sum_{\pi \in NC([q])} \mu(\pi, 1_q) \varphi_\pi,
+\]
+where $\varphi_\pi$ represents the product of moments over the blocks of the partition $\pi$. That is:
+\[
+\varphi_{\pi} (a_1,a_2,\ldots,a_q)  = \prod_{C \in \pi} \varphi(\prod_{i \in C}a_i)
+\]
+where $C \in \pi$ denotes the block in $\pi$ of $[q]$ and the product of the $a_i$ is taken in increasing order.
+
+Having established the multiplicative extension for $\varphi$, we can generalize this concept to any collection of functions defined on $A^q$.
+
+\begin{definition}[Multiplicative Extension]
+Let $(A, \varphi)$ be a non-commutative probability space. For a collection of functions $\psi_q: A^q \to \mathbb{C}$ where $q\in \mathbb{N}$, we define its multiplicative extensions to $NC([q])$ as follows:
+
+For any $\pi \in NC([q])$ and $a_1, a_2, \ldots, a_q \in A$,
+\[
+\psi_{\pi} (a_1,a_2,\ldots,a_q) = \prod_{C \in \pi} \psi_{|C|}(a_i : i \in C)
+\]
+where $|C|$ denotes the size of the block $C$ of $\pi$ and the product of the $a_i$ is taken in increasing order.
+\end{definition}
+
+\begin{remark}
+This definition generalizes the multiplicative extensions of $\varphi$ and $\kappa$ previously introduced. Specifically:
+
+\begin{enumerate}
+    \item For $\varphi$, we have:
+    \begin{align*}
+    \varphi_{\pi} (a_1,a_2,\ldots,a_q) &= \prod_{C \in \pi} \varphi_{|C|}(a_i : i \in C) &\text{(by definition of multiplicative extension)}\\
+    &=\prod_{C \in \pi} \varphi\left(\prod_{i \in C}a_i\right) &\text{(by definition of $\varphi_q$)}
+    \end{align*}
+
+    \item For $\kappa$, we have:
+    \[
+    \kappa_{\pi} (a_1,a_2,\ldots,a_q) = \prod_{C \in \pi} \kappa_{|C|}(a_i : i \in C)
+    \]
+\end{enumerate}
+\end{remark}
+
+The following theorem from \cite{JFApaper} establishes key relationships between cumulants and moments using M"{o}bius inversion:
+
+\begin{theorem}[Theorem 7 of \cite{JFApaper}]\label{mob-thm}
+Given two collections of functions $\{\varphi_q : A^q \to \mathbb{C}\}_{q \in \mathbb{N}}$ and $\{\kappa_q : A^q \to \mathbb{C}\}_{q \in \mathbb{N}}$ extended multiplicatively, the following conditions are all equivalent:
+\begin{enumerate}
+    \item $\varphi_q = \sum_{\pi \in NC([q])} \kappa_\pi$ for each $q \in \mathbb{N}$.
+    \item $\kappa_q = \sum_{\pi \in NC([q])} \mu(\pi, 1_q) \varphi_\pi$ for each $q \in \mathbb{N}$.
+    \item $\varphi_\tau = \sum_{\pi \in NC([q]), \pi \leq \tau} \kappa_\pi$ for each $q \in \mathbb{N}$, $\tau \in NC([q])$.
+    \item $\kappa_\tau = \sum_{\pi \in NC([q]), \pi \leq \tau} \mu(\pi, \tau) \varphi_\pi$ for each $q \in \mathbb{N}$, $\tau \in NC([q])$.
+\end{enumerate}
+\end{theorem}
+
+The M"{o}bius function facilitates the transformation between moments and cumulants, allowing us to accurately translate between these two critical quantities in NCPS. It helps us understand how freeness works in NCPS. Speicher's result shows exactly how this works:
+
+\begin{theorem}[Theorem 11.20 of \cite{nicaspec}]
+Let $(A, \varphi)$ be a non-commutative probability space and $\{A_i : i \in I\}$ be a family of unital subalgebras of $A$ such that $A_i$ is generated as an algebra by $G_i \subseteq A_i$. This family is freely independent if and only if, for each positive integer $q$, indices $i_1, \dots, i_q \in I$ that are not all equal, and elements $a_t \in G_{i_t}$ for $t = 1, 2, \dots, q$, the equality
+\[
+\kappa_q(a_1, a_2, \dots, a_q) = 0
+\]
+holds.
+\end{theorem}
+
+This result is pivotal in free probability theory. It gives us an easy way to check if families are free by looking at free cumulants. Free cumulants are often simpler to work with than moments. This idea is known as the ``vanishing of mixed cumulants". It means that if the mixed cumulants are zero, the families are free.
+
+\subsubsection{Uniformly $R$-cyclic matrices}\label{uni-rcyclic}
+
+We now introduce uniformly $R$-cyclic matrices, a specific class of matrices crucial in free probability theory. We explore a key result related to these matrices as discussed by Nica and Speicher (refer to Lecture 20 of \cite{nicaspec}). 
+
+Consider a NCPS $(A, \varphi)$, and for any positive integer $d$, let $M_d(A)$ be the space of $d \times d$ matrices over $A$. We extend the functional $\varphi$ to this matrix space by defining $\varphi^d(X) = \frac{1}{d} \sum_{i=1}^d \varphi(x_{ii})$ for $X = (x_{ij}) \in M_d(A)$. Let $\kappa^d(\cdot)$ denote the free cumulants in this matrix space. Within this setup, we formally define uniformly $R$-cyclic matrices as follows:
+
+\begin{definition}
+A matrix $X = (x_{ij}) \in M_d(A)$ is uniformly $R$-cyclic with a determining sequence $\{\alpha_t\}_{t \in \mathbb{N}} \subseteq \mathbb{C}$ if, for any indices $i_1, j_1, \dots, i_t, j_t \in \{1, 2, \dots, d\}$, we have:
+\[
+\kappa_t(x_{i_1 j_1}, x_{i_2 j_2}, \dots, x_{i_t j_t}) = 
+\begin{cases} 
+\alpha_t & \text{if } i_1 = j_2, i_2 = j_3, \dots, j_{t-1} = i_t, j_t = i_1, \\
+0 & \text{otherwise}.
+\end{cases}
+\]
+'Uniform' indicates that the cumulants are independent of the specific choice of indices $i_s, j_s$.
+\end{definition}
+
+This definition results in a theorem concerning the free independence of subalgebras generated by such matrices.
+
+\begin{theorem}[Theorem 14.18 and 14.20 of \cite{nicaspec}]\label{rcyclicfreeness}
+Let $X = (x_{ij}) \in M_d(A)$ be uniformly $R$-cyclic with some determining sequence $\{\alpha_t\}_{t \in \mathbb{N}}$. Let $A_1= M_d(\mathbb{C})\subset M_d(A) $ and $A_2$ be the unital subalgebras generated by $X$ in $M_d(A)$. The following statements are equivalent:
+\begin{itemize}
+    \item The matrix $X$ is uniformly $R$-cyclic.
+    \item The subalgebras $A_1$ and $A_2$ are freely independent.
+\end{itemize}
+\end{theorem}
+
+The above theorem illustrates the deep connection between the $R$-cyclic property and free independence.
+
+
+\subsection*{Important Notations and Conventions}
+
+While our discussion thus far has primarily focused on algebraic and combinatorial aspects, we now turn our attention to analytic considerations crucial for studying subfactors. To facilitate this transition, we introduce essential notations and conventions that will be employed throughout the subsequent analysis.
+
+Let $(A, \varphi_A)$ and $(B, \varphi_B)$ be NCPS and consider a parameter $\alpha \in (0,1)$. We define a new non-commutative probability space $(\underset{\alpha}{A} \oplus \underset{1-\alpha}{B}, \varphi)$ where:
+
+\[
+\varphi = \alpha \varphi_A + (1 - \alpha) \varphi_B.
+\]
+
+The notation introduced here is especially useful when dealing with interpolated spaces that combine two NCPSs. Specifically, we use the following conventions to clarify how these combinations work:
+
+\begin{itemize}
+    \item The space $\underset{\alpha}{A} \oplus \underset{1-\alpha}{B}$ represents a direct sum of $A$ and $B$.
+    \item The subscripts $\alpha$ and $1-\alpha$ indicate the respective weights assigned to each space in the sum.
+    \item The state $\varphi$ on this space is a convex combination of the states $\varphi_A$ and $\varphi_B$.
+\end{itemize}
+
+This construction enables a smooth transition between the two spaces as $\alpha$ varies, providing a continuous interpolation between the original NCPSs $A$ and $B$ as seen below.
+
+\begin{itemize}
+    \item When $\alpha=0$, the space $\underset{\alpha}{A} \oplus \underset{1-\alpha}{B}$ is $B$, and the state $\varphi$ is $\varphi_B$.
+    \item When $\alpha =1$, the space $\underset{\alpha}{A} \oplus \underset{1-\alpha}{B}$ is $A$, and the state $\varphi$ is $\varphi_A$.
+\end{itemize}
+
+\section{Group von Neumann Algebra for Countable Groups}\label{sec:gp-von}
+With a solid understanding of NCPS and the combinatorial tools that define their structure, we now turn to group von Neumann algebras. These algebras, particularly those associated with countable groups, play a pivotal role in the study of free probability and offer insights into the unique trace conditions that arise in this context. Let $\mathcal{G}$ be a countable discrete group. The group von Neumann algebra $L\mathcal{G}$ is generated by the left regular representation of $\mathcal{G}$ acting on the Hilbert space $\ell^2(\mathcal{G})$.
+
+The faithful, normal, tracial state $\tau: L\mathcal{G} \rightarrow \mathbb{C}$ of the algebra $L\mathcal{G}$ is defined by:
+\[
+\tau(\lambda(g)) = \begin{cases} 
+1 & \text{if } g = e, \\
+0 & \text{otherwise},
+\end{cases}
+\]
+where $e$ is the identity element in $\mathcal{G}$.
+
+Note that this trace is unique if $\mathcal{G}$ is an ICC group (Infinite conjugacy class group), where each non-identity element has infinitely many conjugates. When $\mathcal{G}$ is an ICC group, $L\mathcal{G}$ becomes a type II$_1$ factor, characterised by a unique tracial state. For $q\in \mathbb{N}\cup \{\infty\}$, we denote $F_q$ as the free group generated by $q$ elements. The notation $LF_q$ represents the free group factor associated with the free group $F_q$. We use $LF_1= L \mathbb{Z}$ since $F_1 \cong \mathbb{Z}$. Except for $F_1=\mathbb{Z}$, all others are ICC. Thus, all $LF_q$ for $q \geq 2$ are II$_1$ factors with unique tracial state.
+
+After exploring the properties of group von Neumann algebras, the focus shifts to a more general class of algebras central to the subsequent analysis.
+
+\begin{definition}[Finite pre-von Neumann algebra]
+A finite pre-von Neumann algebra is a complex $*$-algebra $A$ equipped with a normalised trace $\tau_A$ such that:
+\begin{enumerate}
+    \item The sesquilinear form defined by $\langle a', a \rangle = \tau_A(a^* a')$ defines an inner-product on $A$.
+    \item For each $a \in A$, the left-multiplication map $\lambda_a: A \to A$ given by $\lambda_a(x) = ax$ is bounded for the trace induced norm of $A$.
+\end{enumerate}
+\end{definition}
+
+The following result is key to understanding the link between free independence of subalgebras and of their double commutants in von Neumann algebras.
+
+\begin{lemma}(\cite[Lemma 2.5.7]{nicaspec}, \cite[Proposition 5, Chapter 6]{mingo2017})\label{primefreeness}
+Let $(A, \varphi)$ be a von Neumann algebraic NCPS, and let $\{A_i : i \in I\}$ be a family of unital $*$-subalgebras of $A$. Then $\{A_i : i \in I\}$ is a free family if and only if $\{A_i^{\prime \prime} : i \in I\}$ is a free family, where $A_i^{\prime \prime}$ denotes the double commutant of $A_i$ in $A$.
+\end{lemma}
+
+Having established the properties of group von Neumann algebras, we now explore specific elements within $*$-NCPS. One such element is the free Poisson element.
+
+\subsubsection{Free Poisson element}
+
+\begin{definition}\label{freepoidefn}
+Let $(A, \varphi)$ be a $*$-NCPS. A self-adjoint element $a \in A$ is called a \textit{free Poisson element} with rate $\lambda \geq 0$ and jump size $\alpha \in \mathbb{R}$ if its free cumulants $\kappa_q(a, a, \dots, a) = \lambda \alpha^q$ for all $q \geq 1$.
+\end{definition}
+A free Poisson element can be viewed as the non-commutative analogue of a Poisson random variable in classical probability. We will see many free Poisson elements later. They help us understand certain von Neumann algebras. Proposition 13 of \cite{JFApaper} provides a clear explanation.
+The following is a slightly changed version, but the proof is mostly the same. We don't give the proof here.
+
+\begin{proposition}\label{poiprop}
+Let $(A, \varphi)$ be a von Neumann NCPS with free cumulants $\kappa_q$, and let $x \in A$ be a free Poisson element with rate $\lambda$ and jump $\alpha$ (i.e, $\kappa_q(x, x, \dots, x) = \lambda\alpha^q$). Let $B$ be the von Neumann algebra generated by $x$, and set $\varphi_B = \varphi|_B$. Then:
+\[
+(B, \varphi_B) \cong \underset{1 - \lambda}{\mathbb{C}} \oplus \underset{\lambda}{L\mathbb{Z}}.
+\]
+\end{proposition}
+
+This result gives a clear description of the von Neumann algebra generated by such a free Poisson element. It's a direct sum of the group von Neumann algebra $L\mathbb{Z}$ and a scalar algebra $\mathbb{C}$.
+
+\subsection*{Interpolated free group factors}
+
+As we continue our exploration of von Neumann algebras within free probability, the construction of interpolated free group factors $LF_r$ (for $r > 1$) emerges as a significant development. Interpolated free group factors are important because they bridge the fields of operator algebras and random matrix theory. They provide a rich context for understanding the algebraic structures we have discussed earlier. Kenneth Dykema \cite{LFdyk} and Florin R\u{a}dulescu \cite{Radulesc} have independently provided two equivalent approaches. We summarise the necessary content from \cite{mingo2017}. We define interpolated free group factors by using semicircular elements, which are fundamental objects in free probability theory:
+
+\begin{definition}[Semicircular Element]
+    A self-adjoint element $s$ in a $*$-NCPS with odd moments $\varphi(s^{2n+1}) = 0$ and even moments $\varphi(s^{2n}) = \sigma^{2n} C_n$, where $C_n$ is the $n$-th Catalan number and $\sigma > 0$ is a constant, is called a semicircular element of variance $\sigma^2$.
+\end{definition}
+
+It is well known that the free group factor $LF_\infty$ is isomorphic to the von Neumann algebra generated by any countably infinite set of free semicircular elements. For $r > 1$, we define interpolated free group factors as follows:
+
+\begin{theorem}[Theorem 13 of Chapter 6 of \cite{mingo2017}]\label{LF formula}
+    Let $\mathscr{R}$ be the hyperfinite II$_1$ factor and $LF_\infty = \text{vN}(s_1, s_2, \ldots)$ be a free group factor generated by countably many free semicircular elements $s_i$, such that $\mathscr{R}$ and $LF_\infty$ are free   in some von Neumann NCPS $(A, \varphi)$. Consider orthogonal projections $p_1, p_2, \ldots \in \mathscr{R}$ and set $r := 1 + \sum_j \varphi(p_j)^2 \in [1, \infty]$. Then the von Neumann algebra
+    \[
+    LF_r := \text{vN}(\mathscr{R}, p_j s_j p_j \, (j \in \mathbb{N}))
+    \]
+    is a factor and depends only on $r$ (up to isomorphism).
+    These $LF_r$ for $r \in \mathbb{R}$, $1 \leq r \leq \infty$ are the \emph{interpolated free group factors}.
+\end{theorem}
+
+The interpolated free group factors exhibit two fundamental properties:
+
+\begin{enumerate}
+    \item \textbf{Free Product Formula:} For $r, s > 1$, 
+    \[
+    LF_r * LF_s \cong LF_{r + s}
+    \]
+
+    \item \textbf{Compression Formula:} For $0 < t \leq 1$ and $r > 1$,
+    \[
+    (LF_r)_t \cong LF_{1+\frac{r-1}{t^2}}
+    \]
+    where $(LF_r)_t$ denotes the compression of $LF_r$ by a projection of trace $t$.
+\end{enumerate}
+
+\subsubsection*{Additional Results and Formulas}
+
+We present key analytic results involving free products of tracial von Neumann algebraic probability spaces.
+
+\begin{proposition}[Proposition 15, Section 4 of \cite{LFdyk}]
+Let $r, s \geq 1$ and $0 \leq \alpha, \beta \leq 1$. Then:
+\[
+\left( \underset{1-\alpha}{\mathbb{C}} \oplus \underset{\alpha}{LF_r} \right) * \left( \underset{1 - \beta}{\mathbb{C}} \oplus \underset{\beta}{LF_s} \right) = 
+\begin{cases}
+LF_{(r\alpha^2 + 2\alpha(1-\alpha) + s\beta^2 + 2\beta(1-\beta))} & \text{if } \alpha + \beta \geq 1, \\
+\underset{1-\alpha-\beta}{\mathbb{C}} \oplus \underset{\alpha+\beta}{LF_{((\alpha + \beta)^{-2}(r\alpha^2 + s\beta^2 + 4\alpha\beta))}} & \text{if } \alpha + \beta \leq 1.
+\end{cases}
+\]
+\end{proposition}
+
+\begin{corollary}[Corollary 16, Section 5.2 of \cite{JFApaper}]\label{LF power formula}
+Let $\alpha > 1$ and $N \in \mathbb{N}$. Then:
+\[
+\left( \underset{1-\alpha^{-1}}{\mathbb{C}} \oplus \underset{\alpha^{-1}}{L\mathbb{Z}}\right)^{*N} = 
+\begin{cases}
+LF(N(\alpha^2-1 - \alpha^{-2})) & \text{if } N \geq \alpha, \\
+\underset{1-N\alpha^{-1}}{\mathbb{C}} \oplus \underset{N\alpha^{-1}}{LF_{\left( 2 - \frac{1}{N} \right)}} & \text{if } N \leq \alpha.
+\end{cases}
+\]
+\end{corollary}
+
+\begin{proposition}[Proposition 17, based on Lemma 3.4 of \cite{LFdyk}]\label{LF formula matrix}
+Let $r \geq 1$, $0 \leq \alpha \leq 1$ and $d \in \mathbb{N}$. Then:
+\[
+\left( \underset{1-\alpha}{\mathbb{C}} \oplus \underset{\alpha}{LF_r} \right) * M_d(\mathbb{C}) = 
+\begin{cases}
+LF_{(r\alpha^2 + 2\alpha(1-\alpha) + 1 - d^{-2})} & \text{if } \alpha \geq d^{-2}, \\
+\underset{1-\alpha d^2}{M_d(\mathbb{C})} \oplus \underset{\alpha d^2}{LF_{(rd^{-4} - 2d^{-4} + 1 + d^{-2})}} & \text{if } \alpha \leq d^{-2}.
+\end{cases}
+\]
+\end{proposition}
+
+\begin{proposition}[Special case of Theorem 4.6 of \cite{LFdyk}]\label{special case}
+Let $A$ be an $n$-dimensional von Neumann algebra, and let $\varphi$ be the normalized trace on $A$ in its left regular representation and suppose that $\frac{1}{n} \leq \alpha \leq 1$. Then:
+\[
+\left( \underset{1-\alpha}{\mathbb{C}} \oplus \underset{\alpha}{L\mathbb{Z}} \right) * A 
+\cong LF_{2 \alpha - \alpha^2 +1 - \frac{1}{n}}.
+\]
+\end{proposition}
+
+\begin{thebibliography}{9}
+\bibitem{mingo2017} J.~A.~Mingo and R.~Speicher, \emph{Free Probability and Random Matrices}, Springer, 2017.
+\bibitem{nicaspec} A.~Nica and R.~Speicher, \emph{Lectures on the Combinatorics of Free Probability}, Cambridge University Press, 2006.
+\bibitem{voiculescu1992free} D.~V.~Voiculescu, K.~J.~Dykema, and A.~Nica, \emph{Free Random Variables}, AMS, 1992.
+\bibitem{LFdyk} K.~Dykema, \emph{Interpolated free group factors}, Pacific Journal of Mathematics, 1994.
+\bibitem{Radulesc} F.~R\u{a}dulescu, \emph{Random matrix approximation of free group factors}, Inventiones Mathematicae, 1994.
+\bibitem{JFApaper} Author, \emph{Title}, Journal of Functional Analysis, Year.
+\end{thebibliography}
+
+\end{document}

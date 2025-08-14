@@ -1,0 +1,66 @@
+\section{Automorphisms and Galois Extensions}
+
+\subsection{Automorphisms and fixed fields}
+
+\begin{definition}
+For an extension $L/K$, a \emph{$K$-automorphism} of $L$ is a field automorphism $\sigma:L\to L$ fixing $K$ pointwise. The \emph{Galois group} is
+\[
+\Gal(L/K)=\{\sigma\in \Aut(L)\mid \sigma|_K=\mathrm{id}_K\}.
+\]
+For any subgroup $H\le \Aut(L)$, the \emph{fixed field} is $L^H=\{x\in L:\sigma(x)=x\ \forall\sigma\in H\}$.
+\end{definition}
+
+\begin{proposition}[Basic properties]
+$L^H$ is a subfield of $L$ containing $K$. If $H_1\le H_2$ then $L^{H_2}\subseteq L^{H_1}$.
+\end{proposition}
+
+\begin{theorem}[Artin's fixed field theorem]
+If $H$ is a finite subgroup of $\Aut(L)$, then $L/L^H$ is finite and separable with $|\Gal(L/L^H)|=|H|$. In particular, $K=L^{\Gal(L/K)}$ when $L/K$ is finite and normal.
+\end{theorem}
+\begin{proof}[Idea]
+Show that distinct automorphisms are linearly independent as endomorphisms of $L$ (Artin's lemma). Then $\dim_{L^H}L\ge|H|$. The opposite inequality follows by counting embeddings.
+\end{proof}
+
+\subsection{Finite Galois extensions}
+
+\begin{definition}
+A finite extension $L/K$ is \emph{Galois} if it is both normal and separable. Equivalently, $|\Gal(L/K)|=[L:K]$.
+\end{definition}
+
+\begin{proposition}[Automorphisms act on roots]
+Let $f\in K[x]$ and $E$ a splitting field. Then $\Gal(E/K)$ permutes the roots of $f$. If $E/K$ is Galois, the action is faithful.
+\end{proposition}
+
+\begin{corollary}
+If $E/K$ is the splitting field of a separable polynomial $f$ of degree $n$, then $\Gal(E/K)$ embeds into $S_n$ and $[E:K]\mid n!$.
+\end{corollary}
+
+\subsection{Examples}
+
+\begin{example}[Quadratic]
+For $L=\Q(\sqrt{d})/\Q$ with squarefree $d$, $\Gal(L/\Q)=\{\mathrm{id},\ \sqrt{d}\mapsto -\sqrt{d}\}\cong C_2$.
+\end{example}
+
+\begin{example}[Finite fields]
+For $L=\F_{p^n}$ over $K=\F_p$, the Frobenius $\varphi:x\mapsto x^p$ generates $\Gal(L/K)\cong C_n$. The fixed field of $\langle \varphi^m\rangle$ is $\F_{p^{\gcd(n,m)}}$.
+\end{example}
+
+\begin{example}[Cyclotomic]
+For $L=\Q(\zeta_n)$, $\Gal(L/\Q)\cong (\Z/n\Z)^\times$ via $\sigma_a(\zeta_n)=\zeta_n^a$.
+\end{example}
+
+\begin{example}[Cubic $x^3-2$]
+If $E$ is the splitting field of $x^3-2$ over $\Q$, then $\Gal(E/\Q)\cong S_3$ and $[E:\Q]=6$; complex conjugation is a transposition.
+\end{example}
+
+\subsection{A small picture}
+\[
+\begin{tikzcd}
+& L \arrow[-]{dl}[swap]{\text{fix }H} \arrow[-]{dr}{\text{fix }G} & \\
+L^{H} \arrow[-]{dr} & & L^{G}=K \arrow[-]{dl} \\
+& K &
+\end{tikzcd}
+\]
+\begin{remark}
+Larger subgroups give smaller fixed fields. This reversal drives the Fundamental Theorem next.
+\end{remark}

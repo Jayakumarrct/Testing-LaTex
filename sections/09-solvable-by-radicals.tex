@@ -1,0 +1,56 @@
+\section{Solvability by Radicals and Abel--Ruffini}
+
+\subsection{Definitions}
+
+\begin{definition}[Radical extension]
+An extension $L/K$ is \emph{radical} if there is a tower
+\[
+K=K_0\subset K_1\subset\cdots\subset K_m=L
+\]
+with $K_{i}=K_{i-1}(\alpha_i)$ and $\alpha_i^{n_i}\in K_{i-1}$ for some $n_i\ge2$, after adjoining appropriate roots of unity.
+\end{definition}
+
+\begin{definition}[Solvable by radicals]
+A polynomial $f\in K[x]$ is \emph{solvable by radicals over $K$} if its roots lie in a field obtained from $K$ by a sequence of radical extensions.
+\end{definition}
+
+\begin{definition}[Solvable groups]
+A finite group $G$ is \emph{solvable} if it has a subnormal series
+\[
+\{1\}=G_0\trianglelefteq G_1\trianglelefteq\cdots\trianglelefteq G_r=G
+\]
+with each quotient $G_{i}/G_{i-1}$ abelian.
+\end{definition}
+
+\subsection{Galois theory bridge}
+
+\begin{theorem}[Galois $\Rightarrow$ radicals]
+Assume $\operatorname{char}K=0$ (or more generally that the needed roots of unity are present). If $f\in K[x]$ is solvable by radicals and $E$ is its splitting field, then $\Gal(E/K)$ is solvable.
+\end{theorem}
+
+\begin{theorem}[Radicals $\Leftarrow$ Galois]
+Conversely, if $\Gal(E/K)$ is solvable and $K$ contains all roots of unity of order dividing $|\,\Gal(E/K)\,|$, then every element of $E$ can be expressed by radicals over $K$.
+\end{theorem}
+
+\begin{corollary}[Abel--Ruffini]
+The general quintic polynomial is not solvable by radicals over $\Q$. Equivalently, there exist irreducible quintics over $\Q$ whose splitting-field Galois group is $S_5$, which is not solvable.
+\end{corollary}
+
+\subsection{Examples}
+
+\begin{example}[Cubic]
+All irreducible cubics over $\Q$ are solvable by radicals because subgroups of $S_3$ are solvable. The casus irreducibilis explains why real radicals may require complex numbers.
+\end{example}
+
+\begin{example}[A solvable quintic]
+$f(x)=x^5-1$ factors over $\Q$ as $(x-1)\Phi_5(x)$ with $\Gal(\Q(\zeta_5)/\Q)\cong C_4$ solvable; hence its roots are radical over $\Q$.
+\end{example}
+
+\begin{example}[A non-solvable quintic]
+$f(x)=x^5-6x+3$ has Galois group $S_5$ over $\Q$ (can be shown using modulo reductions and the discriminant). Hence $f$ is not solvable by radicals.
+\end{example}
+
+\subsection{Remarks}
+\begin{remark}
+When roots of unity are missing, use Kummer theory to adjoin them first; solvability is then tested on the enlarged base field.
+\end{remark}

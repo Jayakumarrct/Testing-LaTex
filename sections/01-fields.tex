@@ -1,0 +1,70 @@
+\section{Fields and Morphisms}
+
+\subsection{Definitions}
+\begin{definition}[Field]
+A \emph{field} $K$ is a commutative ring with $1\neq 0$ in which every nonzero element has a multiplicative inverse.
+\end{definition}
+
+\begin{definition}[Characteristic and prime subfield]
+The \emph{characteristic} of $K$ is the unique $n\in\{0,2,3,4,\dots\}$ such that $n\cdot 1_K=0$ and no smaller positive integer has this property.  
+The \emph{prime subfield} of $K$ is the smallest subfield containing $1$, hence is isomorphic to $\Q$ if $\operatorname{char}K=0$ and to $\F_p$ if $\operatorname{char}K=p>0$.
+\end{definition}
+
+\begin{proposition}[Field maps are injective]
+A unital ring homomorphism $\varphi:K\to L$ between fields is injective. 
+\end{proposition}
+\begin{proof}
+$\ker\varphi$ is a proper ideal of $K$. Fields have only the zero ideal, hence $\ker\varphi=0$.
+\end{proof}
+
+\begin{proposition}[Finite domains are fields]
+Every finite integral domain is a field.
+\end{proposition}
+\begin{proof}
+For nonzero $a$, the map $x\mapsto ax$ is injective on the finite set $K$, hence surjective, so $1=ax$ for some $x$ and $a$ is invertible.
+\end{proof}
+
+\subsection{Polynomials over a field}
+Let $K[x]$ be the polynomial ring. Degree $\deg f$ is the highest power with nonzero coefficient. A root $\alpha\in L$ (in any extension $L/K$) satisfies $f(\alpha)=0$.
+
+\begin{proposition}[Degree $\le 3$ test]
+If $f\in K[x]$ has degree $2$ or $3$, then $f$ is irreducible over $K$ iff it has no root in $K$.
+\end{proposition}
+
+\begin{theorem}[Rational Root Test]
+For $f(x)=a_nx^n+\cdots+a_0\in\Z[x]$ with $a_0\neq 0$, any rational root $\frac{p}{q}$ in lowest terms satisfies $p\mid a_0$ and $q\mid a_n$.
+\end{theorem}
+
+\begin{theorem}[Eisenstein]
+Let $f(x)=\sum_{i=0}^na_ix^i\in\Z[x]$. If there exists a prime $p$ with $p\mid a_i$ for $i<n$, $p\nmid a_n$, and $p^2\nmid a_0$, then $f$ is irreducible over $\Q$.
+\end{theorem}
+\begin{proof}[Proof sketch]
+Reduce mod $p$ to get $x^n$ up to a nonzero scalar; a nontrivial factorization over $\Q$ would force $p^2\mid a_0$ by Gauss's lemma.\footnote{Gauss's lemma: a primitive factorization in $\Q[x]$ lifts to one in $\Z[x]$.}
+\end{proof}
+
+\subsection{Examples}
+\begin{example}
+$\Q,\R,\C,\F_p$ are fields; $\Z$ is not a field. The rational function field $K(t)$ is a field containing $K$.
+\end{example}
+\begin{example}[Irreducibility by Eisenstein]
+$x^5-2\in\Q[x]$ is irreducible using $p=2$. Hence $[\Q(\sqrt[5]{2}):\Q]=5$.
+\end{example}
+\begin{example}[Degree $\le 3$ test]
+$f(x)=x^3-3x-1$ has no rational root by the Rational Root Test, hence is irreducible over $\Q$.
+\end{example}
+
+\subsection{Remarks}
+\begin{remark}
+In $K[x]$ every irreducible polynomial generates a maximal ideal; $K[x]$ is a PID iff $K$ is a field and one restricts to univariate polynomials.
+\end{remark}
+\begin{remark}
+We will view all fields inside a fixed algebraic closure when convenient.
+\end{remark}
+
+\subsection{A tiny diagram}
+\[
+\begin{tikzcd}
+\F_p \arrow[r, hook] \arrow[d, hook] & \F_p(t) \\
+\F_{p^n} &
+\end{tikzcd}
+\]

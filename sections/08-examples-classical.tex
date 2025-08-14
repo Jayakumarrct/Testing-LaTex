@@ -1,0 +1,53 @@
+\section{Classical Examples}
+
+\subsection{Quadratics and biquadratics}
+\begin{example}
+For $d$ squarefree, $L=\Q(\sqrt{d})$ is Galois of degree $2$ with group $C_2$.  
+For $d_1,d_2$ distinct and squarefree, $E=\Q(\sqrt{d_1},\sqrt{d_2})$ has
+\[
+\Gal(E/\Q)\cong V_4,\qquad E=\Q\big(\sqrt{d_1},\sqrt{d_2}\big),
+\]
+and the three quadratic subfields correspond to the three order-$2$ subgroups.
+\end{example}
+
+\subsection{Cubic $x^3-2$}
+\begin{example}
+Let $f=x^3-2$. The discriminant is $\Delta(f)=-4(-2)^3-27(1)^2=(-4)(-8)-27=32-27=5$. Since $\Delta(f)$ is not a square in $\Q$, the Galois group of the splitting field is $S_3$; $[E:\Q]=6$ and $E=\Q(\sqrt[3]{2},\omega)$.
+\end{example}
+
+\subsection{Cyclotomic fields}
+\begin{example}
+For a prime $p$, the $p$-th cyclotomic field $K=\Q(\zeta_p)$ has degree $\varphi(p)=p-1$ and
+\[
+\Gal\big(\Q(\zeta_p)/\Q\big)\cong(\Z/p\Z)^\times\cong C_{p-1}.
+\]
+The unique quadratic subfield for $p\equiv1\pmod 4$ is fixed by the unique index-$2$ subgroup.
+\end{example}
+
+\subsection{Finite fields}
+\begin{example}
+Let $q=p^n$. The polynomial $x^{q}-x$ in $\F_q[x]$ splits with distinct roots and its roots are exactly the elements of $\F_q$. For $m\mid n$, the subextensions of $\F_{p^n}/\F_p$ are precisely $\F_{p^m}$.
+\end{example}
+
+\subsection{A quartic}
+\begin{example}
+For $f=x^4-2$, $E=\Q(\sqrt[4]{2},i)$ and $\Gal(E/\Q)\cong D_4$. The quadratic subfields are $\Q(\sqrt{2})$, $\Q(i)$, and $\Q(\sqrt{-2})$.
+\[
+\begin{tikzcd}
+& E \arrow[-]{dl} \arrow[-]{d} \arrow[-]{dr} & \\
+\Q(\sqrt[4]{2}) \arrow[-]{dr} & \Q(i,\sqrt{2}) \arrow[-]{d} & \Q(i\sqrt[4]{2}) \arrow[-]{dl} \\
+& \Q(\sqrt{2}) \arrow[-]{d} & \\
+& \Q &
+\end{tikzcd}
+\]
+\end{example}
+
+\subsection{Worked computations}
+
+\begin{example}[Deciding $A_n$ vs $S_n$ by the discriminant]
+Let $E$ be the splitting field of a separable $f\in\Q[x]$ of degree $n$. If the discriminant $\Delta(f)$ is a square in $\Q$, then $\Gal(E/\Q)\subseteq A_n$; otherwise it is not contained in $A_n$.
+\end{example}
+
+\begin{example}[A solvable quartic]
+For $f=x^4+ax^2+b$ with $a^2\ne4b$, the resolvent quadratic $y^2-2ay+(a^2-4b)$ decides the structure: when it splits in $\Q$, the Galois group is contained in $V_4$; otherwise it is $D_4$.
+\end{example}

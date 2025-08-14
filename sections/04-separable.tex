@@ -1,0 +1,54 @@
+\section{Separable and Perfect Fields}
+
+\subsection{Multiple roots and the derivative}
+For $f=\sum a_ix^i\in K[x]$, define $f'=\sum ia_ix^{i-1}$. 
+
+\begin{proposition}[Multiple root criterion]\label{prop:gcd}
+Let $L\supseteq K$. A root $\alpha\in L$ of $f$ has multiplicity $>1$ iff $f(\alpha)=f'(\alpha)=0$. Equivalently, $f$ has a repeated root in a splitting field iff $\gcd(f,f')\neq 1$ in $K[x]$.
+\end{proposition}
+\begin{proof}
+If $f=(x-\alpha)^2g$, then $f'=2(x-\alpha)g+(x-\alpha)^2g'$ so $f(\alpha)=f'(\alpha)=0$.  
+Conversely, if $f(\alpha)=f'(\alpha)=0$, divide $f$ by $(x-\alpha)$ to see $(x-\alpha)$ also divides $f'$, hence $(x-\alpha)^2\mid f$.
+\end{proof}
+
+\subsection{Separable polynomials and extensions}
+\begin{definition}
+A polynomial $f\in K[x]$ is \emph{separable} over $K$ if it has no repeated root in a splitting field, i.e.\ $\gcd(f,f')=1$.  
+An element $\alpha$ algebraic over $K$ is \emph{separable} if $m_\alpha$ is separable.  
+An algebraic extension $L/K$ is \emph{separable} if every element of $L$ is separable over $K$.
+\end{definition}
+
+\begin{theorem}[Embeddings count]\label{thm:sep-emb}
+Let $L/K$ be finite. Then the following are equivalent:
+\begin{enumerate}
+\item $L/K$ is separable.
+\item The number of $K$-embeddings $L\hookrightarrow \overline{K}$ equals $[L:K]$.
+\item For each $\alpha\in L$, the roots of $m_\alpha$ in $\overline{K}$ are distinct.
+\end{enumerate}
+\end{theorem}
+\begin{proof}[Idea]
+For simple $L=K(\alpha)$, embeddings correspond to roots of $m_\alpha$; count equals $\deg m_\alpha$ precisely when the roots are distinct. Use the tower law to extend to general finite $L/K$.
+\end{proof}
+
+\subsection{Perfect fields}
+\begin{definition}
+A field $K$ of characteristic $p>0$ is \emph{perfect} if every element is a $p$-th power, equivalently the Frobenius $x\mapsto x^p$ is surjective. By convention, all fields of characteristic $0$ are perfect.
+\end{definition}
+\begin{proposition}
+Finite fields and characteristic $0$ fields are perfect.
+\end{proposition}
+\begin{proof}
+If $K$ is finite of size $q=p^n$, the Frobenius map $x\mapsto x^p$ is injective on a finite set, hence bijective; thus every finite extension of $\F_p$ is separable. Characteristic $0$ is perfect because $f'=0$ forces $f$ to be constant.
+\end{proof}
+
+\subsection{Examples}
+\begin{example}[Inseparable polynomial]
+Over $K=\F_p(t)$, the polynomial $x^p-t$ is irreducible but not separable since $(x^p-t)'=0$; it has a unique root $t^{1/p}$ of multiplicity $p$ in a splitting field.
+\end{example}
+\begin{example}[Separable binomials]
+Over a field $K$ of characteristic $p>0$, the polynomial $x^p-a$ is separable iff $a\notin K^p$.
+\end{example}
+
+\begin{remark}
+When $L/K$ is finite, ``Galois'' will mean \emph{normal and separable}. The separability part is verified by \cref{thm:sep-emb}.
+\end{remark}
