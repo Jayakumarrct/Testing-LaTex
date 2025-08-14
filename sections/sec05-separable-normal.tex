@@ -1,4 +1,45 @@
-\section{Separable and Normal Extensions}
-\label{sec:separable-normal}
+\section{Separable and normal extensions}\label{sec:sep-normal}
 
-Key properties include separability and normality.
+\subsection{Formal derivative and separability}
+\begin{definition}
+For $f(x)=\sum a_i x^i\in F[x]$, the \emph{formal derivative} is $f'(x)=\sum i\,a_i x^{i-1}$.
+\end{definition}
+\begin{proposition}[Root multiplicity]
+Let $E$ contain a splitting field of $f$. A root $\alpha$ has multiplicity $>1$ iff $f(\alpha)=f'(\alpha)=0$.
+\end{proposition}
+\begin{theorem}[Criteria]
+For irreducible $f\in F[x]$ the following are equivalent:
+\begin{enumerate}[label=(\alph*)]
+\item $f$ has distinct roots in a splitting field;
+\item $\gcd(f,f')=1$ in $F[x]$;
+\item $f$ has $\deg f$ distinct $F$-embeddings of $F[x]/(f)$ into an algebraic closure.
+\end{enumerate}
+A root of such $f$ is \emph{separable}. An algebraic extension $E/F$ is separable if every element of $E$ is separable over $F$.
+\end{theorem}
+\begin{corollary}
+If $\operatorname{char}F=0$ or $F$ is finite, then every algebraic extension of $F$ is separable.
+\end{corollary}
+
+\subsection{Normal extensions}
+\begin{definition}
+An algebraic extension $E/F$ is \emph{normal} if every irreducible $f\in F[x]$ that has a root in $E$ splits into linear factors over $E$.
+\end{definition}
+\begin{theorem}[Equivalent characterizations]
+For algebraic $E/F$ the following are equivalent:
+\begin{enumerate}[label=(\alph*)]
+\item $E/F$ is normal;
+\item $E$ is a splitting field over $F$ of a family of polynomials in $F[x]$;
+\item every $F$-embedding $\sigma:E\hookrightarrow \overline{F}$ satisfies $\sigma(E)=E$.
+\end{enumerate}
+\end{theorem}
+
+\subsection{Primitive element theorem}
+\begin{theorem}
+If $E/F$ is finite and separable, then $E=F(\alpha)$ for some $\alpha\in E$.
+\end{theorem}
+\begin{example}
+$\Q(\sqrt2,\sqrt3)=\Q(\sqrt2+\sqrt3)$ since the extension is finite and separable.
+\end{example}
+\begin{remark}
+The theorem can fail for inseparable or infinite algebraic extensions.
+\end{remark}

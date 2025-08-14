@@ -1,4 +1,42 @@
-\section{Finite Fields}
-\label{sec:finite-fields}
+\section{Finite fields}\label{sec:finite-fields}
 
-Finite fields have unique sizes and cyclic multiplicative groups.
+\subsection{Existence and uniqueness}
+\begin{theorem}
+For each prime power $q=p^n$ there exists a field $\mathbb{F}_q$ of order $q$, unique up to isomorphism.
+\end{theorem}
+\begin{theorem}
+$\mathbb{F}_q^\times$ is cyclic of order $q-1$.
+\end{theorem}
+
+\subsection{Frobenius and Galois group}
+\begin{proposition}
+The \emph{Frobenius} map $\varphi:x\mapsto x^p$ is an automorphism of $\mathbb{F}_{p^n}$ with fixed field $\mathbb{F}_p$.
+\end{proposition}
+\begin{theorem}
+$\Gal(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle \varphi\rangle$ is cyclic of order $n$.
+\end{theorem}
+\begin{corollary}
+Subfields of $\mathbb{F}_{p^n}$ are exactly $\mathbb{F}_{p^d}$ with $d\mid n$.
+\end{corollary}
+
+\subsection{Irreducibles, trace, and norm}
+\begin{proposition}
+An element $\alpha\in\mathbb{F}_{p^n}$ has minimal polynomial
+\[
+m_\alpha(x)=\prod_{i=0}^{r-1}\bigl(x-\alpha^{p^{i}}\bigr),
+\]
+where $r$ is the size of the Frobenius orbit of $\alpha$.
+\end{proposition}
+\begin{definition}
+For $E=\mathbb{F}_{p^n}$ over $F=\mathbb{F}_p$ define
+\[
+\Tr_{E/F}(\alpha)=\alpha+\alpha^p+\cdots+\alpha^{p^{n-1}},\qquad
+\Norm_{E/F}(\alpha)=\alpha^{1+p+\cdots+p^{n-1}}=\alpha^{(p^{n}-1)/(p-1)}.
+\]
+\end{definition}
+Both maps are $F$-linear, multiplicative in the second case, and nontrivial.
+
+\subsection{Examples}
+\begin{example}
+$\mathbb{F}_4=\mathbb{F}_2[\omega]/(\omega^2+\omega+1)$, $\ \omega^3=1$, and $\mathbb{F}_4^\times=\langle \omega\rangle$.
+\end{example}

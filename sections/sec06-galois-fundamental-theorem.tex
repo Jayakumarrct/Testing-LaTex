@@ -1,4 +1,37 @@
-\section{Galois Extensions and the Fundamental Theorem}
-\label{sec:galois-fundamental-theorem}
+\section{Galois extensions and the Fundamental Theorem}\label{sec:galois-ft}
 
-We state and prove the Fundamental Theorem of Galois theory.
+\subsection{Definitions and basic facts}
+\begin{definition}
+A finite extension $E/F$ is \emph{Galois} if it is normal and separable. Its Galois group is $\Gal(E/F)=\Aut_F(E)$.
+\end{definition}
+\begin{theorem}[Counting]
+For any finite $E/F$, $\#\Aut_F(E)\le [E\!:\!F]$, with equality iff $E/F$ is Galois.
+\end{theorem}
+\begin{theorem}[Artin]
+If $G$ is a finite group of $F$-automorphisms of $E$, then $E/E^G$ is Galois and $\Gal(E/E^G)\cong G$.
+\end{theorem}
+
+\subsection{Fundamental Theorem of Galois Theory}
+\begin{theorem}
+Let $E/F$ be finite Galois with group $G=\Gal(E/F)$. The maps
+\[
+K\longmapsto \Gal(E/K),\qquad
+H\longmapsto E^H
+\]
+give inverse inclusion-reversing bijections between intermediate fields $F\subseteq K\subseteq E$ and subgroups $H\le G$. Moreover,
+\[
+[E\!:\!K]=\#H,\qquad [K\!:\!F]=\#G/\#H.
+\]
+$K/F$ is normal $\iff$ $H\trianglelefteq G$, and in that case $\Gal(K/F)\cong G/H$.
+\end{theorem}
+\begin{proof}[Idea]
+Use the action of $G$ on $E$ and Artin's theorem. Injectivity and size relations follow from fixed fields and orbit--stabilizer.
+\end{proof}
+
+\subsection{Examples}
+\begin{example}[Quadratic]
+If $d$ is squarefree then $E=\Q(\sqrt d)$ is Galois over $\Q$ with group $C_2$ and exactly two intermediate fields: $\Q$ and $E$.
+\end{example}
+\begin{example}[Cyclotomic prime]
+For an odd prime $p$, $E=\Q(\zeta_p)$ is Galois over $\Q$ with $\Gal(E/\Q)\cong (\Z/p\Z)^\times$, which is cyclic of order $p-1$.
+\end{example}

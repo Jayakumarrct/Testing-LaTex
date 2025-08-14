@@ -1,4 +1,44 @@
-\section{Cyclotomic and Basic Kummer Theory}
-\label{sec:cyclotomic-kummer}
+\section{Cyclotomic fields and basic Kummer theory}\label{sec:cyclotomic-kummer}
 
-Cyclotomic fields and Kummer theory require roots of unity.
+\subsection{Cyclotomic polynomials}
+\begin{definition}
+Let $\zeta_n$ be a primitive $n$th root of unity. The \emph{cyclotomic polynomial} is
+\[
+\Phi_n(x)=\prod_{\substack{1\le a\le n\\ \gcd(a,n)=1}}\bigl(x-\zeta_n^{\,a}\bigr)\in\Z[x].
+\]
+\end{definition}
+\begin{theorem}
+$x^n-1=\prod_{d\mid n}\Phi_d(x)$, the polynomial $\Phi_n$ is irreducible over $\Q$, and $\deg\Phi_n=\varphi(n)$.
+\end{theorem}
+
+\subsection{Cyclotomic fields}
+\begin{definition}
+The \emph{cyclotomic field} is $\Q(\zeta_n)$, the splitting field of $x^n-1$ over $\Q$.
+\end{definition}
+\begin{theorem}
+Restriction gives a canonical isomorphism
+\[
+\Gal\bigl(\Q(\zeta_n)/\Q\bigr)\ \cong\ (\Z/n\Z)^\times,\qquad
+\sigma_a(\zeta_n)=\zeta_n^{\,a}.
+\]
+\end{theorem}
+\begin{example}
+$\Gal(\Q(\zeta_8)/\Q)\cong (\Z/8\Z)^\times\cong C_2\times C_2$; 
+$\Gal(\Q(\zeta_p)/\Q)\cong C_{p-1}$ for prime $p$.
+\end{example}
+
+\subsection{Basic Kummer theory}
+Assume $\operatorname{char}F\nmid n$ and $\mu_n\subset F$ (all $n$th roots of unity lie in $F$).
+\begin{theorem}[Kummer]
+There is a natural correspondence between cyclic degree-$n$ extensions of $F$ and cosets in $F^\times/F^{\times n}$:
+\[
+a\in F^\times\ \mapsto\ F\bigl(\sqrt[n]{a}\bigr)\!/F,
+\]
+with $F\bigl(\sqrt[n]{a}\bigr)/F$ cyclic of degree $n$ iff $a\notin F^{\times n}$.
+\end{theorem}
+\begin{example}
+Over $F=\Q(\zeta_p)$ with $p$ odd prime, adjoining a $p$th root $\sqrt[p]{a}$ yields a cyclic extension of degree $p$ whenever $a$ is not a $p$th power in $F$.
+\end{example}
+\begin{remark}[Kronecker--Weber]
+Every finite abelian extension of $\Q$ is contained in some $\Q(\zeta_n)$.
+\end{remark}
