@@ -1,0 +1,64 @@
+\section{Normal Extensions and the Primitive Element Theorem}
+
+\subsection{Normal extensions}
+
+\begin{definition}[Normality]
+A finite extension $L/K$ is \emph{normal} if every $K$-embedding $\sigma:L\hookrightarrow \overline{K}$ satisfies $\sigma(L)=L$. Equivalently, $L$ is the splitting field over $K$ of a family of polynomials in $K[x]$.
+\end{definition}
+
+\begin{proposition}[Equivalent criteria]
+For a finite extension $L/K$, the following are equivalent:
+\begin{enumerate}
+\item $L/K$ is normal.
+\item Every irreducible $f\in K[x]$ having a root in $L$ splits completely over $L$.
+\item $L$ is the splitting field over $K$ of some $f\in K[x]$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}[Proof sketch]
+$(1)\Rightarrow(2)$: If $\alpha\in L$ is a root of irreducible $f$, the other roots are $\sigma(\alpha)$ for $K$-embeddings $\sigma:L\to\overline{K}$. Normality forces $\sigma(\alpha)\in L$.  
+$(2)\Rightarrow(3)$: Take a finite set of generators $\alpha_i$ of $L$ and let $f=\prod m_{\alpha_i}$.  
+$(3)\Rightarrow(1)$: Any $K$-embedding permutes the roots of $f$ and hence preserves the field they generate.
+\end{proof}
+
+\subsection{Primitive Element Theorem}
+
+\begin{theorem}[PET, separable case]
+If $L/K$ is finite and separable, then $L=K(\alpha)$ for some $\alpha\in L$.
+\end{theorem}
+\begin{proof}[Idea]
+Write $L=K(\alpha_1,\alpha_2)$. For $c\in K$ outside a finite exceptional set, the fields $K(\alpha_1+c\alpha_2)$ and $K(\alpha_1,\alpha_2)$ coincide. Induct on the number of generators.
+\end{proof}
+
+\begin{remark}[What can fail]
+Without separability the theorem may fail. For instance, in characteristic $p>0$ one can have a finite purely inseparable extension $K\subset L$ with $L=K(\alpha,\beta)$ where $\alpha^p,\beta^p\in K$ but $L\neq K(\gamma)$ for any $\gamma\in L$. This cannot happen in characteristic $0$ nor for finite separable extensions.
+\end{remark}
+
+\begin{corollary}
+If $L/K$ is finite, separable, and normal, then $L$ is the splitting field of the minimal polynomial of a single element $\alpha$ and $L=K(\alpha)$.
+\end{corollary}
+
+\subsection{Examples}
+
+\begin{example}[$\Q(\sqrt{2},\sqrt{3})$]
+Over $\Q$, $L=\Q(\sqrt{2},\sqrt{3})$ is separable. By PET,
+\[
+L=\Q\big(\sqrt{2}+\sqrt{3}\big)
+\]
+since $m_{\sqrt{2}+\sqrt{3}}(x)=x^4-10x^2+1$ and its splitting field over $\Q$ is $L$.
+\end{example}
+
+\begin{example}[A normal but not Galois over a subfield]
+Let $E=\Q(\zeta_8)$ and $K=\Q(i)$. Then $E/K$ is normal and cyclic of degree $2$; however $E/\Q$ is also normal, while $\Q(i)/\Q$ is not normal as the irreducible $x^2+1$ has both roots $\pm i$ but $\Q(i)$ contains only one of them as an element, not all conjugates over $\Q$ of elements of $\Q(i)$.
+\end{example}
+
+\subsection{Lattice picture}
+\[
+\begin{tikzcd}
+& K(\alpha_1,\alpha_2)=K(\alpha_1+c\alpha_2) \arrow[-]{dl} \arrow[-]{dr} & \\
+K(\alpha_1) \arrow[-]{dr} & & K(\alpha_2) \arrow[-]{dl} \\
+& K &
+\end{tikzcd}
+\]
+\begin{remark}
+For all but finitely many $c\in K$, the top field equals $K(\alpha_1+c\alpha_2)$.
+\end{remark}
