@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}
+\title{Lecture Notes: Simplicity of $A_5$}
+\author{}
+\date{}
+\maketitle
+
+\section{Symmetric and Alternating Groups}
+\subsection{The symmetric group}
+For a positive integer $n$, the \emph{symmetric group} $S_n$ is the group of all bijections of the set $\{1,2,\ldots,n\}$ under composition.  Its order is $n!$.
+A \emph{cycle} is a permutation written as $(a_1\;a_2\;\dotsb\;a_k)$, which maps $a_1\mapsto a_2,\ldots,a_k\mapsto a_1$ and fixes all other points.
+Every permutation can be written as a product of disjoint cycles; we call the cycle lengths the \emph{cycle type} of the permutation.
+
+Every permutation also has a parity: it is the product of an even or an odd number of transpositions.
+
+\subsection{The alternating group}
+The \emph{alternating group} $A_n$ is the subgroup of $S_n$ consisting of even permutations.  Because exactly half the elements of $S_n$ are even, $|A_n|=\tfrac{1}{2}n!$.
+
+\section{The group $A_5$}
+For $n=5$ we have $|A_5| = \tfrac{1}{2}\cdot5! = 60$.  The elements of $A_5$ fall into the following cycle types:
+\begin{itemize}
+ \item The identity $e$.
+ \item $20$ \emph{3-cycles}, e.g. $(1\,2\,3)$.
+ \item $15$ \emph{products of two disjoint transpositions}, e.g. $(1\,2)(3\,4)$.
+ \item $24$ \emph{5-cycles}, e.g. $(1\,2\,3\,4\,5)$.  In $A_5$ these split into two conjugacy classes of $12$ elements each, consisting of a cycle and its square.
+\end{itemize}
+Thus the conjugacy class sizes in $A_5$ are: $1$ (identity), $20$, $15$, $12$, and $12$, whose sum is $60$ as expected.
+
+\section{Simplicity of $A_5$}
+A group is \emph{simple} if its only normal subgroups are the trivial subgroup and the whole group.
+
+Let $N$ be a non-trivial normal subgroup of $A_5$.  Being normal, $N$ is a union of conjugacy classes including the identity.  Therefore the order of $N$ must be of the form
+\[
+1 + 20a + 15b + 12c + 12d
+\]
+where each coefficient $a,b,c,d$ is either $0$ or $1$ according to whether $N$ contains the corresponding conjugacy class.
+
+The possible values (other than $60$) are
+\begin{align*}
+1+20 &=21, &1+15&=16, &1+12&=13,\\
+1+20+15&=36, &1+20+12&=33, &1+15+12&=28,\\
+1+12+12&=25, &1+20+15+12&=48, &1+20+12+12&=45,\\
+1+15+12+12&=40.
+\end{align*}
+None of these divide $60$.  Consequently $N$ cannot be proper: the only divisor of $60$ obtainable as a sum of full conjugacy class sizes is $60$ itself.  Thus the only normal subgroups of $A_5$ are $\{e\}$ and $A_5$.
+
+\section{Conclusion}
+We have shown that $A_5$ has no non-trivial proper normal subgroups. Therefore $A_5$ is a simple group.
+\end{document}
+
