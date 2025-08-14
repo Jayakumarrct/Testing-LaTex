@@ -1,0 +1,72 @@
+\section{Discriminants and Resolvents}
+
+\subsection{Discriminant of a polynomial}
+
+\begin{definition}
+For a monic separable $f(x)=\prod_{i=1}^n (x-\alpha_i)\in K[x]$, the \emph{discriminant} is
+\[
+\Delta(f)=\prod_{i<j}(\alpha_i-\alpha_j)^2\in K.
+\]
+It equals $(-1)^{n(n-1)/2}\, \frac{1}{a_n}\operatorname{Res}(f,f')$ for a general leading coefficient $a_n$.
+\end{definition}
+
+\begin{proposition}[Parity test]
+Let $E$ be the splitting field of a separable $f\in K[x]$ of degree $n$ over a field of characteristic $\neq 2$. Then
+\[
+\Delta(f)\text{ is a square in }K \iff \Gal(E/K)\subseteq A_n.
+\]
+\end{proposition}
+\begin{proof}[Idea]
+A permutation of the roots acts on $\sqrt{\Delta(f)}$ by its sign.
+\end{proof}
+
+\subsection{Discriminant of number fields}
+\begin{definition}
+If $L/K$ is a finite separable extension, the \emph{relative discriminant} $\mathfrak{D}_{L/K}$ is defined via any $K$-basis and the trace form; in characteristic $0$ it is an ideal of the ring of integers $\mathcal{O}_K$. For $K=\Q$ one gets an integer $\mathrm{disc}(L)$.
+\end{definition}
+
+\begin{example}
+For $L=\Q(\sqrt{d})$ with squarefree $d$,
+\[
+\mathrm{disc}(L)=
+\begin{cases}
+d & d\equiv 1\pmod 4,\\
+4d & d\equiv 2,3\pmod 4.
+\end{cases}
+\]
+\end{example}
+
+\subsection{Resolvents}
+
+\begin{definition}[Resolvent idea]
+A \emph{resolvent} is a polynomial whose roots are certain symmetric expressions in the roots of $f$, designed so that the action of $\Gal(E/K)$ can be detected by the factorization of the resolvent over $K$.
+\end{definition}
+
+\paragraph{Cubic resolvent for quartics.}
+For $f(x)=x^4+ax^3+bx^2+cx+d$ define the \emph{cubic resolvent}
+\[
+R(y)=y^3-2by^2+(b^2+ac-4d)y+(4bd-a^2d-c^2).
+\]
+\begin{itemize}
+\item If $R$ is irreducible and $\Delta(f)$ is not a square, then $\Gal(E/K)\cong D_4$.
+\item If $R$ splits but $\Delta(f)$ not a square, then $\Gal(E/K)\cong V_4$ or $C_4$ (decide by the square status of certain coefficients).
+\item If $\Delta(f)$ is a square and $R$ irreducible, then $\Gal(E/K)\subset A_4$ and often equals $A_4$.
+\end{itemize}
+
+\paragraph{Quadratic resolvent for cubics.}
+For $f(x)=x^3+ax^2+bx+c$, the \emph{discriminant} already decides $A_3$ vs.\ $S_3$; one may also form the quadratic resolvent $y^2-4by+(a b-3c)^2$ to aid explicit formulas.
+
+\subsection{Examples}
+
+\begin{example}[Quartic $x^4-2$]
+Here $a=c=0$, $b=0$, $d=-2$. Then $R(y)=y^3+8$ is irreducible over $\Q$, and $\Delta(f)=-2^{11}$ is not a square. Hence $\Gal(E/\Q)\cong D_4$.
+\end{example}
+
+\begin{example}[A biquadratic]
+For $f(x)=x^4-5x^2+6=(x^2-2)(x^2-3)$, the discriminant is a square and the resolvent splits completely, giving $\Gal\cong V_4$.
+\end{example}
+
+\subsection{Remarks}
+\begin{remark}
+Resolvents are a practical classification tool up to degree $4$. For higher degrees, group-based tests, reductions modulo primes, and transitivity arguments are standard.
+\end{remark}
