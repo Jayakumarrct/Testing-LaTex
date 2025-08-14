@@ -1,4 +1,35 @@
-\section{Worked Examples and Computations}
-\label{sec:worked-examples}
+\section{Worked examples and computations}\label{sec:worked-examples}
 
-Examples illustrate the theory.
+\subsection{Quadratic and biquadratic}
+\begin{example}[Quadratic]
+For $d$ squarefree, the splitting field of $x^2-d$ is $\Q(\sqrt d)$ with $\Gal\cong C_2$.
+\end{example}
+\begin{example}[Biquadratic]
+$E=\Q(\sqrt2,\sqrt3)$ is Galois over $\Q$ with group $V_4$. Intermediate fields are $\Q(\sqrt2)$, $\Q(\sqrt3)$, and $\Q(\sqrt6)$.
+\end{example}
+
+\subsection{A simple cubic}
+\begin{example}
+For $f(x)=x^3-2$, the splitting field is $\Q(\root3\of2,\zeta_3)$ of degree $6$, with $\Gal\cong S_3$ by \cref{prop:permute-roots}.
+\end{example}
+
+\subsection{A separable quartic}
+\begin{example}
+Let $f(x)=x^4-2$. The splitting field is $\Q(\sqrt[4]{2},i)$. The Galois group is the dihedral group $D_4$ of order $8$; complex conjugation gives a reflection.
+\end{example}
+
+\subsection{Cyclotomic}
+\begin{example}
+$\Q(\zeta_7)/\Q$ is Galois of degree $\varphi(7)=6$ with cyclic group $C_6$ (\cref{sec:cyclotomic-kummer}).
+\end{example}
+
+\subsection{Finite fields}
+\begin{example}
+$\Gal(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle x\mapsto x^p\rangle\cong C_n$; the subfields are $\mathbb{F}_{p^d}$ for $d\mid n$ (\cref{sec:finite-fields}).
+\end{example}
+
+\subsection{Discriminant hints}
+\begin{remark}
+For irreducible $f\in\Q[x]$ of degree $n$, if the discriminant is a square and the mod-$p$ factorization shows a $2$-cycle, then $\Gal(f)\subset A_n$ is impossible; hence $\Gal(f)=S_n$.
+\end{remark}
+
