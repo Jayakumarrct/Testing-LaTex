@@ -1,4 +1,37 @@
-\section{Splitting Fields and Algebraic Closure}
-\label{sec:splitting-algebraic-closure}
+\section{Splitting fields and algebraic closure}\label{sec:splitting-fields}
 
-Discussion of splitting fields and algebraic closures.
+\subsection{Splitting fields}
+\begin{definition}
+A \emph{splitting field} of $f\in F[x]$ is a minimal extension $E/F$ over which $f$ factors as linear terms.
+\end{definition}
+\begin{theorem}[Existence and uniqueness]
+Every $f\in F[x]$ has a splitting field $E/F$, unique up to $F$-isomorphism.
+\end{theorem}
+\begin{proof}[Idea]
+Existence by adjoining roots one by one; uniqueness by extending embeddings and induction on $\deg f$.
+\end{proof}
+References: \cite[\S14]{DF}, \cite[Ch.~V]{Artin}.
+
+\subsection{Algebraic closures}
+\begin{definition}
+An \emph{algebraic closure} $\overline{F}$ of $F$ is an algebraic extension that is algebraically closed.
+\end{definition}
+\begin{theorem}
+Every $F$ has an algebraic closure, unique up to $F$-isomorphism.
+\end{theorem}
+\begin{remark}
+Construction uses Zorn's lemma; see \cite[Ch.~VIII]{Lang}.
+\end{remark}
+
+\subsection{Separability preview}
+\begin{proposition}
+Let $E/F$ be finite and $\sigma:E\hookrightarrow \overline{F}$ an $F$-embedding. Then $\#\{\sigma\}\le [E\!:\!F]$, with equality iff $E/F$ is separable.
+\end{proposition}
+
+\subsection{Examples}
+\begin{example}
+The splitting field of $x^3-2$ over $\Q$ is $\Q(\root3\of2,\zeta_3)$ of degree $6$.
+\end{example}
+\begin{example}
+The splitting field of $x^n-1$ over $\Q$ is $\Q(\zeta_n)$; see \cref{sec:cyclotomic-kummer}.
+\end{example}

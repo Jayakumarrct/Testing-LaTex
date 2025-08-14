@@ -1,4 +1,42 @@
-\section{Field Extensions and Minimal Polynomials}
-\label{sec:extensions-minimal}
+\section{Field extensions and minimal polynomials}\label{sec:extensions-minimal}
 
-We examine extensions and minimal polynomials.
+\subsection{Extensions and degree}
+\begin{definition}
+An \emph{extension} $E/F$ is a field $E$ containing $F$ as a subfield; its degree is $[E\!:\!F]=\dim_F E$.
+\end{definition}
+\begin{theorem}[Tower law]\label{thm:tower}
+If $K/E/F$, then $[K\!:\!F]=[K\!:\!E]\,[E\!:\!F]$.
+\end{theorem}
+\begin{proof}
+Choose an $F$-basis $\{e_i\}$ of $E$ and an $E$-basis $\{k_j\}$ of $K$. Then $\{e_i k_j\}$ is an $F$-basis of $K$.
+\end{proof}
+References: \cite[\S13]{DF}, \cite[Ch.~V]{Artin}.
+
+\subsection{Algebraic vs.\ transcendental}
+\begin{definition}
+$\alpha\in E$ is \emph{algebraic over $F$} if it satisfies some nonzero $f\in F[x]$; otherwise \emph{transcendental}.
+\end{definition}
+
+\subsection{Minimal polynomial and simple extensions}
+\begin{definition}
+For algebraic $\alpha$, the \emph{minimal polynomial} $m_{\alpha,F}\in F[x]$ is the unique monic irreducible with $m_{\alpha,F}(\alpha)=0$.
+\end{definition}
+\begin{proposition}[Structure]\label{prop:simple}
+If $n=\deg m_{\alpha,F}$ then
+\[
+F(\alpha)\cong F[x]/(m_{\alpha,F}),\qquad
+\{1,\alpha,\dots,\alpha^{n-1}\}\ \text{is an $F$-basis, so } [F(\alpha)\!:\!F]=n.
+\]
+\end{proposition}
+\begin{remark}[Conjugates]
+Each $F$-embedding $\sigma:F(\alpha)\hookrightarrow \overline{F}$ sends $\alpha$ to a root of $m_{\alpha,F}$; there are at most $n$ such embeddings.
+\end{remark}
+References: \cite[\S13--14]{DF}, \cite[Ch.~V]{Artin}.
+
+\subsection{Examples}
+\begin{example}
+For squarefree $d\in\Z$, $m_{\sqrt d,\Q}=x^2-d$ so $[\Q(\sqrt d):\Q]=2$.
+\end{example}
+\begin{example}
+With $\alpha=\sqrt2+\sqrt3$, $m_{\alpha,\Q}(x)=x^4-10x^2+1$ and $[\Q(\alpha):\Q]=4$.
+\end{example}

@@ -1,4 +1,117 @@
-\section{Fields and Polynomials}
-\label{sec:fields-polynomials}
+\section{Fields and polynomials}\label{sec:fields-polynomials}
 
-These notes review basic field theory and polynomial rings.
+\subsection{Fields, characteristic, prime fields}
+\begin{definition}
+A \emph{field} is a commutative ring $F\neq0$ in which every nonzero element has a multiplicative inverse. In particular $1\neq0$ and there are no zero divisors.
+\end{definition}
+
+\begin{definition}[Characteristic]
+The \emph{characteristic} of a field $F$, denoted $\operatorname{char}F$, is the smallest integer $n\ge1$ with $n\cdot1_F=0$ if such $n$ exists; otherwise $\operatorname{char}F=0$.
+\end{definition}
+
+\begin{proposition}[Characteristic is $0$ or prime]\label{prop:char}
+If $\operatorname{char}F=n>0$, then $n$ is a prime number. Consequently the characteristic of a field is either $0$ or a prime $p$.
+\end{proposition}
+\begin{proof}
+Suppose $n=ab$ with $1<a,b<n$. Then
+\[
+0=n\cdot1_F=(a\cdot1_F)(b\cdot1_F),
+\]
+which expresses $0$ as a product of two nonzero elements. This contradicts the absence of zero divisors, so no such factorization exists and $n$ must be prime.
+\end{proof}
+
+\begin{proposition}[Prime field]\label{prop:prime-field}
+Every field $F$ contains a smallest subfield, called the \emph{prime field}. It is isomorphic to $\Q$ when $\operatorname{char}F=0$ and to $\mathbb{F}_p$ when $\operatorname{char}F=p$.
+\end{proposition}
+\begin{proof}
+Consider the homomorphism $\phi: \Z\to F$ given by $1\mapsto1_F$. Its image consists of the elements $n\cdot1_F$ and forms a subring containing $1_F$. Any subfield must contain this image, so it is the smallest subfield. If $\operatorname{char}F=0$, the map $\phi$ is injective and the image is a copy of $\Z$; adjoining inverses yields a field isomorphic to $\Q$. If $\operatorname{char}F=p$, then $\ker\phi=(p)$ and the image is $\Z/(p)\cong\mathbb{F}_p$.
+\end{proof}
+
+\begin{remark}
+We may therefore regard any field as an extension of its prime field, which is either the rational numbers or a finite field of prime order.
+\end{remark}
+
+References: \cite[\S13]{DF}, \cite[Ch.~I]{Artin}.
+
+\subsection{Polynomials over a field}
+\begin{definition}
+Let $F$ be a field. The polynomial ring $F[x]$ consists of finite sums $\sum_{i=0}^n a_i x^i$ with coefficients $a_i\in F$. The \emph{degree} $\deg f$ is the largest $i$ with $a_i\ne0$, and the coefficient $a_{\deg f}$ is called the \emph{leading coefficient}.
+\end{definition}
+
+\begin{proposition}[Division algorithm]\label{prop:division}
+For polynomials $f,g\in F[x]$ with $g\ne0$ there exist unique $q,r\in F[x]$ such that
+\[
+f=qg+r, \qquad r=0\text{ or }\deg r<\deg g.
+\]
+\end{proposition}
+\begin{proof}
+We argue by induction on $\deg f$. If $\deg f<\deg g$ take $q=0$ and $r=f$. Otherwise write $f=a x^m+\cdots$ and $g=b x^n+\cdots$ with $m\ge n$. Set
+\[
+f_1=f-\frac{a}{b}x^{m-n}g,
+\]
+which has degree $<m$. By the induction hypothesis $f_1=q_1g+r$ with $r=0$ or $\deg r<\deg g$. Then $f=(q_1+\frac{a}{b}x^{m-n})g+r$, yielding the desired decomposition. For uniqueness, suppose $f=qg+r=q' g+r'$ with degrees of $r$ and $r'$ less than $\deg g$. Subtracting gives $(q-q')g=r'-r$. If $q\ne q'$, the left side has degree at least $\deg g$, contradicting the degree bound on the right. Thus $q=q'$ and $r=r'$.
+\end{proof}
+
+\begin{corollary}[Euclidean property]
+The degree function makes $F[x]$ a Euclidean domain. Therefore $F[x]$ is a principal ideal domain and a unique factorization domain.
+\end{corollary}
+
+\begin{corollary}[B\'ezout identity]\label{cor:bezout}
+For any $f,g\in F[x]$ there exist polynomials $a,b\in F[x]$ such that $af+bg=\gcd(f,g)$. In particular, $af+bg=1$ if and only if $f$ and $g$ are coprime.
+\end{corollary}
+\begin{proof}
+Apply the extended Euclidean algorithm supplied by the division algorithm. The final nonzero remainder expresses the greatest common divisor as an $F[x]$-linear combination of $f$ and $g$.
+\end{proof}
+
+\begin{example}
+In $\Q[x]$ the gcd of $x^3-x$ and $x^2-1$ is $x^2-1$. Indeed,
+\[
+x^3-x=(x)(x^2-1)\quad\text{and}\quad x^2-1=(1)(x^2-1)+0,
+\]
+so $af+bg=x^2-1$ with $a=0$ and $b=1$.
+\end{example}
+
+\subsection{Irreducibility criteria}
+\begin{proposition}[Degree $2$ or $3$]\label{prop:deg23}
+Let $f\in F[x]$ have degree $2$ or $3$. Then $f$ is reducible over $F$ if and only if it has a root in $F$.
+\end{proposition}
+\begin{proof}
+If $f$ has a root $\alpha\in F$, then $f=(x-\alpha)g$ with $\deg g=1$ or $2$, so $f$ is reducible. Conversely, if $f=gh$ is a nontrivial factorization, then $\deg g,\deg h\ge1$ and $\deg g+\deg h=\deg f\le3$, so one factor has degree $1$ and provides a root in $F$.
+\end{proof}
+
+\begin{theorem}[Eisenstein]\label{thm:eisenstein}
+Let $R$ be a UFD and $p\in R$ a prime element. Suppose $f(x)=a_nx^n+\cdots+a_0\in R[x]$ satisfies
+\begin{enumerate}
+ \item $p\nmid a_n$,
+ \item $p\mid a_i$ for all $i<n$, and
+ \item $p^2\nmid a_0$.
+\end{enumerate}
+Then $f$ is irreducible in $R[x]$ and therefore in the fraction field $\operatorname{Frac}(R)[x]$.
+\end{theorem}
+\begin{proof}
+Assume $f=gh$ with nonconstant $g,h\in R[x]$. Write $g=b_mx^m+\cdots$ and $h=c_lx^l+\cdots$ with $m,l\ge1$. The constant term satisfies $a_0=b_0c_0$. Since $p^2\nmid a_0$, exactly one of $b_0$ and $c_0$ is divisible by $p$; say $p\mid b_0$ but $p\nmid c_0$. Reducing the factorization modulo $p$ yields
+\[
+\bar f=\bar g\,\bar h\in(R/(p))[x].
+\]
+However $\bar f=\bar a_n x^n$ is a monomial because $p\mid a_i$ for $i<n$. Thus $\bar g$ must be a unit in $(R/(p))[x]$, implying $p\nmid b_0$, a contradiction. No such factorization exists, so $f$ is irreducible.
+\end{proof}
+
+\begin{example}
+Consider $x^5-10x+5$. Substituting $x=y+1$ gives
+\[
+y^5+5y^4+50y^2+40y+5,
+\]
+where every coefficient except the leading one is divisible by $5$ and the constant term is not divisible by $25$. By \cref{thm:eisenstein} with $p=5$, the shifted polynomial is irreducible in $\Z[y]$, hence $x^5-10x+5$ is irreducible over $\Q$.
+\end{example}
+
+References: \cite[\S9--11]{DF}, \cite[Ch.~II]{Lang}.
+
+\subsection{Evaluation, roots, and factorization}
+\begin{definition}
+Let $E/F$ be a field extension and $f\in F[x]$. For $\alpha\in E$ define the \emph{evaluation map} $\operatorname{ev}_\alpha:F[x]\to E$, $f\mapsto f(\alpha)$. The element $\alpha$ is called a \emph{root} of $f$ if $f(\alpha)=0$.
+\end{definition}
+
+\begin{remark}
+The evaluation map is a ring homomorphism. Factorization of polynomials can change when moving from $F$ to a larger field because new roots may appear. Adjoining enough roots to split a polynomial completely leads to the notion of splitting fields discussed in \cref{sec:splitting-fields}.
+\end{remark}
+
