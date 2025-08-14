@@ -1,15 +1,38 @@
 \documentclass[12pt]{article}
 
-\usepackage{amsmath,amsthm,amssymb}
+\usepackage{amsmath,amssymb}
 \usepackage{tikz}
 \usepackage{tikz-cd}
 \usepackage{graphicx}
 \usepackage{mwe}
 \usepackage{hyperref}
 
-% Shortcuts
+% ---------- Theorem environments ----------
+\usepackage{amsthm} % ensure loaded
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+% ---------- End theorem environments ----------
+
+% ---------- Shortcuts ----------
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
 \DeclareMathOperator{\Gal}{Gal}
 \DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Norm}{N}
 
 \title{Galois Theory --- Graduate Notes}
 \author{Anonymous}
