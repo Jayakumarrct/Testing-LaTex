@@ -1,4 +1,38 @@
-\section{Galois Extensions and the Fundamental Theorem}
-\label{sec:galois-fundamental-theorem}
+\section{Galois extensions and the Fundamental Theorem}\label{sec:galois-ft}
 
-We state and prove the Fundamental Theorem of Galois theory.
+\subsection{Definitions}
+\begin{definition}
+A finite extension $E/F$ is \emph{Galois} if it is normal and separable. Its Galois group is $\Gal(E/F)=\Aut_F(E)$.
+\end{definition}
+
+\subsection{Artin's theorem and counting}
+\begin{theorem}[Artin]
+If $G$ is a finite group of $F$-automorphisms of $E$, then $E/E^G$ is Galois and $\Gal(E/E^G)\cong G$.
+\end{theorem}
+\begin{theorem}[Counting]
+For finite $E/F$, $\#\Aut_F(E)\le [E\!:\!F]$, with equality iff $E/F$ is Galois.
+\end{theorem}
+
+\subsection{Fundamental Theorem of Galois Theory}
+\begin{theorem}\label{thm:FTGT}
+Let $E/F$ be finite Galois with group $G=\Gal(E/F)$. The maps
+\[
+K\mapsto \Gal(E/K),\qquad H\mapsto E^H
+\]
+yield inverse inclusion-reversing bijections between intermediate fields $F\subseteq K\subseteq E$ and subgroups $H\le G$. Moreover
+\[
+[E\!:\!K]=\#H,\qquad [K\!:\!F]=\#G/\#H,
+\]
+and $K/F$ is normal $\iff$ $H\trianglelefteq G$, in which case $\Gal(K/F)\cong G/H$.
+\end{theorem}
+\begin{proof}[Idea]
+Use $E^H$ and Artin's theorem; show the correspondences are inverse and respect indices by orbit–stabilizer. Details in \cite[\S14]{DF}, \cite[Ch.~VI]{Artin}.
+\end{proof}
+
+\subsection{Examples}
+\begin{example}[Quadratic]
+For squarefree $d$, $\Q(\sqrt d)/\Q$ is Galois with group $C_2$.
+\end{example}
+\begin{example}[Cyclotomic prime]
+$\Q(\zeta_p)/\Q$ has Galois group $(\Z/p\Z)^\times\cong C_{p-1}$ for prime $p$; see \cref{sec:cyclotomic-kummer}.
+\end{example}
