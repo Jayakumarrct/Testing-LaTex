@@ -7,6 +7,11 @@
 \usepackage{mwe}
 \usepackage{hyperref}
 \usepackage{cleveref}
+% ---------- Fonts and colors ----------
+\usepackage{mathpazo} % Palatino text & math
+\usepackage[scaled=0.85]{inconsolata} % Monospace font
+\usepackage[most]{tcolorbox}
+% ---------- End fonts and colors ----------
 
 % ---------- Theorem environments ----------
 \usepackage{amsthm}
@@ -23,6 +28,44 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 % ---------- End theorem environments ----------
+
+% ---------- Colored boxes for theorem environments ----------
+\tcolorboxenvironment{theorem}{
+  colback=blue!5!white,
+  colframe=blue!75!black,
+  fonttitle=\bfseries
+}
+\tcolorboxenvironment{lemma}{
+  colback=green!5!white,
+  colframe=green!60!black,
+  fonttitle=\bfseries
+}
+\tcolorboxenvironment{proposition}{
+  colback=purple!5!white,
+  colframe=purple!60!black,
+  fonttitle=\bfseries
+}
+\tcolorboxenvironment{corollary}{
+  colback=orange!10!white,
+  colframe=orange!70!black,
+  fonttitle=\bfseries
+}
+\tcolorboxenvironment{definition}{
+  colback=yellow!10!white,
+  colframe=yellow!60!black,
+  fonttitle=\bfseries
+}
+\tcolorboxenvironment{example}{
+  colback=teal!5!white,
+  colframe=teal!60!black,
+  fonttitle=\bfseries
+}
+\tcolorboxenvironment{remark}{
+  colback=gray!10!white,
+  colframe=gray!60!black,
+  fonttitle=\bfseries
+}
+% ---------- End colored boxes ----------
 
 % ---------- Shortcuts ----------
 \newcommand{\N}{\mathbb{N}}
