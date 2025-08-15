@@ -1,30 +1,59 @@
 \documentclass[12pt]{article}
 
-\usepackage{amsmath,amssymb}
+% encoding and fonts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+
+% page layout and colors
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+
+% graphics and tables
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+% mathematics
+\usepackage{mathtools,amssymb,amsmath,amsthm}
+\usepackage{bm}
+\usepackage{enumitem}
+
+% additional utilities
 \usepackage{tikz}
 \usepackage{tikz-cd}
-\usepackage{graphicx}
 \usepackage{mwe}
+
+% hyperlinks and references
 \usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  citecolor=SeaGreen,
+  urlcolor=RoyalBlue
+}
 \usepackage{cleveref}
 
-% ---------- Theorem environments ----------
-\usepackage{amsthm}
+% headings and boxed environments
+\usepackage{titlesec}
+\usepackage[most]{tcolorbox}
 
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
+% ---------- Color palette ----------
+\definecolor{SoftBlue}{RGB}{96,149,228}
+\definecolor{SoftGreen}{RGB}{120,180,140}
+\definecolor{SoftPurple}{RGB}{150,120,200}
+\definecolor{SoftGray}{RGB}{245,245,247}
+\definecolor{Ink}{RGB}{40,40,45}
 
-\theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{example}[theorem]{Example}
+% ---------- Headings ----------
+\titleformat{\section}{\large\bfseries\color{Ink}}{\thesection}{0.6em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries\color{Ink}}{\thesubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.0ex plus .2ex}{0.6ex}
+\titlespacing*{\subsection}{0pt}{0.8ex}{0.4ex}
 
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
-% ---------- End theorem environments ----------
-
-% ---------- Shortcuts ----------
+% ---------- Math numbering and macros ----------
+\numberwithin{equation}{section}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -34,6 +63,32 @@
 \DeclareMathOperator{\Aut}{Aut}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Norm}{N}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\inner}{\langle}{\rangle}
+\DeclarePairedDelimiter{\set}{\{ }{\ }}
+
+% ---------- Theorem environments ----------
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+% ---------- End theorem environments ----------
+
+% ---------- Colorful boxes ----------
+\tcbset{colback=SoftGray, colframe=SoftBlue, boxsep=4pt, arc=6pt, left=6pt, right=6pt, top=6pt, bottom=6pt}
+\newtcolorbox{infobox}{colback=SoftGray, colframe=SoftBlue}
+\newtcolorbox{defbox}{colback=SoftGray, colframe=SoftGreen}
+\newtcolorbox{thmbox}{colback=SoftGray, colframe=SoftPurple}
+
+\newtcbtheorem[number within=section]{theobox}{Theorem}{enhanced, colback=SoftGray, colframe=SoftPurple, fonttitle=\bfseries}{thm}
+\newtcbtheorem[number within=section]{defnbox}{Definition}{enhanced, colback=SoftGray, colframe=SoftGreen, fonttitle=\bfseries}{def}
+\newtcbtheorem[number within=section]{exbox}{Example}{enhanced, colback=SoftGray, colframe=SoftBlue, fonttitle=\bfseries}{ex}
 
 \title{Galois Theory --- Graduate Notes}
 \author{Anonymous}
@@ -48,6 +103,26 @@
 \tableofcontents
 
 \input{sections/sec01-fields-polynomials}
+
+\begin{infobox}
+  These notes use a light color theme and readable fonts. Boxes are printable and accessible.
+\end{infobox}
+
+\begin{defbox}
+  \begin{definition}
+    A function $f:G\to H$ between groups is a homomorphism if $f(xy)=f(x)f(y)$.
+  \end{definition}
+\end{defbox}
+
+\begin{thmbox}
+  \begin{theorem}
+    The identity element of a group is unique.
+  \end{theorem}
+  \begin{proof}
+    If $e$ and $e'$ are identities, then $e=e\cdot e'=e'$.
+  \end{proof}
+\end{thmbox}
+
 \input{sections/sec02-extensions-minimal}
 \input{sections/sec03-splitting-algebraic-closure}
 \input{sections/sec04-automorphisms-fixedfields}
