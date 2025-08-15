@@ -21,6 +21,26 @@
 - Polynomial rings over fields
 
 ### Build
+Compile with `latexmk` or the provided `Makefile`:
 ```bash
-latexmk -pdf -interaction=nonstopmode -shell-escape main.tex
+latexmk -pdf -interaction=nonstopmode main.tex
+# or
+make
 ```
+
+## Styling
+The preamble now loads a light, print-friendly theme:
+
+ - `mathpazo` for Palatino text/math and `inconsolata` for monospace listings
+- `geometry` for A4 layout with 1in margins
+- `xcolor` with a pastel palette (`SoftBlue`, `SoftGreen`, `SoftPurple`, `SoftGray`, `Ink`)
+- `tcolorbox` and `titlesec` for boxed theorems and subtle headings
+- `hyperref`+`cleveref` for colored links and smart references
+
+Customize the palette by adjusting the `Soft*` color definitions in `main.tex`.
+
+Three lightweight box environments are available:
+
+- `infobox` for general notes
+- `defbox` for definitions
+- `thmbox` for theorems (with optional `theobox`, `defnbox`, and `exbox` wrappers)
