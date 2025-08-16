@@ -28,6 +28,13 @@ F(\alpha)\cong F[x]/(m_{\alpha,F}),\qquad
 \{1,\alpha,\dots,\alpha^{n-1}\}\ \text{is an $F$-basis, so } [F(\alpha)\!:\!F]=n.
 \]
 \end{proposition}
+\begin{proof}
+Evaluate polynomials at $\alpha$ to obtain a surjective homomorphism $\varphi:F[x]\to F(\alpha)$. Its kernel consists of polynomials vanishing at $\alpha$; since $m_{\alpha,F}$ is the monic irreducible with this property, $\ker\varphi=(m_{\alpha,F})$.
+Thus $F(\alpha)\cong F[x]/(m_{\alpha,F})$.
+Every element of $F(\alpha)$ is $r(\alpha)$ for some $r\in F[x]$; dividing $r$ by $m_{\alpha,F}$ shows it is an $F$-linear combination of $1,\alpha,\dots,\alpha^{n-1}$.
+If $\sum_{i=0}^{n-1}c_i\alpha^i=0$, the polynomial $\sum_{i=0}^{n-1}c_ix^i$ lies in $\ker\varphi$ and hence is $0$, so the coefficients vanish.
+Therefore $\{1,\alpha,\dots,\alpha^{n-1}\}$ is a basis and $[F(\alpha)\!:\!F]=n$.
+\end{proof}
 \begin{remark}[Conjugates]
 Each $F$-embedding $\sigma:F(\alpha)\hookrightarrow \overline{F}$ sends $\alpha$ to a root of $m_{\alpha,F}$; there are at most $n$ such embeddings.
 \end{remark}
