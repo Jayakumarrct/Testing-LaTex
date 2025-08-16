@@ -10,6 +10,17 @@ For a primitive $n$th root of unity $\zeta_n$, the \emph{cyclotomic polynomial} 
 \begin{theorem}
 $x^n-1=\prod_{d\mid n}\Phi_d(x)$, $\deg\Phi_n=\varphi(n)$, and $\Phi_n$ is irreducible over $\Q$.
 \end{theorem}
+\begin{proof}
+Every $n$th root of unity is $\zeta_n^a$ for some $a$.
+Those with $\gcd(a,n)=1$ are the primitive roots, so grouping terms by
+their orders gives $x^n-1=\prod_{d\mid n}\Phi_d(x)$.
+The degree of $\Phi_n$ equals the number of $a$ with $1\le a\le n$ and
+$\gcd(a,n)=1$, namely $\varphi(n)$.
+Let $\zeta_n$ be primitive.
+Its conjugates over $\Q$ are $\zeta_n^{\,a}$ with $\gcd(a,n)=1$, so the
+minimal polynomial of $\zeta_n$ is $\Phi_n$; hence $\Phi_n$ is
+irreducible over $\Q$.
+\end{proof}
 References: \cite[\S13]{DF}, \cite[Ch.~VIII]{Lang}.
 
 \subsection{Cyclotomic fields}
@@ -22,12 +33,35 @@ Restriction induces
 \Gal\bigl(\Q(\zeta_n)/\Q\bigr)\ \cong\ (\Z/n\Z)^\times,\qquad \sigma_a(\zeta_n)=\zeta_n^{\,a}.
 \]
 \end{theorem}
+\begin{proof}
+Any automorphism of $\Q(\zeta_n)$ is determined by the image of
+$\zeta_n$, which must be another primitive $n$th root, say
+$\zeta_n^{\,a}$ with $\gcd(a,n)=1$.
+The map $a\mapsto\sigma_a$ is a homomorphism from
+$(\Z/n\Z)^\times$ to the Galois group.
+It is injective because $\sigma_a=\operatorname{id}$ only when
+$a\equiv1\pmod n$.
+Since both groups have size $\varphi(n)$, it is an isomorphism.
+\end{proof}
 
 \subsection{Basic Kummer theory}
 Assume $\mathrm{char}\,F\nmid n$ and $\mu_n\subset F$.
 \begin{theorem}[Kummer]
 Cyclic degree-$n$ extensions of $F$ correspond to cosets in $F^\times/F^{\times n}$ via $a\mapsto F(\sqrt[n]{a})$; the extension has degree $n$ iff $a\notin F^{\times n}$.
 \end{theorem}
+\begin{proof}
+Let $L/F$ be a cyclic extension of degree $n$ and choose
+$\sigma\in\Gal(L/F)$ generating the group.
+Pick $\alpha\in L^\times$ with
+$\sigma(\alpha)=\zeta_n\alpha$; then $\alpha^n\in F$ and
+$L=F(\alpha)=F(\sqrt[n]{\alpha^n})$.
+Different choices of $\alpha$ change $\alpha^n$ by an $n$th power of
+$F^\times$, giving the correspondence.
+Conversely, if $a\in F^\times$ and $L=F(\sqrt[n]{a})$, then
+$[L:F]$ divides $n$, and the action of $\Gal(L/F)$ on $\sqrt[n]{a}$ shows
+the extension is cyclic.
+We have $[L:F]=n$ exactly when $a\notin F^{\times n}$.
+\end{proof}
 \begin{remark}[Kronecker–Weber]
 Every finite abelian extension of $\Q$ is contained in some $\Q(\zeta_n)$ \cite{Neukirch}.
 \end{remark}

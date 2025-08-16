@@ -17,17 +17,38 @@ A finite group $G$ is \emph{solvable} if $1=G_0\trianglelefteq\cdots\trianglelef
 \begin{theorem}\label{thm:radicals-criterion}
 Assume $\operatorname{char}F=0$ and $f\in F[x]$ is separable. Then $f$ is solvable by radicals over $F$ iff $\Gal(E/F)$ is solvable, where $E$ is the splitting field of $f$.
 \end{theorem}
-\begin{proof}[Idea]
-($\Rightarrow$) Normalize a radical tower and apply Kummer theory after adjoining roots of unity, producing abelian quotients. ($\Leftarrow$) Induct along a solvable series realizing each abelian quotient by radicals. See \cite[Ch.~14]{DF}, \cite[Ch.~VI]{Artin}.
+\begin{proof}
+($\Rightarrow$) Suppose the roots of $f$ lie in a radical tower
+$F=F_0\subset\cdots\subset F_m$.
+After adjoining the necessary roots of unity, each step
+$F_{i-1}\subset F_i$ is a Kummer extension with abelian Galois group.
+The Galois group of $E/F$ is then built from these abelian quotients, so it is solvable.
+
+($\Leftarrow$) Conversely assume $G=\Gal(E/F)$ is solvable.
+Choose a normal series with abelian factors and let the corresponding
+fields be $F=E_0\subset\cdots\subset E_r=E$.
+Each $E_i/E_{i-1}$ is an abelian extension, hence by Kummer theory is
+obtained by adjoining radicals (after adjoining roots of unity).
+Thus the roots of $f$ lie in a radical tower over $F$.
 \end{proof}
 \begin{theorem}[Abel–Ruffini]
 The general quintic over $\Q$ is not solvable by radicals.
 \end{theorem}
+\begin{proof}
+The splitting field of the general quintic has Galois group $S_5$.
+Since $S_5$ is not solvable, the criterion above shows that the general
+quintic is not solvable by radicals.
+\end{proof}
 
 \subsection{Detecting $S_n$}
 \begin{proposition}
 If $f\in\Q[x]$ is irreducible of prime degree $p$ with exactly two nonreal roots, then $\Gal(f)\cong S_p$.
 \end{proposition}
-\begin{proof}[Idea]
-Complex conjugation acts as a transposition; any transitive subgroup of $S_p$ containing a transposition is $S_p$.
+\begin{proof}
+Let $G=\Gal(f)$ acting on the $p$ roots.
+Irreducibility makes $G$ transitive.
+Exactly two roots are nonreal, so complex conjugation swaps them and fixes the others, giving a transposition in $G$.
+By Cauchy's theorem $G$ contains an element of order $p$, hence a
+$p$-cycle.
+A transitive subgroup of $S_p$ containing a transposition and a $p$-cycle is $S_p$, so $G\cong S_p$.
 \end{proof}
