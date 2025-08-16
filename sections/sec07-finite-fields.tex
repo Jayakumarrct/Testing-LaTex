@@ -4,17 +4,29 @@
 \begin{theorem}
 For each prime power $q=p^n$ there exists a field $\mathbb{F}_q$ of order $q$, unique up to isomorphism.
 \end{theorem}
+\begin{proof}
+An irreducible polynomial $f\in\mathbb{F}_p[x]$ of degree $n$ exists, so $E=\mathbb{F}_p[x]/(f)$ is a field of size $p^n$. Any field $F$ with $|F|=p^n$ is a splitting field of $x^{p^n}-x$, which has $p^n$ distinct roots. Splitting fields of the same separable polynomial over $\mathbb{F}_p$ are isomorphic, giving existence and uniqueness.
+\end{proof}
 \begin{theorem}
 $\mathbb{F}_q^\times$ is cyclic of order $q-1$.
 \end{theorem}
+\begin{proof}
+Let $G=\mathbb{F}_q^\times$. For each $d\mid(q-1)$ the equation $x^d=1$ has at most $d$ solutions in $G$. If every element had order dividing a proper divisor of $q-1$, the total number of elements would be less than $q-1$. Thus $G$ contains an element of order $q-1$ and is therefore cyclic.
+\end{proof}
 
 \subsection{Frobenius and subfields}
 \begin{proposition}[Frobenius]
 The map $\varphi:x\mapsto x^p$ is an automorphism of $\mathbb{F}_{p^n}$ with fixed field $\mathbb{F}_p$.
 \end{proposition}
+\begin{proof}
+For $a,b\in\mathbb{F}_{p^n}$, $(a+b)^p=a^p+b^p$ and $(ab)^p=a^pb^p$, so $\varphi$ is a homomorphism. Since the field is finite, injectivity implies surjectivity, making $\varphi$ an automorphism. The fixed points satisfy $x^p=x$, whose solutions are exactly $\mathbb{F}_p$.
+\end{proof}
 \begin{theorem}
 $\Gal(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle \varphi\rangle\cong C_n$. Subfields are exactly $\mathbb{F}_{p^d}$ with $d\mid n$.
 \end{theorem}
+\begin{proof}
+The automorphism $\varphi$ has order $n$, and any automorphism fixing $\mathbb{F}_p$ is a power of $\varphi$. Hence the Galois group is the cyclic group $\langle\varphi\rangle\cong C_n$. Subfields correspond to subgroups of this group, so they are precisely the fields $\mathbb{F}_{p^d}$ with $d\mid n$.
+\end{proof}
 References: \cite[\S13]{DF}, \cite[Ch.~VIII]{Lang}.
 
 \subsection{Irreducibles, trace, and norm}
@@ -24,6 +36,12 @@ For $\alpha\in\mathbb{F}_{p^n}$ with Frobenius orbit of size $r$,
 m_\alpha(x)=\prod_{i=0}^{r-1}\bigl(x-\alpha^{p^i}\bigr).
 \]
 \end{proposition}
+\begin{proof}
+The Frobenius orbit of $\alpha$ is $\{\alpha,\alpha^p,\ldots,\alpha^{p^{r-1}}\}$ and $\varphi^r(\alpha)=\alpha$. Each element is a root of $g(x)=\prod_{i=0}^{r-1}(x-\alpha^{p^i})\in\mathbb{F}_p[x]$, which has distinct roots. Since the orbit has size $r$, $g$ is the minimal polynomial of $\alpha$ over $\mathbb{F}_p$, so
+\[
+m_\alpha(x)=\prod_{i=0}^{r-1}(x-\alpha^{p^i}).\qedhere
+\]
+\end{proof}
 \begin{definition}
 For $E=\mathbb{F}_{p^n}$ over $F=\mathbb{F}_p$ define
 \[
