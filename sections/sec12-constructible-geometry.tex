@@ -11,11 +11,17 @@ $\alpha$ is constructible iff there exists a tower
 \]
 Hence any constructible $\alpha$ is algebraic of degree a power of $2$.
 \end{theorem}
+\begin{proof}
+Straightedge-and-compass constructions use only field operations and extraction of square roots. Starting from $\Q$, each step therefore yields a quadratic extension, so any constructed number lies in a tower of such extensions and has degree a power of $2$. Conversely, given a tower with degrees $2$, adjoining the required square roots one by one constructs any element in the top field.
+\end{proof}
 
 \subsection{Regular polygons}
 \begin{theorem}[Gauss–Wantzel]
 A regular $n$-gon is constructible iff $n=2^k \prod p_j$ where the $p_j$ are distinct Fermat primes $3,5,17,257,65537$.
 \end{theorem}
+\begin{proof}
+Constructing a regular $n$-gon is equivalent to constructing $\zeta_n=e^{2\pi i/n}$. By the previous theorem this is possible exactly when $[\Q(\zeta_n):\Q]=\varphi(n)$ is a power of $2$. The totient $\varphi(n)$ is a power of $2$ precisely for numbers of the given form with distinct Fermat primes.
+\end{proof}
 \begin{example}
 The $17$-gon is constructible; the $7$-gon and $9$-gon are not.
 \end{example}
@@ -24,7 +30,13 @@ The $17$-gon is constructible; the $7$-gon and $9$-gon are not.
 \begin{corollary}[Doubling the cube]
 No straightedge-and-compass construction of $\sqrt[3]{2}$ exists since $\deg(\sqrt[3]{2}/\Q)=3\ne 2^k$.
 \end{corollary}
+\begin{proof}
+If $\sqrt[3]{2}$ were constructible, its degree over $\Q$ would be a power of $2$. The polynomial $x^3-2$ is irreducible over $\Q$, so the degree is $3$, a contradiction.
+\end{proof}
 \begin{corollary}[Angle trisection]
 A general angle cannot be trisected; e.g.\ $\cos(20^\circ)$ has minimal polynomial of degree $3$.
 \end{corollary}
+\begin{proof}
+Trisecting an arbitrary angle would allow the construction of $\cos(20^\circ)$. Its minimal polynomial $8x^3-6x-1$ is irreducible over $\Q$ and has degree $3$, so this number is not constructible. Therefore a general angle cannot be trisected.
+\end{proof}
 Reference: \cite[\S13]{DF}.
