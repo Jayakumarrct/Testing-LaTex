@@ -20,6 +20,15 @@ If $f(\alpha)=0$, then $0=\sigma(f(\alpha))=f(\sigma(\alpha))$ because $\sigma$ 
 \begin{theorem}\label{thm:autobound}
 For any finite extension $E/F$, $\#\Aut_F(E)\le [E\!:\!F]$, with equality iff $E/F$ is Galois; see \cref{sec:galois-ft}.
 \end{theorem}
+\begin{proof}
+Every $F$-automorphism of $E$ is an $F$-embedding $E\hookrightarrow\overline{F}$,
+so the bound follows from \cref{sec:splitting-fields}'s proposition on
+embeddings. If equality holds then $E/F$ is separable by that result, and the
+images of elements under these embeddings lie in $E$, forcing every irreducible
+polynomial with a root in $E$ to split over $E$; thus $E/F$ is normal and hence
+Galois. Conversely, if $E/F$ is Galois, any $F$-embedding of $E$ lands in $E$ and
+is an automorphism, giving $\#\Aut_F(E)=[E\!:\!F]$.
+\end{proof}
 References: \cite[\S14]{DF}, \cite[Ch.~V]{Artin}.
 
 \subsection{Examples}

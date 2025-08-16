@@ -7,8 +7,17 @@ A \emph{splitting field} of $f\in F[x]$ is a minimal extension $E/F$ over which 
 \begin{theorem}[Existence and uniqueness]
 Every $f\in F[x]$ has a splitting field $E/F$, unique up to $F$-isomorphism.
 \end{theorem}
-\begin{proof}[Idea]
-Existence by adjoining roots one by one; uniqueness by extending embeddings and induction on $\deg f$.
+\begin{proof}
+Pick a root $\alpha$ of $f$ in some extension of $F$ and let $F_1=F(\alpha)$. Then
+\(f=(x-\alpha)g\) with $g\in F_1[x]$ of smaller degree, so by induction on the
+degree we obtain a field $E$ over which $g$ splits. This $E$ is generated over
+$F$ by adjoining all the roots of $f$, hence it is a splitting field.
+
+For uniqueness, let $E$ and $E'$ be splitting fields of $f$. Choose a root
+$\alpha\in E$ and a corresponding root $\beta\in E'$ of its minimal polynomial
+over $F$. The map $\alpha\mapsto\beta$ extends to an $F$-isomorphism
+$F(\alpha)\cong F(\beta)$. Applying the inductive construction to the remaining
+factors of $f$ extends this to an $F$-isomorphism $E\cong E'$.
 \end{proof}
 References: \cite[\S14]{DF}, \cite[Ch.~V]{Artin}.
 
@@ -19,6 +28,18 @@ An \emph{algebraic closure} $\overline{F}$ of $F$ is an algebraic extension that
 \begin{theorem}
 Every $F$ has an algebraic closure, unique up to $F$-isomorphism.
 \end{theorem}
+\begin{proof}
+Consider the set of algebraic extensions of $F$ ordered by inclusion in which
+each polynomial of $F[x]$ has at least one root. Any chain has an upper bound by
+the union of its fields, so Zorn's lemma yields a maximal such extension
+$\overline{F}$. If a polynomial in $\overline{F}[x]$ were irreducible with no
+root in $\overline{F}$, adjoining a root would contradict maximality, hence
+$\overline{F}$ is algebraically closed and algebraic over $F$.
+
+If $\overline{F}'$ is another algebraic closure, the previous theorem gives an
+$F$-isomorphism between their splitting fields for each polynomial in $F[x]$,
+which patch together to an $F$-isomorphism $\overline{F}\cong\overline{F}'$.
+\end{proof}
 \begin{remark}
 Construction uses Zorn's lemma; see \cite[Ch.~VIII]{Lang}.
 \end{remark}
@@ -27,6 +48,15 @@ Construction uses Zorn's lemma; see \cite[Ch.~VIII]{Lang}.
 \begin{proposition}
 Let $E/F$ be finite and $\sigma:E\hookrightarrow \overline{F}$ an $F$-embedding. Then $\#\{\sigma\}\le [E\!:\!F]$, with equality iff $E/F$ is separable.
 \end{proposition}
+\begin{proof}
+Write $E=F(\alpha_1,\ldots,\alpha_n)$ and set $E_i=F(\alpha_1,\ldots,\alpha_i)$.
+An $F$-embedding of $E_{i-1}$ extends to at most $d_i$ embeddings of $E_i$,
+where $d_i$ is the number of distinct roots of the minimal polynomial of
+$\alpha_i$ over $E_{i-1}$. Thus the number of $F$-embeddings of $E$ is at most
+$d_1\cdots d_n=[E\!:\!F]$. Equality holds precisely when each $d_i$ equals the
+degree of the corresponding minimal polynomial, which is the definition of
+separability for $E/F$.
+\end{proof}
 
 \subsection{Examples}
 \begin{example}
