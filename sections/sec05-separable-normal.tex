@@ -7,6 +7,13 @@ For $f(x)=\sum a_i x^i\in F[x]$, the \emph{formal derivative} is $f'(x)=\sum i\,
 \begin{proposition}[Multiplicity]
 In a splitting field, a root $\alpha$ has multiplicity $>1$ iff $f(\alpha)=f'(\alpha)=0$.
 \end{proposition}
+\begin{proof}
+Write $f=(x-\alpha)^m g$ in the splitting field with $g(\alpha)\ne0$. Then
+\(f' = m(x-\alpha)^{m-1} g + (x-\alpha)^m g'\). If $m>1$ both $f(\alpha)$ and
+$f'(\alpha)$ vanish. Conversely, if $f(\alpha)=f'(\alpha)=0$ and $f=(x-\alpha)g$
+with $g(\alpha)\ne0$, then $f'(\alpha)=g(\alpha)\ne0$, a contradiction; hence
+$m>1$.
+\end{proof}
 \begin{theorem}[Separability criteria]\label{thm:sep-criteria}
 For irreducible $f\in F[x]$ the following are equivalent:
 \begin{enumerate}[label=(\alph*)]
@@ -16,9 +23,25 @@ For irreducible $f\in F[x]$ the following are equivalent:
 \end{enumerate}
 A root of such $f$ is \emph{separable}. An algebraic extension is \emph{separable} if each of its elements is separable.
 \end{theorem}
+\begin{proof}
+(a)$\Leftrightarrow$(b): a multiple root $\alpha$ of $f$ satisfies
+$f(\alpha)=f'(\alpha)=0$, so $\gcd(f,f')$ has positive degree. Conversely, if
+$\gcd(f,f')\ne1$, a common root gives a multiple root.
+
+(a)$\Leftrightarrow$(c): In a splitting field the embeddings of $F[x]/(f)$ send
+$x$ to the distinct roots of $f$. Thus the number of embeddings equals the number
+of distinct roots, which is $\deg f$ precisely when $f$ has no multiple roots.
+\end{proof}
 \begin{corollary}[Perfect fields]
 If $\operatorname{char}F=0$ or $F$ is finite then every algebraic extension of $F$ is separable.
 \end{corollary}
+\begin{proof}
+Let $f\in F[x]$ be irreducible. If $\operatorname{char}F=0$ then $f'\ne0$.
+When $F$ is finite of characteristic $p$, the Frobenius map $x\mapsto x^p$ is
+bijective, so an irreducible $f$ cannot be of the form $g(x^p)$ and hence
+$f'\ne0$. By \cref{thm:sep-criteria}, $f$ is separable, and thus every algebraic
+extension of $F$ is separable.
+\end{proof}
 References: \cite[\S13--14]{DF}, \cite[Ch.~VIII]{Lang}.
 
 \subsection{Normal extensions}
@@ -33,11 +56,30 @@ For algebraic $E/F$ the following are equivalent:
 \item every $F$-embedding $\sigma:E\hookrightarrow\overline{F}$ satisfies $\sigma(E)=E$.
 \end{enumerate}
 \end{theorem}
+\begin{proof}
+(a)$\Rightarrow$(b): If $E/F$ is normal, take the family of irreducible
+polynomials in $F[x]$ having a root in $E$; $E$ is a splitting field for this
+family.
+
+(b)$\Rightarrow$(c): If $E$ is a splitting field of polynomials in $F[x]$, any
+$F$-embedding $\sigma$ permutes their roots, so $\sigma(E)=E$.
+
+(c)$\Rightarrow$(a): Let $f\in F[x]$ be irreducible with a root $\alpha$ in $E$.
+For any other root $\beta$, there is an $F$-embedding sending $\alpha$ to
+$\beta$, hence $\beta\in E$. Thus $f$ splits over $E$, so $E/F$ is normal.
+\end{proof}
 
 \subsection{Primitive element theorem}
 \begin{theorem}[Primitive element]\label{thm:PET}
 If $E/F$ is finite and separable then $E=F(\alpha)$ for some $\alpha\in E$.
 \end{theorem}
+\begin{proof}
+Take $E=F(\alpha,\beta)$. For distinct embeddings $\sigma\ne\tau$ of $E$ fixing
+$F$, the set of $c\in F$ with $\sigma(\alpha+c\beta)=\tau(\alpha+c\beta)$ is
+finite. Choose $c$ avoiding all these finitely many values. Then the conjugates
+of $\gamma=\alpha+c\beta$ are distinct, so the minimal polynomial of $\gamma$ has
+degree $[E\!:\!F]$, giving $E=F(\gamma)$.
+\end{proof}
 \begin{example}
 $\Q(\sqrt2,\sqrt3)=\Q(\sqrt2+\sqrt3)$ since the extension is finite and separable.
 \end{example}
