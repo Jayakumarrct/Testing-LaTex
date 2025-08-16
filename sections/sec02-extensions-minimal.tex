@@ -28,6 +28,9 @@ F(\alpha)\cong F[x]/(m_{\alpha,F}),\qquad
 \{1,\alpha,\dots,\alpha^{n-1}\}\ \text{is an $F$-basis, so } [F(\alpha)\!:\!F]=n.
 \]
 \end{proposition}
+\begin{proof}
+Let $m=m_{\alpha,F}$. The evaluation map $\varphi:F[x]\to F(\alpha)$, $f\mapsto f(\alpha)$, is a surjective $F$-algebra homomorphism. Its kernel is $(m)$, since $m$ is the monic polynomial of smallest degree with $m(\alpha)=0$. By the first isomorphism theorem, $F(\alpha)\cong F[x]/(m)$. The classes of $1,x,\dots,x^{n-1}$ form an $F$-basis of $F[x]/(m)$, so $\{1,\alpha,\dots,\alpha^{n-1}\}$ is an $F$-basis of $F(\alpha)$ and $[F(\alpha)\!:\!F]=n$.
+\end{proof}
 \begin{remark}[Conjugates]
 Each $F$-embedding $\sigma:F(\alpha)\hookrightarrow \overline{F}$ sends $\alpha$ to a root of $m_{\alpha,F}$; there are at most $n$ such embeddings.
 \end{remark}

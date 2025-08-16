@@ -25,6 +25,9 @@
 latexmk -pdf -interaction=nonstopmode -shell-escape main.tex
 ```
 
+## Proof Style
+Proofs use the plain `amsthm` environment with simple English and only the steps needed. When a proof ends with a displayed equation we place the symbol using `\qedhere`. Sections&nbsp;1–2 now follow this style.
+
 ## Worked Examples
 Example files live under `examples/section-*-examples.tex`. Add more by following the same format and labeling examples as `ex:sec<i>-<k>`. Compile the notes with:
 ```bash
