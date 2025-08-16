@@ -9,9 +9,23 @@ A finite extension $E/F$ is \emph{Galois} if it is normal and separable. Its Gal
 \begin{theorem}[Artin]
 If $G$ is a finite group of $F$-automorphisms of $E$, then $E/E^G$ is Galois and $\Gal(E/E^G)\cong G$.
 \end{theorem}
+\begin{proof}
+Let $K=E^G$. For $\alpha\in E$ set
+\(f_\alpha(x)=\prod_{\sigma\in G}(x-\sigma(\alpha))\in K[x]\). The roots of
+$f_\alpha$ lie in $E$ and are distinct, so $E/K$ is normal and separable, hence
+Galois. The inclusion $G\subseteq\Gal(E/K)$ is clear. Conversely, if
+$\tau\in\Gal(E/K)$, then $\tau(\alpha)$ is a root of $f_\alpha$ for every
+$\alpha$, so $\tau$ agrees with some $\sigma\in G$ on generators of $E$, forcing
+$\tau=\sigma$. Thus $\Gal(E/K)=G$.
+\end{proof}
 \begin{theorem}[Counting]
 For finite $E/F$, $\#\Aut_F(E)\le [E\!:\!F]$, with equality iff $E/F$ is Galois.
 \end{theorem}
+\begin{proof}
+Let $G=\Aut_F(E)$ and $K=E^G$. By Artin's theorem, $E/K$ is Galois and
+$[E\!:\!K]=\#G$. Since $F\subseteq K$, we have $[E\!:\!F]\ge [E\!:\!K]=\#G$.
+Equality holds precisely when $K=F$, i.e. when $E/F$ is Galois.
+\end{proof}
 
 \subsection{Fundamental Theorem of Galois Theory}
 \begin{theorem}\label{thm:FTGT}
@@ -25,8 +39,16 @@ yield inverse inclusion-reversing bijections between intermediate fields $F\subs
 \]
 and $K/F$ is normal $\iff$ $H\trianglelefteq G$, in which case $\Gal(K/F)\cong G/H$.
 \end{theorem}
-\begin{proof}[Idea]
-Use $E^H$ and Artin's theorem; show the correspondences are inverse and respect indices by orbit–stabilizer. Details in \cite[\S14]{DF}, \cite[Ch.~VI]{Artin}.
+\begin{proof}
+For $K$ with $F\subseteq K\subseteq E$, Artin's theorem gives $E^{\Gal(E/K)}=K$.
+For $H\le G$, the same theorem yields $\Gal(E/E^H)=H$. These equalities show the
+maps are inverse and inclusion reversing. Furthermore,
+$[E\!:\!K]=\#\Gal(E/K)=\#H$ and $[K\!:\!F]=\#G/\#H$.
+
+If $H\trianglelefteq G$ then conjugation by $G$ preserves $H$, so automorphisms
+of $E$ descend to $K=E^H$, giving $\Gal(K/F)\cong G/H$. Conversely, if $K/F$ is
+normal, any $\sigma\in G$ sends $K$ to itself, hence $\sigma H\sigma^{-1}=H$ and
+$H\trianglelefteq G$.
 \end{proof}
 
 \subsection{Examples}
