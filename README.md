@@ -32,3 +32,7 @@ Example files live under `examples/section-*-examples.tex`. Add more by followin
 ```bash
 make pdf
 ```
+
+### Proof Style
+Proofs use the plain `amsthm` `proof` environment with simple English.
+When the final line is displayed math we place the QED symbol using `\qedhere`. Sections 3--6 now include proofs for all theorem-like statements without any color boxes.
