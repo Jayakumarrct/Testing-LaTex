@@ -24,3 +24,9 @@
 ```bash
 latexmk -pdf -interaction=nonstopmode -shell-escape main.tex
 ```
+
+## Worked Examples
+Example files live under `examples/section-*-examples.tex`. Add more by following the same format and labeling examples as `ex:sec<i>-<k>`. Compile the notes with:
+```bash
+make pdf
+```
