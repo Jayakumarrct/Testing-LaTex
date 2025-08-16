@@ -3,6 +3,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{tikz}
 \usepackage{tikz-cd}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{mwe}
 \usepackage{hyperref}
@@ -10,6 +11,9 @@
 % ---------- Fonts and colors ----------
 \usepackage{mathpazo} % Palatino text & math
 \usepackage[scaled=0.85]{inconsolata} % Monospace font
+\usepackage{sectsty}
+\sectionfont{\sffamily\bfseries\color{MidnightBlue}}
+\subsectionfont{\sffamily\bfseries\color{RoyalBlue}}
 \usepackage[most]{tcolorbox}
 % ---------- End fonts and colors ----------
 
@@ -41,9 +45,13 @@
   fonttitle=\bfseries
 }
 \tcolorboxenvironment{proposition}{
-  colback=purple!5!white,
-  colframe=purple!60!black,
-  fonttitle=\bfseries
+  enhanced,
+  colback=Magenta!5!white,
+  colframe=Magenta!80!black,
+  colbacktitle=Magenta!80!black,
+  coltitle=white,
+  fonttitle=\bfseries\sffamily,
+  fontupper=\sffamily
 }
 \tcolorboxenvironment{corollary}{
   colback=orange!10!white,
@@ -61,9 +69,13 @@
   fonttitle=\bfseries
 }
 \tcolorboxenvironment{remark}{
-  colback=gray!10!white,
-  colframe=gray!60!black,
-  fonttitle=\bfseries
+  enhanced,
+  colback=Yellow!5!white,
+  colframe=OrangeRed!80!black,
+  colbacktitle=OrangeRed!80!black,
+  coltitle=white,
+  fonttitle=\bfseries\itshape,
+  fontupper=\itshape
 }
 % ---------- End colored boxes ----------
 
