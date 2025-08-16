@@ -32,3 +32,15 @@ Example files live under `examples/section-*-examples.tex`. Add more by followin
 ```bash
 make pdf
 ```
+
+## Portrait Figures (Section 13)
+Portrait images live under `assets/figures/people/`. To add a new portrait:
+1. Ensure the image on Wikimedia Commons is Public Domain or CC BY/SA.
+2. Download and convert to EPS with:
+   ```bash
+   pip install -r requirements.txt  # once
+   python tools/fetch_and_convert.py IMAGE_URL assets/figures/people/filename.eps
+   ```
+3. Record title, author, year, license, and source URL in `CREDITS.md`.
+
+If internet access is disabled, enable it and allowlist `commons.wikimedia.org` before fetching portraits.
