@@ -25,6 +25,12 @@
 latexmk -pdf -interaction=nonstopmode -shell-escape main.tex
 ```
 
+## Proof Style
+- Proofs use the plain `amsthm` `proof` environment with no color boxes.
+- Arguments are written in short, clear sentences.
+- When a proof ends with display math, `\qedhere` places the QED symbol.
+- Sections 1–2 now follow this style.
+
 ## Worked Examples
 Example files live under `examples/section-*-examples.tex`. Add more by following the same format and labeling examples as `ex:sec<i>-<k>`. Compile the notes with:
 ```bash
