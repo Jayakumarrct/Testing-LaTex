@@ -17,6 +17,11 @@ K\mapsto \Gal(E/K),\qquad H\mapsto E^{H}
 \]
 give inclusion-reversing bijections between intermediate fields and \emph{closed} subgroups $H\le G$. For any $H\le G$, $\overline{H}=\Gal\bigl(E/E^{H}\bigr)$.
 \end{theorem}
+\begin{proof}
+Let $K$ be intermediate. For every finite Galois $L$ with $F\subseteq L\subseteq K$, the classical fundamental theorem gives $\Gal(E/K)=\bigcap\Gal(E/L)$. Intersections of open subgroups are closed, so $\Gal(E/K)$ is closed and the map $K\mapsto\Gal(E/K)$ reverses inclusions.
+
+Conversely, let $H\le G$ be closed and set $K=E^{H}$. If $\sigma$ fixes $K$, then it fixes each finite subextension of $K$, hence $\sigma\in H$ and $H=\Gal(E/K)$. The assignments are inverse bijections. For any subgroup $H$, the closure is $\overline{H}=\Gal(E/E^{H})$ by definition of the Krull topology.
+\end{proof}
 
 \subsection{Inverse limit description}
 \begin{theorem}
@@ -26,6 +31,13 @@ Let $\mathcal{K}$ be the directed set of finite Galois extensions $K/F$ in $E$. 
 \]
 as topological groups.
 \end{theorem}
+\begin{proof}
+Restriction to $K$ yields compatible surjections $\Gal(E/F)\to\Gal(K/F)$. These define a continuous map
+\[
+\phi:\Gal(E/F)\longrightarrow\varprojlim_{K\in\mathcal{K}}\Gal(K/F).
+\]
+If $\sigma\ne\tau$ in $\Gal(E/F)$, some element of $E$ is moved differently and lies in a finite $K$, so the restrictions to $K$ differ; hence $\phi$ is injective. Given a coherent family $(\sigma_K)_K$ in the inverse limit, the maps agree on overlaps and extend to an automorphism of $E$, producing an element of $\Gal(E/F)$. Thus $\phi$ is surjective and a homeomorphism.
+\end{proof}
 References: \cite[Ch.~VIII]{Lang}, \cite[Ch.~I]{Neukirch}.
 
 \subsection{Examples}
