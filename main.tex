@@ -3,6 +3,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{tikz}
 \usepackage{tikz-cd}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{mwe}
 \usepackage{hyperref}
@@ -10,6 +11,9 @@
 % ---------- Fonts and colors ----------
 \usepackage{mathpazo} % Palatino text & math
 \usepackage[scaled=0.85]{inconsolata} % Monospace font
+\usepackage{sectsty}
+\sectionfont{\sffamily\bfseries\color{MidnightBlue}}
+\subsectionfont{\sffamily\bfseries\color{RoyalBlue}}
 \usepackage[most]{tcolorbox}
 % ---------- End fonts and colors ----------
 
@@ -41,9 +45,13 @@
   fonttitle=\bfseries
 }
 \tcolorboxenvironment{proposition}{
-  colback=purple!5!white,
-  colframe=purple!60!black,
-  fonttitle=\bfseries
+  enhanced,
+  colback=Magenta!5!white,
+  colframe=Magenta!80!black,
+  colbacktitle=Magenta!80!black,
+  coltitle=white,
+  fonttitle=\bfseries\sffamily,
+  fontupper=\sffamily
 }
 \tcolorboxenvironment{corollary}{
   colback=orange!10!white,
@@ -61,9 +69,13 @@
   fonttitle=\bfseries
 }
 \tcolorboxenvironment{remark}{
-  colback=gray!10!white,
-  colframe=gray!60!black,
-  fonttitle=\bfseries
+  enhanced,
+  colback=Yellow!5!white,
+  colframe=OrangeRed!80!black,
+  colbacktitle=OrangeRed!80!black,
+  coltitle=white,
+  fonttitle=\bfseries\itshape,
+  fontupper=\itshape
 }
 % ---------- End colored boxes ----------
 
@@ -91,19 +103,47 @@
 \tableofcontents
 
 \input{sections/sec01-fields-polynomials}
+% === Examples for Section 1: Fields and polynomials (auto-generated) ===
+\input{examples/section-1-examples.tex}
 \input{sections/sec02-extensions-minimal}
+% === Examples for Section 2: Field extensions and minimal polynomials (auto-generated) ===
+\input{examples/section-2-examples.tex}
 \input{sections/sec03-splitting-algebraic-closure}
+% === Examples for Section 3: Splitting fields and algebraic closure (auto-generated) ===
+\input{examples/section-3-examples.tex}
 \input{sections/sec04-automorphisms-fixedfields}
+% === Examples for Section 4: Automorphisms and fixed fields (auto-generated) ===
+\input{examples/section-4-examples.tex}
 \input{sections/sec05-separable-normal}
+% === Examples for Section 5: Separable and normal extensions (auto-generated) ===
+\input{examples/section-5-examples.tex}
 \input{sections/sec06-galois-fundamental-theorem}
+% === Examples for Section 6: Galois extensions and the Fundamental Theorem (auto-generated) ===
+\input{examples/section-6-examples.tex}
 \input{sections/sec07-finite-fields}
+% === Examples for Section 7: Finite fields (auto-generated) ===
+\input{examples/section-7-examples.tex}
 \input{sections/sec08-cyclotomic-kummer}
+% === Examples for Section 8: Cyclotomic fields and basic Kummer theory (auto-generated) ===
+\input{examples/section-8-examples.tex}
 \input{sections/sec09-solvability-radicals-quintic}
+% === Examples for Section 9: Solvability by radicals and the quintic (auto-generated) ===
+\input{examples/section-9-examples.tex}
 \input{sections/sec10-worked-examples}
+% === Examples for Section 10: Worked examples and computations (auto-generated) ===
+\input{examples/section-10-examples.tex}
 \input{sections/sec11-infinite-galois}
+% === Examples for Section 11: Infinite Galois theory and the Krull topology (auto-generated) ===
+\input{examples/section-11-examples.tex}
 \input{sections/sec12-constructible-geometry}
+% === Examples for Section 12: Classical geometric constructibility (auto-generated) ===
+\input{examples/section-12-examples.tex}
 \input{sections/100-worked-examples}
+% === Examples for Section 13: 100 Worked Examples (auto-generated) ===
+\input{examples/section-13-examples.tex}
 \input{sections/sec99-figures-diagrams}
+% === Examples for Section 14: Figures and diagrams (auto-generated) ===
+\input{examples/section-14-examples.tex}
 
 \clearpage
 \printbibliography
