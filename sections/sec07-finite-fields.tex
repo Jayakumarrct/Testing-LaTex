@@ -4,17 +4,53 @@
 \begin{theorem}
 For each prime power $q=p^n$ there exists a field $\mathbb{F}_q$ of order $q$, unique up to isomorphism.
 \end{theorem}
+\begin{proof}
+Choose an irreducible polynomial $f\in\mathbb{F}_p[x]$ of degree $n$.
+The quotient $\mathbb{F}_p[x]/(f)$ is a field with $p^n$ elements.
+If $K$ is any field with $q$ elements, then every $x\in K$ satisfies
+$x^q=x$, so $K$ is a splitting field of $x^q-x$ over $\mathbb{F}_p$.
+Any two splitting fields of this separable polynomial are isomorphic,
+so $\mathbb{F}_q$ is unique.
+\end{proof}
 \begin{theorem}
 $\mathbb{F}_q^\times$ is cyclic of order $q-1$.
 \end{theorem}
+\begin{proof}
+Let $m$ be the maximal order of an element in $\mathbb{F}_q^\times$ and
+choose $g$ with order $m$.
+For each divisor $d$ of $m$, the equation $x^d=1$ has at most $d$ roots, so
+$|\langle g\rangle|=m$.
+If $m<q-1$, then every element has order dividing $m$, and the total
+number of such elements is at most $m$, contradicting
+$|\mathbb{F}_q^\times|=q-1$.
+Thus $m=q-1$ and $\mathbb{F}_q^\times$ is cyclic of order $q-1$.
+\end{proof}
 
 \subsection{Frobenius and subfields}
 \begin{proposition}[Frobenius]
 The map $\varphi:x\mapsto x^p$ is an automorphism of $\mathbb{F}_{p^n}$ with fixed field $\mathbb{F}_p$.
 \end{proposition}
+\begin{proof}
+The map $\varphi$ is a field homomorphism because $\operatorname{char}\mathbb{F}_{p^n}=p$.
+In a finite field injective maps are surjective, hence $\varphi$ is an
+automorphism.
+If $\varphi(\alpha)=\alpha$, then $\alpha^p=\alpha$, so $\alpha\in\mathbb{F}_p$.
+Conversely every element of $\mathbb{F}_p$ is fixed, so the fixed field is
+$\mathbb{F}_p$.
+\end{proof}
 \begin{theorem}
 $\Gal(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle \varphi\rangle\cong C_n$. Subfields are exactly $\mathbb{F}_{p^d}$ with $d\mid n$.
 \end{theorem}
+\begin{proof}
+Since $\varphi^n=\operatorname{id}$ and $\varphi^d\ne\operatorname{id}$ for $0<d<n$, the
+automorphism $\varphi$ has order $n$.
+The extension $\mathbb{F}_{p^n}/\mathbb{F}_p$ has degree $n$, so the
+Galois group has at most $n$ elements.
+Thus $\Gal(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle\varphi\rangle\cong C_n$.
+The fixed field of $\varphi^d$ is $\mathbb{F}_{p^d}$, and every
+intermediate field is fixed by some subgroup of $\langle\varphi\rangle$,
+so the subfields are precisely $\mathbb{F}_{p^d}$ with $d\mid n$.
+\end{proof}
 References: \cite[\S13]{DF}, \cite[Ch.~VIII]{Lang}.
 
 \subsection{Irreducibles, trace, and norm}
@@ -24,6 +60,15 @@ For $\alpha\in\mathbb{F}_{p^n}$ with Frobenius orbit of size $r$,
 m_\alpha(x)=\prod_{i=0}^{r-1}\bigl(x-\alpha^{p^i}\bigr).
 \]
 \end{proposition}
+\begin{proof}
+The conjugates of $\alpha$ under $\Gal(\mathbb{F}_{p^n}/\mathbb{F}_p)$ are
+$\alpha,\alpha^p,\ldots,\alpha^{p^{r-1}}$.
+Their product is a monic polynomial in $\mathbb{F}_p[x]$ that has $\alpha$
+as a root, so it is divisible by the minimal polynomial $m_\alpha(x)$.
+Because distinct conjugates give distinct factors, the degree is $r$,
+which equals $\deg m_\alpha$; hence the displayed polynomial is
+$m_\alpha(x)$.
+\end{proof}
 \begin{definition}
 For $E=\mathbb{F}_{p^n}$ over $F=\mathbb{F}_p$ define
 \[
