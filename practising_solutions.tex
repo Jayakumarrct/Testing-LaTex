@@ -57,6 +57,171 @@
 
 \begin{document}
 
+%==============================================================================
+% GEOMETRY CHEAT SHEET - TRIANGLE SIMILARITY AND RELATED THEOREMS
+%==============================================================================
+
+\section*{Geometry Similarity Cheat Sheet}
+
+\subsection*{1. Triangle Similarity Theorems}
+
+\subsubsection*{AA (Angle-Angle) Similarity}
+Two triangles are similar if they have two pairs of congruent angles.
+
+\textbf{Criterion:} $\angle A \cong \angle A'$ and $\angle B \cong \angle B' \implies \triangle ABC \sim \triangle A'B'C'$
+
+\subsubsection*{SAS (Side-Angle-Side) Similarity}
+Two triangles are similar if they have two pairs of proportional sides and the included angles congruent.
+
+\textbf{Criterion:} $\dfrac{AB}{A'B'} = \dfrac{AC}{A'C'}$ and $\angle A \cong \angle A' \implies \triangle ABC \sim \triangle A'B'C'$
+
+\subsubsection*{SSS (Side-Side-Side) Similarity}
+Two triangles are similar if all three pairs of corresponding sides are proportional.
+
+\textbf{Criterion:} $\dfrac{AB}{A'B'} = \dfrac{BC}{B'C'} = \dfrac{CA}{C'A'} \implies \triangle ABC \sim \triangle A'B'C'$
+
+\subsection*{2. Key Geometric Relationships}
+
+\subsubsection*{Geometric Mean Theorem (Right Triangle Altitude)}
+In $\triangle ABC$ with right angle at $C$ and altitude $CD$ to hypotenuse $AB$:
+\[
+CD^2 = AD \times DB
+\]
+
+\subsubsection*{Triangle Altitude to Hypotenuse Ratio}
+In $\triangle ABC$ with right angle at $C$:
+\[
+\dfrac{CD}{AB} = \dfrac{AD}{DB} = \dfrac{AC}{BC}
+\]
+
+\subsubsection*{Angle Bisector Theorem}
+In $\triangle ABC$, if $AD$ bisects $\angle BAC$:
+\[
+\dfrac{AB}{AC} = \dfrac{BD}{DC}
+\]
+
+\subsubsection*{Midpoint Theorem}
+In $\triangle ABC$, if $D$ is midpoint of $BC$, then $AD$ is median and:
+\[
+AD = \dfrac{1}{2} \times \text{length of median to } BC
+\]
+
+\subsection*{3. Common Similarity Patterns}
+
+\subsubsection*{Basic Proportionality}
+If $\triangle ABC \sim \triangle DEF$, then:
+\[
+\dfrac{AB}{DE} = \dfrac{BC}{EF} = \dfrac{CA}{FD} = k \text{ (scale factor)}
+\]
+
+\subsubsection*{Median Ratios}
+If medians $AM$ and $DN$ correspond in similar triangles:
+\[
+\dfrac{AM}{DN} = k \implies \dfrac{AM + MN}{DN + NP} = k
+\]
+
+\subsubsection*{Area Ratios}
+For similar triangles with scale factor $k$:
+\[
+\dfrac{\text{Area of smaller}}{\text{Area of larger}} = k^2
+\]
+
+\subsection*{4. Trapezium and Parallelogram Properties}
+
+\subsubsection*{Trapezium Diagonal Proportionality}
+In trapezium $ABCD$ with $AB \parallel DC$, diagonals $AC$ and $BD$ intersect at $O$:
+\[
+\triangle AOB \sim \triangle COD \implies \dfrac{AO}{CO} = \dfrac{BO}{DO}
+\]
+
+\subsubsection*{Parallelogram Similar Triangles}
+In parallelogram $ABCD$, diagonals intersect at $O$:
+\[
+\triangle AOB \sim \triangle COD \sim \triangle AOD \sim \triangle BOC
+\]
+
+\subsection*{5. Problem-Solving Strategy Flowchart}
+
+\begin{enumerate}
+\item \textbf{Identify given information:} Mark equal angles, parallel lines, proportional sides
+\item \textbf{Determine similarity criterion:} AA, SAS, or SSS
+\item \textbf{Set up proportions:} Match corresponding sides/angles
+\item \textbf{Apply geometric theorems:} Use altitude theorem, angle bisector, midpoint theorem as needed
+\item \textbf{Solve for unknowns:} Cross-multiply and solve equations
+\item \textbf{Verify consistency:} Check if all ratios match
+\end{enumerate}
+
+\subsection*{6. Quick Reference Formulas}
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Theorem} & \textbf{Formula} \\
+\hline
+Pythagoras & $a^2 + b^2 = c^2$ \\
+Geometric Mean & $h^2 = p \times q$ \\
+Angle Bisector & $\dfrac{a}{c} = \dfrac{p}{q}$ \\
+Midpoint & $AD = \dfrac{1}{2} \times \text{median length}$ \\
+Scale Factor & $\dfrac{\text{small}}{\text{large}} = k$ \\
+Area Ratio & $\dfrac{\text{area}_1}{\text{area}_2} = k^2$ \\
+\hline
+\end{tabular}
+
+\subsection*{7. Common Diagram Patterns}
+
+\subsubsection*{Right Triangle with Altitude}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\coordinate (A) at (0,0); \coordinate (B) at (3,0); \coordinate (C) at (0,2);
+\coordinate (D) at ($(A)!(B)!(C)$);
+\draw (A)--(B)--(C)--cycle;
+\draw[dashed] (C)--(D);
+\node[below left] at (A) {A}; \node[below right] at (B) {B}; \node[above left] at (C) {C};
+\node[above right] at (D) {D};
+\end{tikzpicture}
+\end{center}
+$\implies CD^2 = AD \times DB$
+
+\subsubsection*{Triangle with Median}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\coordinate (A) at (0,2); \coordinate (B) at (-1,0); \coordinate (C) at (2,0);
+\coordinate (M) at ($(B)!0.5!(C)$);
+\draw (A)--(B)--(C)--cycle;
+\draw[dashed] (A)--(M);
+\node[above] at (A) {A}; \node[below left] at (B) {B}; \node[below right] at (C) {C};
+\node[below] at (M) {M};
+\end{tikzpicture}
+\end{center}
+$\implies AM = \dfrac{2}{3} \times \text{median length}$
+
+\subsubsection*{Trapezium with Diagonals}
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\coordinate (A) at (0,2); \coordinate (B) at (3,2); \coordinate (C) at (2,0); \coordinate (D) at (1,0);
+\path[name path=AC] (A)--(C); \path[name path=BD] (B)--(D);
+\path[name intersections={of=AC and BD, by=O}];
+\draw (A)--(B)--(C)--(D)--cycle;
+\draw (A)--(C); \draw (B)--(D);
+\node[above left] at (A) {A}; \node[above right] at (B) {B};
+\node[below right] at (C) {C}; \node[below left] at (D) {D};
+\end{tikzpicture}
+\end{center}
+$\implies \dfrac{AO}{OC} = \dfrac{BO}{OD}$
+
+\subsection*{8. Essential Problem-Solving Tips}
+
+\begin{itemize}
+\item \textbf{Draw diagrams:} Always sketch the figure with given information
+\item \textbf{Mark equal measures:} Use same symbols for equal angles/sides
+\item \textbf{Look for right angles:} Check for Pythagoras applications
+\item \textbf{Identify parallel lines:} Use alternate interior angles
+\item \textbf{Set up proportions:} Match corresponding parts
+\item \textbf{Cross-multiply carefully:} Ensure correct correspondence
+\item \textbf{Verify your answer:} Check if it satisfies all conditions
+\end{itemize}
+
+\newpage
+
 \section*{Exercise 15A Solutions}
 
 \subsection*{Question 2}
