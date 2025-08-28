@@ -1,0 +1,291 @@
+================================================================================
+                    GEOMETRY SIMILARITY CHEAT CODE
+            Quick Reference Guide for Triangle Similarity & Theorems
+================================================================================
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                            QUICK NAVIGATION                                 ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+1. 🔷 SIMILARITY THEOREMS (SAS, AAA, SSS)
+2. 📐 PYTHAGORAS & GEOMETRIC MEAN
+3. 📏 MEDIAN THEOREMS
+4. 📐 ANGLE BISECTOR THEOREM
+5. 📐 TRAPEZOID THEOREMS
+6. 🧠 PROBLEM-SOLVING STRATEGIES
+7. ⚡ FORMULA REFERENCE
+8. 🎯 KEY TAKEAWAYS
+
+================================================================================
+🔷 SIMILARITY THEOREMS
+================================================================================
+
+1. SAS (Side-Angle-Side) Similarity:
+   If two sides are proportional and included angle equal → triangles similar
+
+   AB/DE = AC/DF and ∠A = ∠D  ⇒  △ABC ∼ △DEF
+
+   KEY: Included angle is between the proportional sides!
+
+2. AAA (Angle-Angle-Angle) Similarity:
+   If all three angles equal → triangles similar
+
+   ∠A=∠D, ∠B=∠E, ∠C=∠F  ⇒  △ABC ∼ △DEF
+
+   KEY: Easiest to spot - look for matching angle marks!
+
+3. SSS (Side-Side-Side) Similarity:
+   If all three sides proportional → triangles similar
+
+   AB/DE = BC/EF = AC/DF  ⇒  △ABC ∼ △DEF
+
+   KEY: Most restrictive - all sides must be proportional!
+
+================================================================================
+📐 PYTHAGORAS & GEOMETRIC MEAN
+================================================================================
+
+1. Pythagoras Theorem (Right Triangle):
+   AC² + BC² = AB²  (where C is right angle)
+
+2. Geometric Mean (Altitude to Hypotenuse):
+   DC² = AD × DB  (CD ⊥ AB)
+
+   AD/DC = DC/DB ⇒ DC² = AD × DB
+
+3. Geometric Mean (Intersecting Chords):
+   OA × OB = OC × OD  (chords intersect at O)
+
+4. Right Triangle Altitude Rule:
+   PQ² = PM × PR
+   QR² = PR × MR
+
+================================================================================
+📏 MEDIAN THEOREMS
+================================================================================
+
+1. Median Proportionality:
+   AM is median ⇒ AB/AM = 2/1 ⇒ AM = (2/3) of median
+
+2. Similar Triangles with Medians:
+   AL/DM = BC/EF ⇒ △ABC ∼ △DEF
+
+3. Centroid Properties:
+   Medians intersect at G, where AG:GD = 2:1
+   ⇒ BG = 2GD
+
+4. Median in Similar Triangles:
+   BM/EN = AC/DF  (corresponding medians proportional)
+
+================================================================================
+📐 ANGLE BISECTOR THEOREM
+================================================================================
+
+1. Basic Angle Bisector Theorem:
+   BD/DC = AB/AC  (BD bisects ∠ABC)
+
+   KEY: Bisector divides opposite side in ratio of adjacent sides!
+
+2. Extended Angle Bisector:
+   Same ratio applies even if extended to circumcircle
+
+3. Special Case (∠ABC = 2∠ACB):
+   CB/BA = CP/PA ⇒ AB × BC = BP × CA
+
+================================================================================
+📐 TRAPEZOID THEOREMS
+================================================================================
+
+1. Trapezoid Diagonals:
+   AB || DC, diagonals intersect at O:
+   AO/CO = BO/DO ⇒ AO × DO = BO × CO
+
+2. Trapezoid Similarity:
+   △AOB ∼ △COD  (AAA similarity)
+
+3. Trapezoid with Parallel Lines:
+   AB || EF || DC, then:
+   EF = (m×AB + n×DC)/(m+n)  [weighted mean]
+
+4. Isosceles Trapezoid:
+   Non-parallel sides equal, base angles equal
+
+================================================================================
+🧠 PROBLEM-SOLVING STRATEGIES
+================================================================================
+
+STEP-BY-STEP APPROACH:
+
+1. 📖 READ CAREFULLY
+   - Identify what's given vs. what's to prove
+   - Look for parallel lines, perpendicular lines
+   - Note any equal angles or segments
+
+2. ✏️  DRAW DIAGRAM
+   - Sketch accurately with all given info
+   - Label all points and mark equal angles
+   - Add any implied relationships
+
+3. 🔍 LOOK FOR SIMILARITY
+   Check for:
+   • Equal angles (AAA)
+   • Proportional sides + equal included angle (SAS)
+   • All sides proportional (SSS)
+
+4. 🛠️  APPLY THEOREMS
+   Priority order:
+   1. Similarity theorems
+   2. Pythagoras (right triangles)
+   3. Angle bisector theorem
+   4. Median properties
+   5. Geometric mean
+
+5. 🔢 SET UP PROPORTIONS
+   - Write ratios clearly
+   - Cross-multiply carefully
+   - Solve algebraically
+   - Check units match
+
+6. ✅ VERIFY ANSWER
+   - Does it make geometric sense?
+   - Check if ratios are consistent
+   - Verify with original problem
+
+================================================================================
+⚡ QUICK FORMULA REFERENCE
+================================================================================
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                           COMMON RATIOS & FORMULAS                          ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+Similarity Ratio:    a/a' = b/b' = c/c' = k
+
+Pythagoras:          a² + b² = c²
+
+Geometric Mean:      x² = p × q
+
+Angle Bisector:      p/q = a/b
+
+Median Length:       m = √(2b² + 2c² - a²)/2
+
+Centroid Division:   2:1 ratio
+
+Trapezoid Diagonals: AO×DO = BO×CO
+
+================================================================================
+🎯 KEY TAKEAWAYS (MUST REMEMBER!)
+================================================================================
+
+1. 🔷 SIMILARITY = SAME SHAPE, DIFFERENT SIZE
+   - Same angles, proportional sides
+   - Ratio of corresponding sides = similarity ratio
+
+2. 🔍 AAA IS EASIEST TO SPOT
+   - Look for matching angle marks
+   - Parallel lines create equal corresponding angles
+
+3. ⚠️  SAS NEEDS INCLUDED ANGLE
+   - Make sure angle is BETWEEN the proportional sides
+   - Common mistake: using wrong angle
+
+4. 🔒 SSS IS MOST RESTRICTIVE
+   - All three sides must be proportional
+   - Hardest to prove, but most definitive
+
+5. 📐 RIGHT TRIANGLES = PYTHAGORAS OPPORTUNITIES
+   - Always check for right angles
+   - Use geometric mean for altitude problems
+
+6. 📏 PARALLEL LINES = SIMILARITY GOLDMINE
+   - Create equal alternate interior angles
+   - Often leads to AAA similarity
+
+7. 📊 MEDIANS = 2:1 MAGIC RATIO
+   - Always divide into 2:1 ratio
+   - Useful for similarity proofs
+
+8. 🔄 PROPORTIONS ARE KEY
+   - Set up ratios carefully
+   - Cross-multiply systematically
+   - Solve step by step
+
+================================================================================
+📚 PRACTICE PROBLEMS BY DIFFICULTY
+================================================================================
+
+BEGINNER LEVEL:
+• Basic SAS/AAA proofs
+• Finding missing sides in similar triangles
+• Parallel line similarity problems
+• Simple Pythagoras applications
+
+INTERMEDIATE LEVEL:
+• Geometric mean applications
+• Median similarity proofs
+• Trapezoid diagonal problems
+• Angle bisector ratio calculations
+
+ADVANCED LEVEL:
+• Complex similarity chains (triangle within triangle)
+• Algebraic similarity proofs with variables
+• Circle geometry combined with similarity
+• 3D geometry similarity problems
+
+================================================================================
+🚨 COMMON MISTAKES TO AVOID
+================================================================================
+
+1. ❌ Wrong Included Angle in SAS
+   "Angle must be BETWEEN the proportional sides!"
+
+2. ❌ Forgetting Parallel Lines
+   "Parallel lines create equal alternate interior angles!"
+
+3. ❌ Messy Proportions
+   "Write ratios clearly, cross-multiply carefully!"
+
+4. ❌ Missing Right Triangles
+   "Always check for 90° angles - Pythagoras opportunities!"
+
+5. ❌ Incomplete Similarity Check
+   "Need ALL criteria: AAA needs 3 angles, SAS needs 2 sides + angle!"
+
+================================================================================
+💡 PRO TIPS FOR SUCCESS
+================================================================================
+
+• Draw LARGE, CLEAR diagrams
+• Label ALL points and angles
+• Use color-coding for similar triangles
+• Double-check angle relationships
+• Practice ratio calculations
+• Memorize key theorems (not just formulas!)
+• Work backwards from what you need to prove
+• Look for "hidden" similarity opportunities
+
+================================================================================
+📞 QUICK REFERENCE CARDS
+================================================================================
+
+CUT THESE OUT AND KEEP WITH YOU!
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                         SIMILARITY CHEAT SHEET                             ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+SAS: 2 sides ∝ + included ∠ equal          SSS: All 3 sides ∝
+AAA: All 3 angles equal                    PYTH: a² + b² = c²
+GEOM: x² = p×q                            BISECT: p/q = a/b
+MEDIAN: 2:1 ratio                         CENTROID: 2:1 division
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                       PROBLEM-SOLVING FLOWCHART                           ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+1. Read → 2. Draw → 3. Look for Similarity → 4. Apply Theorems → 5. Solve
+
+================================================================================
+
+                    🎯 REMEMBER: SIMILARITY IS ABOUT RATIOS!
+                    Everything boils down to proportional relationships.
+                    Master the ratios, master the problems! 🚀
+================================================================================
