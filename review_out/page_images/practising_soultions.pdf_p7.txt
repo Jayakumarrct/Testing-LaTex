@@ -1,0 +1,49 @@
+Question 6
+
+Question: In APQR, ZQ = 90° and QM is perpendicular to PR. Prove that: (i) PQ? = PM x PR (ii)
+
+QR? = PR x MR (iii) PQ? + QR? = PR?
+
+Solution Given: APQR with ZPQR = 90° and altitude QM L PR.
+
+To Prove: The three geometric mean relationships.
+
+P
+y M
+aa
+Q R
+
+Step 1: Part (i): Consider APMQ and APQR.
+
+Step 2: ZPMQ = ZPQR = 90°. (given)
+
+Step 3: ZMPQ = ZQPR (or ZP). (common angle)
+
+Step 4: Therefore, APMQ ~ APQR. (AA similarity)
+
+4 PQ PM
+
+Step 5: From similarity, 55 = Po: (corresponding sides)
+
+Step 6: Cross-multiplying gives | PQ? = PM x PR |.
+
+Step 7: Part (ii): Consider AQMR and APQR.
+
+Step 8: ZQMR = ZPQR = 90°. (given)
+
+Step 9: ZMRQ = ZPRQ (or ZR). (common angle)
+Step 10: Therefore, AQMR ~ APQR. (AA similarity)
+
+M.
+
+Step 11: From similarity, on = or (corresponding sides)
+Step 12: Cross-multiplying gives] QR? = PR x MR |.
+Step 13: Part (iii): Add the results from (i) and (ii).
+Step 14: PQ? + QR? = (PM x PR) + (MR x PR). (addition)
+Step 15: Factor out PR: PQ? + QR? = PR x (PM + MR). (distributive property)
+Step 16: Since P, M, R are collinear, PM + MR = PR. (segment addition)
+Step 17: Substitute to get] PQ? + QR? = PR? |.
+
+Answer: All three parts are proved.
+
+7

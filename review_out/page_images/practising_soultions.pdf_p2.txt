@@ -1,0 +1,27 @@
+Step 5: Conclude AABL ~ ADEM. (SAS similarity)
+AL _AB_ BC . a
+Step 6: Hence 55> = pp = BF (corresponding sides in similar triangles)
+BC AL
+Answer: EF DM’
+Question 4
+Question: In AABC, AD is perpendicular to side BC and AD? = BD x CD. Prove that ZBAC = 90°.
+Solution Given: AD | BC and AD? = BD-CD.
+To Prove: ZBAC = 90°.
+A
+B D c
+Step 1: In AADB, AB? = AD? + BD?. (Pythagoras in right AADB)
+Step 2: In AADC, AC? = AD? + CD?. (Pythagoras in right AADC)
+Step 3: Add: AB? + AC? = 2AD? + BD? + CD?. (add equations)
+Step 4: Substitute AD? = BD - CD to get AB? + AC? = (BD + CD)? = [Bc?] (given and
+BC = BD+CD)
+Step 5: Conclude ZBAC = 90°. (converse of Pythagoras)
+Answer: ZBAC = 90°.
+Question 5
+Question: In the given figure, AABC and ADEF are similar. BM and EN are their medians. Prove
+that: (i) AABM ~ ADEN (ii) BY = 46
+Solution Given: AABC ~ ADEF and BM, EN are medians.
+; - jy BM _ AC
+To Prove: (i) AABM ~ ADEN; (ii) Fy = Hp
+B E
+A M c D N F
+2

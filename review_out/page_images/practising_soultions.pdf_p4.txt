@@ -1,0 +1,31 @@
+Exercise 15B Solutions
+Question 2
+Question: In the figure, straight lines AB and CD intersect at P, and AC —— BD. Prove that: (i)
+AAPC and ABPD are similar. (ii) If BD = 2.4 cm, AC = 3.6 cm, PD = 4.0 cm and PB = 3.2 cm, find
+the lengths of PA and PC.
+Solution Given: AC || BD and lines AB and CD intersect at P.
+To Prove: (i) AAPC ~ ABPD; (ii) find PA, PC.
+A
+= |
+D
+B
+Step 1: ZPAC = ZPBD and ZPCA = ZPDB. (alternate interior angles, AC || BD)
+Step 2: ZAPC = ZBPD. (vertically opposite)
+Step 3: Conclude AAPC ~ ABPD. (AAA similarity)
+. _ ., PA PC _ AC ;
+Step 4: Use the ratio of corresponding sides: 55 = 5 = Fp (similar triangles)
+. . PA PC 36 :
+Step 5: Substitute the given lengths: [5 = 5 = 53- (substitution)
+Step 6: Caleulate the ratio: 5> =] 5 |= 1.5. (simplification)
+PA
+Step 7: Solve for PA: F>=15 =» | PA=4.8em} (algebra)
+PC
+Step &: Solve for PC: 77 =1.5 => | PC = 6.0em| (algebra)
+Answer: (i) AAPC ~ ABPD. (ii) PA = 4.8 cm, PC = 6.0 em.
+Question 3
+Question: In a trapezium ABCD, AB || DC. Diagonals AC and BD intersect at O. If BO = 6 cm and
+DQ =8 em, find BP x DO. (Note: as written, this appears incomplete/ambiguous.) Note: We establish
+the standard diagonal proportionality in a trapezium and refrain from speculative numerical conclusions.
+Solution Given: Trapezium ABCD with AB || DC. Diagonals intersect at O.
+To Prove: A relationship between the segments of the diagonals.
+4

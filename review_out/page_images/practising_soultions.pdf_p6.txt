@@ -1,0 +1,28 @@
+Question 5
+Question: Given: ZGHE = ZDFE = 90°, DH = 8, DF = 12, DG = 3x - 1 and DE = 4x + 2. Find the
+lengths of segments DG and DE. Correction based on typical problems: The most likely intended
+similarity is between ADGH and ADEF. This requires ZDHG = ZDFE = 90° or GH —— EF. The
+question states ZDFE = 90°. Let’s assume the intended similarity is ADGH ~ ADEF.
+Solution Given: ADGH and ADEF with common angle D. DH=8, DF=12, DG=3x-1, DE=4x+2.
+To Prove: Find the lengths of DG and DE.
+E
+Hi \
+\
+D G F
+Step 1: Assume the intended similarity is ADGH ~ ADEF. This implies the vertices correspond in
+that order.
+; _ DG DH _ GH ; ;
+Step 2: The ratio of corresponding sides is 5 = T= = Zo. (definition of similar triangles)
+DG DH
+Step 3: Using the first two parts of the ratio: ee =oF (property of similarity)
+Step 4: Substitute the given values: 2®—1 _ 8 (substitution)
+p 4: Substitute the given values: 7" = 5. ‘substitution,
+Step 5: Simplify the ratio: = 3. (simplification)
+. _ 3a-1_ 2
+Step 6: Set up the equation: eno 3
+Step 7; Cross-multiply: 3(32 — 1) = 2(4x + 2). (algebra)
+Step 8: Solve for x: 92 —3=8r+4 => x=7. (algebra)
+Step 9: Calculate DG: DG = 3x — 1 = 3(7) — 1 = 20. (substitution)
+Step 10: Calculate DE: DE = 4x + 2 = 4(7) + 2 = 30. (substitution)
+Answer: DG = 20 and DE = 30.
+6

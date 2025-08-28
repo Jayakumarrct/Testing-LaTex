@@ -1,0 +1,45 @@
+Similarity of Triangles — Quick Notes (Grade 10) 11
+Answer Key (Condensed)
+1. AC = 15.
+2_ (4)? _ 16 © 16
+2. k = (4) =F, so area = 27- 3 = 48.
+3. BD: DC =8: 10 =4:5, so BD = 8, DC = 10 (since BC = 18).
+4. CH = V5.9 = V45 = 3V5, AC = V5- 14 = V70, BC = V9- 14 = V126 = 3V14.
+5. k= O86 = a2, 80 EF =2-9=18.
+6. Model height = 3 = 0.9 m.
+7. LQ = LB = 180° — 40° — 65° = 75°.
+AD _ AE
+8. = 34-85 C= 12.
+DB EC 8 EC
+9. P=2.5-28=70.
+2
+5)" _ 25
+
+10. (3) =.
+
+ll. BD/DC = 6/10 = 3/5 with BD = 7.2 > 7.2/DC = 3/5 = DC = 12, so BC = 19.2.
+
+12. Yes, k = 2 (every coordinate doubled).
+
+13. Line is parallel to AB if it passes through A and cuts BC in ratio of BA : AC only if ratio matches; given
+BD : DC =2: 3, it is not generally parallel to AB or AC unless sides match that ratio. Insufficient
+data; typical answer: parallel to a side only when the side ratios match.
+
+= PQ_l6_4. =4 = -4 =
+14, k= 4R =p = 7; QR= 3-15 =20,RP=5-9=12.
+AB
+15. k = —————., or compute: similar to a scaled 3-4-5, so AB = 15.
+VAC? + BC?
+
+16. Height = 24-2, = 30m.
+17. [DEF] =k.
+
+[ABC]
+
+AD _AE 7 _ 10
+
+18. AB AC 7 4B = 15 > AB= 105.
+
+19. BD : DC =5:7; with BC = 18, get BD = 4 -18=7.5, DC = 10.5.
+
+20. Yes, each coordinate multiplied by 2; k = 2.

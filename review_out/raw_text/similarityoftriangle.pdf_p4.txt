@@ -1,0 +1,41 @@
+Similarity of Triangles — Quick Notes (Grade 10)                                                          3
+
+
+Consequences of Similarity
+   Property
+
+   If △𝐴𝐵𝐶 ∼ △𝐴′ 𝐵′ 𝐶 ′ with scale factor 𝑘 (so 𝐴′ 𝐵′ = 𝑘 𝐴𝐵), then:
+    • Corresponding angles are equal.
+       𝐴𝐵       𝐵𝐶        𝐶𝐴         1
+    • ′ ′ = ′ ′ = ′ ′ = .
+      𝐴𝐵       𝐵𝐶        𝐶 𝐴         𝑘
+                          𝑃 𝐴′ 𝐵′ 𝐶 ′
+    • Perimeter ratio is               = 𝑘.
+                            𝑃 𝐴𝐵𝐶
+                    [ 𝐴′ 𝐵 ′ 𝐶 ′ ]
+    • Area ratio is                = 𝑘 2.
+                      [ 𝐴𝐵𝐶]
+    • Altitudes, medians, and angle bisectors scale by 𝑘.
+
+   Example
+
+                                                                  𝐴𝐵      ℎ 𝐴𝐵
+   A quick proof (altitudes scale by 𝑘): In similar triangles,          = ′      because both pairs
+                                                                 𝐴′ 𝐵 ′  ℎ 𝐴′ 𝐵′
+   are opposite equal angles and form similar right triangles when dropping perpendiculars. Hence
+   ℎ′𝐴′ 𝐵′ = 𝑘 ℎ 𝐴𝐵 .
+
+
+
+
+               𝐶
+
+
+
+
+                                  𝐻        𝐵
+      𝐴
+
+
+   Shortcut
+   Area shortcut: If sides scale by 𝑘, areas scale by 𝑘 2 . If perimeters scale by 3, areas scale by 9.

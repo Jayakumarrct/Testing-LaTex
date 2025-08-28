@@ -1,0 +1,61 @@
+Exercise 15B Solutions
+
+Question 2
+
+Question: In the figure, straight lines AB and CD intersect at P, and AC —— BD. Prove that: (i)
+△AP C and △BP D are similar. (ii) If BD = 2.4 cm, AC = 3.6 cm, PD = 4.0 cm and PB = 3.2 cm, find
+the lengths of PA and PC.
+Solution Given: AC ∥ BD and lines AB and CD intersect at P .
+To Prove: (i) △AP C ∼ △BP D; (ii) find P A, P C.
+
+
+                                     A
+                                                                 C
+
+
+                                                     P
+
+
+
+                                     D
+                                                                 B
+
+
+Step 1: ∠P AC = ∠P BD and ∠P CA = ∠P DB.                          (alternate interior angles, AC ∥ BD)
+
+Step 2: ∠AP C = ∠BP D.                                                             (vertically opposite)
+
+Step 3: Conclude △AP C ∼ △BP D.                                                       (AAA similarity)
+                                                PA   PC   AC
+Step 4: Use the ratio of corresponding sides:      =    =    .                       (similar triangles)
+                                                PB   PD   BD
+                                         PA    PC    3.6
+Step 5: Substitute the given lengths:        =     =     .                                (substitution)
+                                         3.2   4.0   2.4
+                               3.6   3
+Step 6: Calculate the ratio:       =   = 1.5.                                           (simplification)
+                               2.4   2
+                         PA
+Step 7: Solve for P A:       = 1.5 =⇒     P A = 4.8 cm .                                      (algebra)
+                         3.2
+                         PC
+Step 8: Solve for P C:       = 1.5 =⇒      P C = 6.0 cm .                                     (algebra)
+                         4.0
+
+Answer: (i) △AP C ∼ △BP D. (ii) P A = 4.8 cm, P C = 6.0 cm.
+
+
+
+
+Question 3
+
+Question: In a trapezium ABCD, AB ∥ DC. Diagonals AC and BD intersect at O. If BO = 6 cm and
+DQ = 8 cm, find BP × DO. (Note: as written, this appears incomplete/ambiguous.) Note: We establish
+the standard diagonal proportionality in a trapezium and refrain from speculative numerical conclusions.
+Solution Given: Trapezium ABCD with AB ∥ DC. Diagonals intersect at O.
+To Prove: A relationship between the segments of the diagonals.
+
+
+
+
+                                                     4

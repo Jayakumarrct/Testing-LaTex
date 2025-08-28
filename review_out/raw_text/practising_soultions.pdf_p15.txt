@@ -1,0 +1,67 @@
+           BQ   QS                  BQ  3
+Step 12:      =    . From part (i),    = .
+           BC   CR                  BC  7
+           3    6         7×6
+Step 13:     =    =⇒ CR =     = 14 cm.
+           7   CR          3
+Step 14: The question asks for AR, which is not part of these triangles. Without more information about
+         the line CD and point R, AR cannot be determined.
+
+ Answer: (i) PQ:AC = 3:7. (ii) AR cannot be determined from the given information.
+
+
+
+
+ Question 17
+
+ Question: In triangle ABC, medians BD and CE meet at centroid G. Prove (i) △EGD ∼ △CGB; (ii)
+ BG = 2 GD.
+ Solution Given: D is midpoint of AC, E is midpoint of AB; Medians BD and CE intersect at G.
+ To Prove: (i) △EGD ∼ △CGB; (ii) BG = 2 GD.
+
+
+                                            A
+
+
+
+                                      E                    D
+                                                   G
+
+
+                                  B                                    C
+
+
+ Step 1: In △ABC, E and D are midpoints of AB and AC respectively.
+
+ Step 2: By the Midpoint Theorem, ED ∥ BC and ED = 12 BC.                              (midpoint theorem)
+
+ Step 3: Part (i): Consider △EGD and △CGB.
+
+ Step 4: Since ED ∥ BC, we have ∠GED = ∠GCB and ∠GDE = ∠GBC.                    (alternate interior angles)
+
+ Step 5: Also, ∠EGD = ∠CGB.                                                    (vertically opposite angles)
+
+ Step 6: Therefore, △EGD ∼ △CGB.                                                         (AAA similarity)
+
+ Step 7: Part (ii): From the similarity, the ratio of corresponding sides is equal.
+           EG   GD   ED
+ Step 8:      =    =    .
+           CG   GB   CB
+ Step 9: Using the ratio involving the sides we need and the one we know from the midpoint theorem:
+         GD     ED
+             =      .
+         GB     CB
+                                       1
+                                  GD     BC  1
+Step 10: Substitute ED = 12 BC:      = 2    = .                                              (substitution)
+                                  GB   BC    2
+                GD  1
+Step 11: From      = , we cross-multiply to get BG = 2 GD.                                       (algebra)
+                GB  2
+
+ Answer: (i) The triangles are similar. (ii) BG = 2 GD is proved.
+
+
+
+
+                                                    15

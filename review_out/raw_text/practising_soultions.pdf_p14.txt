@@ -1,0 +1,66 @@
+Step 1: Let AE : ED = m : n (unknown from the data). Then the line through E parallel to the bases
+        cuts off a segment EF whose length is the weighted mean of the bases:
+                                                     n AB + m DC
+                                              EF =               .
+                                                        m+n
+                                                                (similar triangles along the transversals)
+
+Step 2: Without m : n (or AD), neither EC nor EF can be uniquely determined.
+
+Answer: Additional information (e.g., AE : ED) is required. In general, if AE : ED = m : n, then
+     n AB + m DC
+EF =               .
+        m+n
+
+
+
+Question 16
+
+Question: In △ABC, P is a point on AB such that AP:PB = 4:3. PQ is drawn parallel to AC to meet
+BC at Q. (i) Find the ratio PQ:AC. (ii) If a line from A is perpendicular to CD (where D is on BC) at R
+and PQ is perpendicular to CD at S, and QS = 6 cm, find AR.
+                 AP     4
+Solution Given:     = and P Q ∥ AC.
+                 PB     3
+To Prove: (i) PQ:AC; (ii) AR given QS=6.
+
+
+                                                                            C
+
+                          A
+
+
+                                                                     Q
+                                                P
+
+
+
+
+                                                            B
+
+
+Step 1: Part (i): Consider △BP Q and △BAC.
+
+Step 2: Since P Q ∥ AC, ∠BP Q = ∠BAC and ∠BQP = ∠BCA.                             (corresponding angles)
+
+Step 3: ∠B is common to both triangles.
+
+Step 4: Therefore, △BP Q ∼ △BAC.                                                        (AAA similarity)
+                                              BP   BQ   PQ
+Step 5: The ratio of corresponding sides is      =    =    .
+                                              BA   BC   AC
+                                                                            BP   3k  3
+Step 6: Given AP : P B = 4 : 3, so AB = AP + P B = 4k + 3k = 7k. Thus          =    = .
+                                                                            BA   7k  7
+Step 7: Hence, P Q : AC = 3 : 7.
+
+Step 8: Part (ii): Consider △BQS and △BCR.
+
+Step 9: ∠BSQ = ∠BRC = 90◦ (assuming S is on BQ, R on BC).
+
+Step 10: ∠QBS = ∠CBR (common angle B).
+
+Step 11: So △BQS ∼ △BCR.
+
+
+                                                    14

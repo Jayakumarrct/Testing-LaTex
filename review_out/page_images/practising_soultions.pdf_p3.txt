@@ -1,0 +1,38 @@
+AB AC .
+Step 1: From AABC ~ ADEF, we get = Fz and ZA = 2D. (similar triangles)
+Step 2: Since BM, EN are medians, AM = AC and DN = 3DF. (definition of median)
+AM _4AC _ AC .
+Step 3: Hence 5a; = DF > DF (halves of proportional sides)
+. AB AM ;
+Step 4: Combining steps 1 and 3, we have T= = Fay- (transitive property)
+AB AM
+Step 5: In AABM and ADEN, we have 2A = 2D and Fe = Fy (from steps 1 and 4)
+Step 6: Conclude AABM ~ ADEN. (SAS similarity)
+BM __ AB
+Step 7: From this similarity, => = pa5- (corresponding sides in similar triangles)
+. . AB AC BM _ AC .
+Step 8: Since FF = Fz (from step 1), we can conclude = = Fa (transitive property)
+BM_ A
+Answer: (i) AABM ~ ADEN; (ii) —— = AC
+— EN DF
+Question 6
+Question: In the given figure, AABC is isosceles with AC = BC and AP x BQ = AC?. Prove that
+AACP ~ ABCQ.
+Solution Given: AABC is isosceles with AC = BC and AP - BQ = AC?.
+To Prove: AACP ~ ABCQ.
+Cc
+Q
+van
+A B
+Step 1: Note: The condition AP - BQ = AC? together with AC = BC is not sufficient to conclude
+AACP ~ ABCQ.
+Step 2: The previous version incorrectly used ZCAP = ZC.BQ; this is generally false because P € AC
+and Q € BC make ZCAP degenerate.
+AP _ AC er
+Step 3: From AP - BQ = AC - BC we get Bo Ba’ but this ratio alone does not fix the angles at C
+in AACP and ABCQ.
+Step 4: A common correct variant assumes additional angle/ratio information (for example, equal angles
+at C), after which SAS can be applied.
+Answer: As stated, the data are insufficient to prove the claimed similarity without an extra condition
+at C.
+3

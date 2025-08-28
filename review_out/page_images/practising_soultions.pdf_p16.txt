@@ -1,0 +1,35 @@
+Exercise 15C Solutions
+Question 2
+Question: In triangles ABC and PQR, sides AB, BC and median AD are proportional to PQ, QR and
+median PM respectively. Prove (i) AABD ~ APQM; (ii) AABC ~ APQR.
+AB BC AD
+Solution Given: <= = [= = ——,; p, M are midpoints of BC, QR.
+aaa PQ QR. PM
+To Prove: (i) AABD ~ APQM; (ii) AABC ~ APQR.
+A P
+B D Cc Q M R
+Step 1: Part (i):
+AB BC AD
+Step 2: We are given 22 _ BC _ AD
+PQ QR PM
+Step 3: Since D and M are midpoints, BC = 2BD and QR = 2QM. (definition of median)
+AB 2BD AD
+Step 4: Substitute this into the proportion: —2 =~ = =~.
+PQ 2QM PM
+AB BD AD
+Step 5: This simplifies to 55 = yy = pay" (cancel factor 2)
+Step 6: In AABD and APQM, all three pairs of corresponding sides are in proportion.
+Step 7: Therefore, AABD ~ APQM. (SSS similarity)
+Step 8: Part (ii):
+Step 9: From the similarity in part (i), we know that corresponding angles are equal. So, ZB = ZQ.
+AB BC
+Step 10: In AABC and APQR, we are given Fo = on
+Step 11: We have two pairs of sides in proportion and the included angles (ZB, ZQ) are equal.
+Step 12: Therefore, AABC ~ APQR. (SAS similarity)
+Answer: (i) AABD ~ APQM. (ii) AABC ~ APQR.
+Question 3
+Question: Find x given two triangles ABC and DEF with ZB = ZE, and side data AB=7.5, BC=9,
+AC=6; DE=x+3, EF=12, DF=8. (Assuming DF=8, not 9, for consistency).
+Solution Given: 7B = ZE and side lengths for AABC and ADEF.
+To Prove: Find the value of x.
+16

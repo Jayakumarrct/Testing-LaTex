@@ -1,0 +1,65 @@
+Exercise 15A Solutions
+
+Question 2
+                                                AB   AC
+Question: In triangles ABC and DEF, ∠A = ∠D and DE = DF . Prove that △ABC ∼ △DEF .
+                         AB    AC
+Solution Given: ∠A = ∠D and  =    .
+                         DE    DF
+To Prove: △ABC ∼ △DEF (SAS).
+
+
+                                C
+                                                                  F
+
+
+
+
+                                            B
+                                                                            E
+                       A                                  D
+
+
+Step 1: Identify the included angle and sides: in △ABC, sides AB, AC include ∠A; in △DEF , sides
+        DE, DF include ∠D.                                            (definition of included angle)
+                                    AB   AC
+Step 2: Use the data ∠A = ∠D and       =    .                                                 (given)
+                                    DE   DF
+Step 3: Conclude △ABC ∼ △DEF .                                                       (SAS similarity)
+
+Answer: △ABC ∼ △DEF by SAS.
+
+
+
+
+Question 3
+
+Question: In △ABC and △DEF , ∠A = ∠D, ∠B = ∠E and ∠C = ∠F . Also, AL and DM are medians.
+Prove that BC   AL
+           EF = DM .
+
+Solution Given: △ABC ∼ △DEF (AAA), and AL, DM are medians.
+          BC     AL
+To Prove:     =     .
+          EF    DM
+
+
+              B                                      E
+                                L                C                    M              F
+
+
+
+                           A                                        D
+
+                                    BC   AB   AC
+Step 1: From △ABC ∼ △DEF , get         =    =    .                                 (similar triangles)
+                                    EF   DE   DF
+Step 2: Since L and M are midpoints, BL = 12 BC and EM = 21 EF .                (definition of median)
+                    BL   BC
+Step 3: Therefore      =    .                                                    (divide equal halves)
+                    EM   EF
+                                                         AB   BL
+Step 4: In △ABL and △DEM , we have ∠B = ∠E and              =    . (correspondence from similarity)
+                                                         DE   EM
+
+                                                 1

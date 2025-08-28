@@ -1,0 +1,62 @@
+Step 5: (v) True. An isosceles right triangle must have angles 90-45-45. Any two such triangles are similar
+        by AAA similarity.
+
+Step 6: (vi) True. In a trapezium ABCD with AB ∥ DC, the diagonals intersect at O, forming △AOB and
+                                                                                            AO   BO
+        △COD. These triangles are similar (AA similarity), so their sides are proportional: CO = DO .
+
+Answer: (i) False, (ii) True, (iii) True, (iv) False, (v) True, (vi) True.
+
+
+
+
+Question 12
+
+Question: D is a point on the side BC of triangle ABC such that ∠ADC = ∠BAC. Prove that
+CA2 = CB · CD.
+Solution Given: In △ABC, D is on BC such that ∠ADC = ∠BAC.
+To Prove: AC 2 = CB · CD.
+
+
+                                              A
+                                               α
+
+
+
+
+                                                           α
+                                    B                     D           C
+
+
+Step 1: Consider △ADC and △BAC.
+
+Step 2: ∠ADC = ∠BAC.                                                                               (given)
+
+Step 3: ∠ACD = ∠BCA (or ∠C).                                                              (common angle)
+
+Step 4: Therefore, △ADC ∼ △BAC.                                                           (AA similarity)
+
+Step 5: The ratio of corresponding sides must be equal. Match vertices: A ↔ B, D ↔ A, C ↔ C.
+              AC   DC   AD
+Step 6: So,      =    =    .                                                         (corresponding sides)
+              BC   AC   BA
+                                                      AC   DC
+Step 7: From the first two parts of the proportion,      =    .
+                                                      BC   AC
+Step 8: Cross-multiply to get AC × AC = BC × DC, which is AC 2 = CB · CD.                        (algebra)
+
+Answer: AC 2 = CB · CD.
+
+
+
+
+Question 13
+
+Question: △ABC and △AM P are right-angled at B and M respectively. A is a common vertex. AC =
+10 cm, AP = 15 cm, PM = 12 cm. (i) Prove △ABC ∼ △AM P . (ii) Find AB and BC.
+Solution Given: ∠B = ∠M = 90◦ , A is a common vertex. AC=10, AP=15, PM=12.
+To Prove: (i) similarity; (ii) find AB, BC.
+
+
+
+                                                     11

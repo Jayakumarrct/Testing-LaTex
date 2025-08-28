@@ -1,0 +1,31 @@
+Similarity of Triangles — Quick Notes (Grade 10) 1
+Overview: What is Similarity?
+
+Two figures are similar if they have the same Quick check: If two angles of one triangle
+shape. For triangles, this means: match two of another, triangles are similar
+* Corresponding angles are equal. (AAA). You do not need the third angle.
+
+* Corresponding side lengths are in pro-
+
+portion.
+We write: AABC ~ AA’B’C’.
+Cc
+Scale factor k: If AABC ~ AA’B’C’, and
+‘A’B’ Cc
+
+AB matches A’B’, then 7a © k. Every scale k
+corresponding side scales by k.
+
+* Perimeters scale by k.
+
+* Areas scale by k?. ”
+
+A
+
+Matching corresponding parts: Keep ver-
+
+tex order consistent. If AABC ~ ADEF,
+
+thn Ao D, B © E,C © F. So Keep order: AABC ~ ADial means
+AB BC CA Ao D,Be E,C © F. Mixing order
+DE EF FD’ gives wrong ratios.

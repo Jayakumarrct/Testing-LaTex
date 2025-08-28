@@ -1,0 +1,31 @@
+Similarity of Triangles — Quick Notes (Grade 10) 6
+Worked Examples
+Type A: Find an unknown side using similarity
+In AABC, DE || BC with D on AB and E on AC. If AD = 6, AB = 9, and AE = 8, find AC.
+c
+A » 8B
+
+Steps
+1. DE || BC > AADE ~ AABC.
+
+AD AE 6 8
+2, = =— > -=—.
+
+AB AC 9 AC
+3. Cross-multiply: 6 AC = 9-8 = 72.
+4. AC = 12.
+
+Use BPT: a single proportion solves it.
+Type B: Perimeter and area comparisons
+Two similar triangles have side ratio k = = If the smaller has perimeter 24 and area 54, find the
+larger’s perimeter and area.
+Steps
+1. Perimeter scales by k: Piarge = k 24 = > +24 = 40.
+
+> > 5\)*.,_ 25
+
+2. Area scales by k*: Alarge = k“ - 54 = 3 54= roa 54 = 150.
+
+Perimeter xk, area Xk?. Keep which triangle is larger consistent.
+Type C: Angle-bisector splits a side
+In AABC, AD bisects ZA. If AB = 7, AC = 9, and BC = 12, find BD and DC.

@@ -1,0 +1,33 @@
+Step 11: From AB © DF and BC + DE, vertex B must correspond to vertex D.
+Step 12: From BC + DE and AC © FE, vertex C must correspond to vertex E.
+Step 13: This leaves vertex A corresponding to vertex F.
+Step 14: Therefore, the correct similarity statement is AABC ~ AF DE.
+Answer: The triangles are similar by SSS. The correct correspondence is AABC ~ AFDE.
+Question 6
+Question: In trapezium ABCD with AB || DC, diagonals intersect at P. Prove (i) AAPB ~ ACPD;
+(ii) PA- PD = PB- PC.
+Solution Given: Trapezium ABCD with AB || DC, diagonals AC and BD intersect at P.
+To Prove: (i) AAPB ~ ACPD; (ii) PA: PD = PB: PC.
+A B
+D Cc
+Step 1: Part (i): Consider AAPB and ACPD.
+Step 2: Since AB || DC, ZPAB = ZPCD. (alternate interior angles)
+Step 3: Similarly, ZPBA = ZPDC. (alternate interior angles)
+Step 4: Also, ZAPB = ZCPD. (vertically opposite angles)
+Step 5: Therefore, AAPB ~ ACPD. (AAA similarity)
+Step 6: Part (ii): From the similarity proved in part (i), the ratio of corresponding sides is equal.
+PA PB AB
+Step” BG = pp > CD
+. : PA PB
+Step 8: Taking the first two parts of the proportion: PC PD
+Step 9: Cross-multiply to get PA- PD = PB- PC. (algebra)
+Answer: (i) The triangles are similar. (i) The product equality is proved.
+Question 7
+Question: In parallelogram ABCD, P is a point on BC. DP is extended to meet AB extended at L.
+Prove: (i) DP:PL = DC:BL (ii) DL:DP = AL:DC.
+Solution Given: Parallelogram ABCD, P on BC, L is the intersection of extended DP and extended
+AB.
+DPD DL AL
+To Prove: (i) —— = Be. (i) — = —.
+PL BL DP DC
+19

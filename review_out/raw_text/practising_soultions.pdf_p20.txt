@@ -1,0 +1,60 @@
+                              A                   L            B
+
+
+
+
+                                                                    P
+
+                                        D                               C
+
+ Step 1: Part (i): Consider △DP C and △LP B.
+ Step 2: Since AL is an extension of AB, and AB ∥ DC, we have AL ∥ DC.
+ Step 3: ∠P DC = ∠P LB (or ∠P LA).                                              (alternate interior angles)
+ Step 4: ∠P CD = ∠P BL.                                        (alternate interior angles, since AD ∥ BC)
+ Step 5: Therefore, △DP C ∼ △LP B.                                                        (AA similarity)
+                                             DP     PC     DC
+ Step 6: The ratio of corresponding sides is      =      =     .
+                                             LP     PB     LB
+                                                  DP     DC
+ Step 7: From this, we get the required relation:      =     .
+                                                  PL      BL
+                                                         PL      BL
+ Step 8: Part (ii): Start with the result from part (i):     =      .                 (inverting the ratio)
+                                                         DP     DC
+                                PL         BL
+ Step 9: Add 1 to both sides:       +1=        + 1.                                              (algebra)
+                                DP         DC
+                          P L + DP       BL + DC
+Step 10: Combine terms:               =           .
+                             DP             DC
+Step 11: Since D, P, L are collinear, P L + DP = DL.
+Step 12: Since A, B, L are collinear, BL + AB = AL. Also, AB = DC in a parallelogram.
+                                                DL   BL + AB   AL
+Step 13: Substitute these into the equation:       =         =    .
+                                                DP     DC      DC
+
+ Answer: Both proportions are proved.
+
+
+
+
+ Question 8
+
+ Question: In △ABC, ∠ABC = 2∠ACB. The bisector of ∠ABC, BP, meets AC at P. Show: (i) CB:BA
+ = CP:PA (ii) AB · BC = BP · CA.
+ Solution Given: BP bisects ∠ABC; ∠ABC = 2∠ACB.
+ To Prove: (i) CB:BA = CP:PA; (ii) AB · BC = BP · CA.
+
+
+                                            A
+
+
+                                                           P
+
+
+
+
+                               B                                            C
+
+
+                                                      20

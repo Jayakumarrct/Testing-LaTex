@@ -1,0 +1,39 @@
+Step 1: For the triangles to be similar by SAS, the sides including the equal angles must be proportional.
+Step 2: The sides including ZB are AB and BC. The sides including ZE are DE and EF.
+. _ AB _ BC ;
+Step 3: Set up the proportion: 7 = F-.. (SAS similarity condition)
+Step 4: Substitute the given values; 7. = =. (substitution)
+r+3 DB
+Step 5: Simplify the ratio: 2 = 3
+Doe Sump Ny NC TN DT
+753
+it : Solve the equation —— = -.
+Step 6: Solve the equation 374
+Step 7: Cross-multiply: 7.5 x 4 = 3x (« +3). (algebra)
+Step 8: 30=32+9 = 384=21 = x=7.
+. . : woe AC 6 34.
+Step 9: Consistency Check: Let's check the ratio of the third sides, AC and DF. T= = 5 = 5. Since
+this ratio is the same, the triangles are indeed similar by SSS.
+Answer: x = 7.
+Question 4
+Question: In the given figure, BC —— DE. Find the lengths of the sides of both the triangles. Sides are
+given as expressions in x. AADE: AD=18, AE=6x, DE=3(x+1). AABC: AB=2x-+1, AC=4x, BC=?.
+Solution Given: A is the top vertex, DE is a horizontal line below BC, and BC || DE. Side lengths in
+terms of x.
+To Prove: Find the value of x and the lengths of all sides.
+A
+yan
+D E
+Step 1: Since BC | DE, by the property of similar triangles, AABC ~ AADE. (AA similarity)
+Step 2: The ratio of corresponding sides must be equal: 22 — AC _ BC
+ep 2: The ratio of corresponding sides must be equal: 775 = 5 = pay
+Qw+1 4:
+Step 3: Substitute the given expressions: “@+* _ 4".
+is Ox
+Step 4: From the second part of the ratio, we can find the similarity constant: =" = > = 5.
+7 3
+Qe +1 2
+Step 5: Now use this ratio to solve for x; “14 = 2.
+is 3
+Step 6: Cross-multiply: 3(2x + 1) = 18 x 2. (algebra)
+WwW

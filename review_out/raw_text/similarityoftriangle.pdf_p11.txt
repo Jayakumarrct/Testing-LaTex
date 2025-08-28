@@ -1,0 +1,48 @@
+ Similarity of Triangles — Quick Notes (Grade 10)                                                           10
+
+
+ Pitfalls and Checks
+     Warning
+
+      • Wrong order: Always match letters correctly when writing ratios.
+      • SAS uses included angle: The equal angle must be between the two compared sides.
+      • 𝑘 vs 𝑘 2 : Perimeter uses 𝑘, area uses 𝑘 2 .
+      • Rounding: Keep sufficient precision; round only at the end.
+      • Not to scale: Diagrams may mislead; rely on given measures.
+
+
+
+ Practice Problems
+ 1. In △𝐴𝐵𝐶, 𝐷𝐸 ∥ 𝐵𝐶, 𝐴𝐷 = 3, 𝐴𝐵 = 9, 𝐴𝐸 = 5. Find 𝐴𝐶.
+ 2. Two similar triangles have 𝑘 = 43 . If the smaller area is 27, find the larger area.
+ 3. In △𝐴𝐵𝐶, 𝐴𝐷 bisects ∠ 𝐴. If 𝐴𝐵 = 8, 𝐴𝐶 = 10, 𝐵𝐶 = 18, find 𝐵𝐷 and 𝐷𝐶.
+ 4. In right △𝐴𝐵𝐶 with right angle at 𝐶, altitude to hypotenuse meets at 𝐻, 𝐴𝐻 = 5, 𝐻𝐵 = 9. Find 𝐶𝐻,
+    𝐴𝐶, 𝐵𝐶.
+ 5. △𝐴𝐵𝐶 ∼ △𝐷𝐸 𝐹 with 𝐴𝐵 = 7, 𝐵𝐶 = 9, 𝐷𝐸 = 14. Find 𝐸 𝐹.
+ 6. A model uses scale 1 : 50. A real building is 45 m tall. How tall is the model?
+ 7. If △𝐴𝐵𝐶 ∼ △𝑃𝑄𝑅 and ∠ 𝐴 = 40◦ , ∠𝐶 = 65◦ , find ∠𝑄.
+ 8. In △𝐴𝐵𝐶, 𝐷𝐸 ∥ 𝐵𝐶 with 𝐴𝐷 = 4, 𝐷𝐵 = 8, 𝐴𝐸 = 6. Find 𝐸𝐶.
+ 9. △𝐴𝐵𝐶 ∼ △𝐴′ 𝐵′ 𝐶 ′ and 𝑘 = 2.5. If 𝑃 𝐴𝐵𝐶 = 28, find 𝑃 𝐴′ 𝐵′ 𝐶 ′ .
+       𝐴𝐵     𝐵𝐶 𝐶 𝐴 3                                 [𝐷𝐸 𝐹]
+10. If      =      =      = 5 , what is the area ratio          ?
+       𝐷𝐸 𝐸 𝐹 𝐹 𝐷                                      [ 𝐴𝐵𝐶]
+11. Sides 𝐴𝐵 = 6, 𝐴𝐶 = 10. If 𝐴𝐷 bisects ∠ 𝐴 meeting 𝐵𝐶 at 𝐷 and 𝐵𝐷 = 7.2, find 𝐵𝐶.
+12. Points 𝐴(0, 0), 𝐵(3, 1), 𝐶 (0, 2). Points 𝐷 (0, 0), 𝐸 (6, 2), 𝐹 (0, 4). Are △𝐴𝐵𝐶 and △𝐷𝐸 𝐹 similar?
+    State 𝑘.
+                                                          𝐵𝐷
+13. In △𝐴𝐵𝐶, a line through 𝐴 meets 𝐵𝐶 at 𝐷 with               = 23 . Prove the line is parallel to 𝐴𝐵 or 𝐴𝐶?
+                                                          𝐷𝐶
+    Which?
+14. △𝐴𝐵𝐶 ∼ △𝑃𝑄𝑅 with 𝐴𝐵 = 12, 𝐵𝐶 = 15, 𝐶 𝐴 = 9 and 𝑃𝑄 = 16. Find 𝑘 and 𝑄𝑅, 𝑅𝑃.
+15. In right △𝐴𝐵𝐶 with ∠𝐶 = 90◦ , 𝐴𝐶 = 9, 𝐵𝐶 = 12. Find 𝐴𝐵 using similarity (not directly by
+    Pythagoras).
+16. A 2 m stick casts 1.6 m shadow. A building casts 24 m shadow at the same time. Find the building
+    height.
+                             𝐴𝐵      𝐵𝐶                  [𝐷𝐸 𝐹]
+17. If △𝐴𝐵𝐶 ∼ △𝐷𝐸 𝐹 and           =        = 𝑘, express           in terms of 𝑘.
+                             𝐷𝐸 𝐸 𝐹                      [ 𝐴𝐵𝐶]
+18. In △𝐴𝐵𝐶, 𝐷𝐸 ∥ 𝐵𝐶 with 𝐴𝐷 = 7, 𝐴𝐸 = 10, 𝐴𝐶 = 15. Find 𝐴𝐵.
+19. In △𝐴𝐵𝐶, 𝐴𝐷 bisects ∠ 𝐴 and meets 𝐵𝐶 at 𝐷. If 𝐴𝐵 : 𝐴𝐶 = 5 : 7 and 𝐵𝐶 = 18, find 𝐵𝐷 and 𝐷𝐶.
+20. Coordinates: 𝐴(1, 1), 𝐵(5, 3), 𝐶 (2, 6) and 𝐴′ (2, 2), 𝐵′ (10, 6), 𝐶 ′ (4, 12). Check similarity and find 𝑘.
+
+ Answers are listed at the end.

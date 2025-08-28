@@ -1,0 +1,65 @@
+Similarity of Triangles — Quick Notes (Grade 10)                                                         7
+
+
+
+                                       𝐶
+
+
+
+
+                                                       𝐷
+
+
+
+                                                                     𝐵
+                                           𝐴
+
+
+   Steps
+                                   𝐵𝐷   𝐴𝐵 7
+   1. Angle Bisector Theorem:         =   = .
+                                   𝐷𝐶   𝐴𝐶 9
+                                                           12 3
+   2. Let 𝐵𝐷 = 7𝑥, 𝐷𝐶 = 9𝑥, then 7𝑥 + 9𝑥 = 12 ⇒ 𝑥 =          = .
+                                                           16 4
+   3. 𝐵𝐷 = 7𝑥 = 5.25, 𝐷𝐶 = 9𝑥 = 6.75.
+
+      Shortcut
+      Split in the ratio of the adjacent sides.
+
+
+   Example
+
+   Type D: Parallel line cuts triangle
+   In △𝐴𝐵𝐶, 𝐷𝐸 ∥ 𝐵𝐶 with 𝐴𝐷 = 5, 𝐷𝐵 = 7, 𝐴𝐸 = 6. Find 𝐸𝐶.
+
+                                           𝐶
+
+
+
+
+                                   𝐸
+
+
+
+                                                                         𝐵
+                                                  𝐷
+                               𝐴
+
+
+   Steps
+            𝐴𝐷    𝐴𝐸      5    6
+   1. BPT:     =      , so =     .
+           𝐷𝐵 𝐸𝐶          7 𝐸𝐶
+   2. Cross-multiply: 5 𝐸𝐶 = 42 ⇒ 𝐸𝐶 = 8.4.
+
+      Shortcut
+      Set up the proportion once; check order carefully.
+
+
+   Example
+
+   Type E: Shadow / scale-model problem
+   At the same time, a tree casts a 9 m shadow and a 1.5 m stick casts a 1.2 m shadow. How tall is the
+   tree?
+   Steps

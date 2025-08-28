@@ -1,0 +1,35 @@
+Exercise 15A Solutions
+Question 2
+Question: In triangles ABC and DEF, 2A = ZD and 42 = 4G. Prove that AABC ~ ADEF.
+Solution Given: ZA = ZD and 43 = AC.
+— DE DF
+To Prove: AABC ~ ADEF (SAS).
+c F
+L B L\
+E
+A D
+Step 1: Identify the included angle and sides: in AABC, sides AB, AC include ZA; in ADEF, sides
+DE, DF include ZD. (definition of included angle)
+AB AC ;
+Step 2: Use the data 2A = 2D and T= Fp. (given)
+Step 3: Conclude AABC ~ ADEF. (SAS similarity)
+Answer: AABC ~ ADEF by SAS.
+Question 3
+Question: In AABC and ADEF, ZA = ZD, ZB = ZE and ZC = ZF. Also, AL and DM are medians.
+Prove that 35 = #4.
+Solution Given: AABC ~ ADEF (AAA), and AL, DM are medians.
+To Prove: BC AL
+HORTON: EF DM"
+B E
+A D
+BC AB_A ;
+Step 1: From AABC ~ ADEF, get oc =n a“ (similar triangles)
+Step 2: Since L and M are midpoints, BL = 5 BC and EM = 3 EF. (definition of median)
+BL BC
+
+Step 3: Therefore 77 = FR (divide equal halves)
+Step 4: In AABL and ADEM, we have ZB = ZE and 22, = BE (correspondence from similarit
+
+ep 4: In an we have ZB = ZE and 555 = gqq- (correspondence from similarity)
+
+1

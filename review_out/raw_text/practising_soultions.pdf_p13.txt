@@ -1,0 +1,63 @@
+ Step 1: Find PN: Consider △N P L and △RQL.
+
+ Step 2: Since PS ∥ QR, then PN ∥ QR.
+
+ Step 3: ∠P N L = ∠RQL and ∠N P L = ∠QRL.                                     (alternate interior angles)
+
+ Step 4: ∠N LP = ∠RLQ.                                                              (vertically opposite)
+
+ Step 5: Therefore, △N P L ∼ △RQL.                                                     (AAA similarity)
+                                 PN   PL
+ Step 6: The ratio of sides is      =    .
+                                 QR   RL
+                 RL  2     PL  3
+ Step 7: Given      = , so    = .
+                 LP  3     RL  2
+           PN   3         3
+ Step 8:      =   =⇒ P N = × 10 = 15 cm.
+           10   2         2
+ Step 9: Find RM: Consider △M RL and △P QL.
+
+Step 10: Since RS ∥ PQ.
+
+Step 11: ∠RM L = ∠P QL and ∠M RL = ∠QP L.                                     (alternate interior angles)
+
+Step 12: Therefore, △M RL ∼ △P QL.                                                      (AA similarity)
+                                 RM   RL
+Step 13: The ratio of sides is      =    .
+                                 PQ   PL
+           RM    2        2       32
+Step 14:       =   =⇒ RM = × 16 =    cm.
+            16   3        3        3
+
+                                   32
+ Answer: P N = 15 cm, RM =            cm.
+                                    3
+
+
+
+ Question 15
+
+ Question: In the figure, AB ∥ EF ∥ DC in trapezium ABCD. Given AB = 67.5 cm, DC = 40.5 cm
+ and AE = 52.5 cm, with E on AD and F on BC. Find the lengths of EC and EF . Note: The statement
+ appears incomplete. Without how E divides AD (i.e., AE : ED or AD), EC and EF are not uniquely
+ determined. Below is the standard relationship when a line segment EF is drawn parallel to the bases in
+ a trapezium.
+ Solution Given: Trapezium ADCB with AB ∥ EF ∥ DC. AB=67.5, DC=40.5, AE=52.5. E is on AD.
+ To Prove: Find ED and EF. (Assuming EC was a typo for ED).
+
+
+                                             A               B
+
+
+
+                                         E                        F
+
+
+
+                                     D                                C
+
+
+
+
+                                                   13

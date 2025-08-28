@@ -1,0 +1,66 @@
+                                              A
+
+
+
+
+                                       D                    E
+                                               M
+
+
+                                   B                       N     C
+
+
+ Step 1: Part (i):
+
+ Step 2: Since DE ∥ BC, △ADE ∼ △ABC.           (AA similarity, common angle A, corresponding angles)
+
+ Step 3: Since DE ∥ BC, and N is on BC, DE ∥ BN. This makes △DM E ∼ △N M B.           (AA similarity,
+         vertically opposite angles at M, alternate interior angles)
+
+ Step 4: Part (ii):
+                                                    AE   DE
+ Step 5: From △ADE ∼ △ABC, we have the ratio           =    .
+                                                    AC   BC
+ Step 6: AC = AE + EC = 15 + 9 = 24 cm.
+
+ Step 7: BC = BN + N C = 24 + 6 = 30 cm.
+           15   DE    5   DE
+ Step 8:      =    =⇒   =    .                                       (substitution and simplification)
+           24   30    8   30
+                 5 × 30   150
+ Step 9: DE =           =     = 18.75 cm.                                                   (algebra)
+                    8      8
+                                            ME   DM   DE
+Step 10: From △DM E ∼ △N M B, we have          =    =    .
+                                            MB   NM   NB
+                         DE   18.75   75/4   75   25
+Step 11: Use the ratio      =       =      =    =    .
+                         NB    24      24    96   32
+               ME   25                    25
+Step 12: So,      =    . This means M E =    M B.
+               MB   32                    32
+                                                25           57
+Step 13: Since BE = M E + M B, we have BE =        MB + MB =    M B.
+                                                32           32
+Step 14: We cannot find the absolute length of ME without knowing the length of BE. The problem is
+         missing information. The same applies to DM.
+
+ Answer: (i) △ADE ∼ △ABC and △DM E ∼ △N M B. (ii) The lengths cannot be uniquely determined.
+                ME   25     DM   25
+ The ratios are    =    and    =    .
+                MB   32     MN   32
+
+
+
+ Question 10
+
+ Question: In the given figure, D is on AB, E is on AC, AD = AE and AD2 = BD × EC. Prove that
+ triangles ABD and CAE are similar. Correction based on typical problems: This problem is only
+ solvable with standard theorems if we assume an additional property, for instance that ∠B = ∠C.
+ Solution Given: AD = AE and AD2 = BD × EC. D on AB, E on AC.
+ To Prove: △ABD ∼ △CAE, assuming ∠B = ∠C.
+
+
+
+
+                                                   9

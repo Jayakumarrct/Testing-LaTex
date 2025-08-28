@@ -1,0 +1,58 @@
+                                      A
+                                                           B            M
+
+
+
+                                                            C
+
+                                                                          P
+
+ Step 1: Part (i): In △ABC and △AM P .
+ Step 2: ∠ABC = ∠AM P = 90◦ .                                                                      (given)
+ Step 3: ∠BAC = ∠M AP (or ∠A).                                                             (common angle)
+ Step 4: Therefore, △ABC ∼ △AM P .                                                         (AA similarity)
+ Step 5: Part (ii): First, find the length of AM in △AM P .
+ Step 6: By Pythagoras’ theorem, AP 2 = AM 2 + P M 2 .                               (Pythagorean theorem)
+ Step 7: 152 = AM 2 + 122 =⇒ 225 = AM 2 + 144.
+
+ Step 8: AM 2 = 225 − 144 = 81 =⇒         AM = 9 cm .
+
+                                                                               AB   BC   AC
+ Step 9: Since the triangles are similar, the ratio of their sides is equal:      =    =    .
+                                                                               AM   MP   AP
+                                                    AC   10   2
+Step 10: Use the ratio with known hypotenuses:         =    =   .
+                                                    AP   15   3
+                    AB   2    AB   2
+Step 11: Find AB:      =   =⇒    =   =⇒               AB = 6 cm .
+                    AM   3     9   3
+                    BC   2    BC   2
+Step 12: Find BC:      =   =⇒    =   =⇒               BC = 8 cm .
+                    MP   3    12   3
+
+ Answer: (i) △ABC ∼ △AM P . (ii) AB = 6 cm, BC = 8 cm.
+
+
+
+
+ Question 14
+
+ Question: In parallelogram PQRS with PQ = 16 cm, QR = 10 cm, point L lies on diagonal PR such
+ that RL:LP = 2:3. QL produced meets RS at M and PS produced at N. Find PN and RM.
+ Solution Given: Parallelogram PQRS, PQ=16, QR=10, RL:LP=2:3.
+ To Prove: Find lengths of P N and RM .
+
+
+                                              N
+
+                                          S          M                      R
+
+                                                           L
+
+
+
+
+                                  P                                Q
+
+
+                                                      12

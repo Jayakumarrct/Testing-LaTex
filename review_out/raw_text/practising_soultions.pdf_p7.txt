@@ -1,0 +1,62 @@
+ Question 6
+
+ Question: In △P QR, ∠Q = 90◦ and QM is perpendicular to PR. Prove that: (i) P Q2 = P M × P R (ii)
+ QR2 = P R × M R (iii) P Q2 + QR2 = P R2
+ Solution Given: △P QR with ∠P QR = 90◦ and altitude QM ⊥ P R.
+ To Prove: The three geometric mean relationships.
+
+
+                                      P
+
+
+                                                  M
+
+
+
+
+                                     Q                        R
+
+
+ Step 1: Part (i): Consider △P M Q and △P QR.
+
+ Step 2: ∠P M Q = ∠P QR = 90◦ .                                                             (given)
+
+ Step 3: ∠M P Q = ∠QP R (or ∠P ).                                                  (common angle)
+
+ Step 4: Therefore, △P M Q ∼ △P QR.                                                (AA similarity)
+                            PQ   PM
+ Step 5: From similarity,      =    .                                         (corresponding sides)
+                            PR   PQ
+
+ Step 6: Cross-multiplying gives P Q2 = P M × P R .
+
+ Step 7: Part (ii): Consider △QM R and △P QR.
+
+ Step 8: ∠QM R = ∠P QR = 90◦ .                                                              (given)
+
+ Step 9: ∠M RQ = ∠P RQ (or ∠R).                                                    (common angle)
+
+Step 10: Therefore, △QM R ∼ △P QR.                                                 (AA similarity)
+                            QR   MR
+Step 11: From similarity,      =    .                                         (corresponding sides)
+                            PR   QR
+
+Step 12: Cross-multiplying gives QR2 = P R × M R .
+
+Step 13: Part (iii): Add the results from (i) and (ii).
+
+Step 14: P Q2 + QR2 = (P M × P R) + (M R × P R).                                         (addition)
+
+Step 15: Factor out PR: P Q2 + QR2 = P R × (P M + M R).                      (distributive property)
+
+Step 16: Since P, M, R are collinear, P M + M R = P R.                          (segment addition)
+
+Step 17: Substitute to get P Q2 + QR2 = P R2 .
+
+
+ Answer: All three parts are proved.
+
+
+
+
+                                                      7

@@ -1,0 +1,40 @@
+ Step 1: Part (i):
+
+ Step 2: In △ABC, BP is the bisector of angle ∠B.
+
+ Step 3: By the Angle Bisector Theorem, the bisector divides the opposite side in the ratio of the other
+         two sides.
+                      CB   CP
+ Step 4: Therefore,      =    . This is equivalent to CB:BA = CP:PA.
+                      BA   PA
+ Step 5: Part (ii):
+
+ Step 6: Let ∠ACB = y. Then the given condition is ∠ABC = 2y.
+
+ Step 7: Since BP bisects ∠ABC, we have ∠ABP = ∠P BC = y.
+
+ Step 8: Now consider △BP C. We have ∠P BC = y and ∠P CB = y.
+
+ Step 9: Since two angles are equal, △BP C is an isosceles triangle with BP = P C.
+
+Step 10: Now consider △ABC and △AP B.
+
+Step 11: ∠BAC = ∠P AB (Common Angle A).
+
+Step 12: ∠ACB = y and ∠ABP = y. So, ∠ACB = ∠ABP .
+
+Step 13: Therefore, △ABC ∼ △AP B.                                                       (AA similarity)
+                                               AB   BC   AC
+Step 14: The ratio of corresponding sides is      =    =    .
+                                               AP   PB   AB
+                BC   AC
+Step 15: From      =    , we cross-multiply to get AB · BC = P B · AC.
+                PB   AB
+Step 16: Note: The question has BP · CA, which is the same.
+
+ Answer: Both parts are proved.
+
+
+
+
+                                                    21

@@ -1,0 +1,26 @@
+Similarity of Triangles — Quick Notes (Grade 10) 4
+Key Theorems from Similarity
+Basic Proportionality Theorem (Thales): If a line through a triangle is parallel to one side, it
+divides the other two sides proportionally.
+If DE || BC in AABC, the AD _ AE id AD _AE
+II BC in 2ABC. then Te = 5G 4 AB AC
+Cc
+D B
+A
+Proof idea: Since DE || BC, ADE = ZABC and AED = ZACB (alternate interior angles).
+AD AE DE _AD_ AE AD AE
+Thus AADE ~ AABC (AAA), so —— = —= and —— = —— = —. From the first, —— = —.
+AB AC BC AB AC DB EC
+Converse of BPT: If a line through a triangle cuts two sides proportionally, it is parallel to the
+third side.
+n A a Q P BD AB
+Angle Bisector Theorem (internal): In AABC, if AD bisects ZA with D on BC, then Yel = AC
+. 5 9 ‘ BE AB
+External bisector at A meets the extension of BC at E and gives ECAC
+A
+erece
+Right-triangle similarity facts:
+* Inright AABC with right angle at C, altitude from C to hypotenuse AB meets AB at H. Then
+AACH ~ AABC ~ AHCB.
+* Mean proportionals: CH? = AH - HB, AC? = AH - AB, BC? = HB- AB.
++ Pythagoras by similarity: From AC? = AH - AB and BC? = HB- AB, add to get AC? + BC? =

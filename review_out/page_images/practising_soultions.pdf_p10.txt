@@ -1,0 +1,35 @@
+A
+ca
+B c
+Step 1: The given condition is AD? = BD x EC.
+Step 2: Since AD = AE, we can substitute AE for one AD: AD x AE = BD x EC. (substitution)
+AD BD
+Step 3: Rearrange this into a proportion: 5G = Fy (algebra)
+Step 4: To prove AABD ~ ACAE, we would need the included angles to be equal, i.e., ZBDA = ZAEC,
+or another pair of sides in proportion, or a pair of non-included angles to be equal.
+Step 5: The given information is insufficient. However, if we assume AABC is isosceles with AB = AC,
+then ZB = ZC.
+Step 6: With AB = AC and AD = AE, we subtract to get AB — AD = AC — AE, which means
+BD= EC.
+Step 7: The condition AD? = BD x EC becomes AD? = BD*, so AD = BD.
+Step 8: This means AE = EC. So D and E are midpoints of AB and AC.
+Step 9: In this specific case, AABD and AC-AE become congruent isosceles triangles, and are therefore
+similar.
+Answer: The problem as stated is not solvable without additional assumptions. If we assume AABC is
+isosceles with AB = AC, the similarity holds.
+Question 11
+Question: State, true or false: (i) Two similar polygons are necessarily congruent. (ii) Two congruent
+polygons are necessarily similar. (iii) All equiangular triangles are similar. (iv) All isosceles triangles are
+similar. (v) Two isosceles right triangles are similar. (vi) The diagonals of a trapezium divide each other
+into proportional segments.
+Solution Given: Statements about geometric figures.
+To Prove: Determine if each statement is True or False.
+Step 1: (i) False. Similarity means same shape, but not necessarily the same size. A small square is
+similar to a large square, but they are not congruent.
+Step 2: (ii) True. Congruent polygons have corresponding angles equal and corresponding sides equal.
+This means the ratio of corresponding sides is 1, so they are similar.
+Step 3: (iii) True. An equiangular triangle is an equilateral triangle, with all angles being 60°. Any two
+such triangles are similar by AAA similarity.
+Step 4: (iv) False. An isosceles triangle could have angles 50-50-80, while another could have 70-70-40.
+Their angles are not the same, so they are not similar.
+10

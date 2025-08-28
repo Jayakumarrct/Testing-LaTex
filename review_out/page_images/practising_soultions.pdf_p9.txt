@@ -1,0 +1,37 @@
+A
+pan
+B NC
+Step 1: Part (i):
+Step 2: Since DE || BC, AADE~ AABC. (AA similarity, common angle A, corresponding angles)
+Step 3: Since DE || BC, and N is on BC, DE || BN. This makes ADME~ ANMB. (AA similarity,
+vertically opposite angles at M, alternate interior angles)
+Step 4: Part (ii):
+AE DE
+Step 5: From ADE ~ AABC, we have the ratio > = Fa.
+Step 6: AC = AE + EC =15+9=24em.
+Step 7; BC = BN + NC =244+6=30 cm.
+15 DE 5 DE
+Step 8: a = = 2 =a (substitution and simplification)
+5x30 150
+Step 9: DE = — = > = 18.75 cm. (algebra)
+. ME DM __ DE
+Step 10: From ADME ~ ANMB, we have [5 = S55 = Fp
+_ DE _ 18.75 75/4 _ 75 25
+Step 11: Use the ratio 5 = SI = Sr = 9g =
+ME % 2
+Step 12: So, MZ = 2°. phis means ME = 2B.
+MB 32 32
+« 5 57
+Step 13: Since BE = MB + MB, we have BE = 55 MB + MB= 5 MB.
+Step 14: We cannot find the absolute length of ME without knowing the length of BE. The problem is
+missing information. The same applies to DM.
+Answer: (i) AADE ~ AABC and ADME ~ ANMB. (ii) The lengths cannot be uniquely determined.
+The ratios are ee = 2 ang DM _ 2
+he ratios ave Tp = Fy and Tey = 55°
+Question 10
+Question: In the given figure, D is on AB, E is on AC, AD = AE and AD? = BD x EC. Prove that
+triangles ABD and CAB are similar. Correction based on typical problems: This problem is only
+solvable with standard theorems if we assume an additional property, for instance that ZB = ZC.
+Solution Given: AD = AE and AD? = BD x EC. D on AB, Eon AC.
+To Prove: AABD ~ ACAE, assuming ZB = ZC.
+9

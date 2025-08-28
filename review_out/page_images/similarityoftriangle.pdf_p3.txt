@@ -1,0 +1,17 @@
+Similarity of Triangles — Quick Notes (Grade 10) 2
+Core Definitions and Similarity Criteria
+Similar triangles: AABC ~ AA’B’C’ if ZA = ZA’, ZB = ZB’, LC = ZC’ (AAA), or if certain
+side-angle conditions hold (SAS, SSS).
+AAA Similarity SAS Similarity SSS Similarity
+« If three angles of a tri- * Two sides in proportion ¢ All three side pairs are
+angle match the three and the included angle in the same ratio k.
+angles of another, the equal imply similarity. . AB = BC -
+triangles are similar. AB AC A’B’ BC’
+Ratios of a ‘aR ~ we ane CA Wk
+. L — =k.
+Ratios of correspon: Ge wo, Cal
+ing sides are equal.
+Common mistakes
+* Using a non-included angle for SAS.
+* Mismatching corresponding sides when writing ratios.
++ Forgetting that areas scale by k?, not by k.

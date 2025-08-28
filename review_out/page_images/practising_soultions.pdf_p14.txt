@@ -1,0 +1,34 @@
+Step 1: Let AE: ED = m:n (unknown from the data). Then the line through E parallel to the bases
+cuts off a segment EF whose length is the weighted mean of the bases:
+pp TAB+mDC
+m+n
+(similar triangles along the transversals)
+Step 2: Without m:n (or AD), neither EC nor EF can be uniquely determined.
+Answer: Additional information (e.g., AE : ED) is required. In general, if AE : ED = m:n, then
+nAB+mDC
+bree.
+m+n
+Question 16
+Question: In AABC, P is a point on AB such that AP:PB = 4:3. PQ is drawn parallel to AC to meet
+BC at Q. (i) Find the ratio PQ:AC. (ii) If a line from A is perpendicular to CD (where D is on BC) at R
+and PQ is perpendicular to CD at $, and QS = 6 em, find AR.
+AP 4
+Solution Given: 57 = 5 and PQ || AC.
+To Prove: (i) PQ:AC; (ii) AR given QS=6.
+peo f
+B
+Step 1: Part (i): Consider ABPQ and ABAC.
+Step 2: Since PQ || AC, ZBPQ = ZBAC and ZBQP = ZBCA. (corresponding angles)
+Step 3: ZB is common to both triangles.
+Step 4: Therefore, ABPQ ~ ABAC. (AAA similarity)
+. . _ , . BP BQ_ PQ
+Step 5: The ratio of comesponding sides is 55 = FG = Fee
+BP 3k 3
+tep 6: Given AP: PB =4:3, so AB = AP + PB =4k+3k =k. Thus —— = =,
+Step 6: Given 3, so + + ns Ba = ET
+Step 7: Hence, PQ: AC =3:7.
+Step 8: Part (ii): Consider ABQS and ABCR.
+Step 9: ZBSQ = ZBRC = 90° (assuming $ is on BQ, R on BC).
+Step 10: ZQBS = ZCBR (common angle B).
+Step 11: So ABQS ~ ABCR.
+14

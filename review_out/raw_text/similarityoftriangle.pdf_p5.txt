@@ -1,0 +1,62 @@
+Similarity of Triangles — Quick Notes (Grade 10)                                                        4
+
+
+Key Theorems from Similarity
+   Theorem/Rule
+   Basic Proportionality Theorem (Thales): If a line through a triangle is parallel to one side, it
+   divides the other two sides proportionally.
+                                 𝐴𝐷     𝐴𝐸      𝐴𝐷   𝐴𝐸
+   If 𝐷𝐸 ∥ 𝐵𝐶 in △𝐴𝐵𝐶, then          =      and    =    .
+                                 𝐷𝐵 𝐸𝐶          𝐴𝐵   𝐴𝐶
+
+                                           𝐶
+
+
+
+                                       𝐸
+
+
+
+                                                                   𝐵
+                                                    𝐷
+                                   𝐴
+
+
+   Example
+
+   Proof idea: Since 𝐷𝐸 ∥ 𝐵𝐶, ∠ 𝐴𝐷𝐸 = ∠ 𝐴𝐵𝐶 and ∠ 𝐴𝐸 𝐷 = ∠ 𝐴𝐶 𝐵 (alternate interior angles).
+                                 𝐴𝐷   𝐴𝐸      𝐷𝐸     𝐴𝐷    𝐴𝐸                    𝐴𝐷    𝐴𝐸
+   Thus △𝐴𝐷𝐸 ∼ △𝐴𝐵𝐶 (AAA), so       =     and      =    =      . From the first,     =     .
+                                 𝐴𝐵   𝐴𝐶      𝐵𝐶     𝐴𝐵    𝐴𝐶                    𝐷𝐵 𝐸𝐶
+
+   Theorem/Rule
+   Converse of BPT: If a line through a triangle cuts two sides proportionally, it is parallel to the
+   third side.
+
+   Theorem/Rule
+                                                                                    𝐵𝐷   𝐴𝐵
+   Angle Bisector Theorem (internal): In △𝐴𝐵𝐶, if 𝐴𝐷 bisects ∠ 𝐴 with 𝐷 on 𝐵𝐶, then    =    .
+                                                                                    𝐷𝐶   𝐴𝐶
+                                                                   𝐵𝐸   𝐴𝐵
+   External bisector at 𝐴 meets the extension of 𝐵𝐶 at 𝐸 and gives    =    .
+                                                                   𝐸𝐶   𝐴𝐶
+
+                               𝐸
+                                       𝐶
+
+
+                                                     𝐷
+
+
+
+                                                                       𝐵
+                                           𝐴
+
+
+   Example
+
+   Right-triangle similarity facts:
+    • In right △𝐴𝐵𝐶 with right angle at 𝐶, altitude from 𝐶 to hypotenuse 𝐴𝐵 meets 𝐴𝐵 at 𝐻. Then
+      △𝐴𝐶𝐻 ∼ △𝐴𝐵𝐶 ∼ △𝐻𝐶 𝐵.
+    • Mean proportionals: 𝐶𝐻 2 = 𝐴𝐻 · 𝐻𝐵, 𝐴𝐶 2 = 𝐴𝐻 · 𝐴𝐵, 𝐵𝐶 2 = 𝐻𝐵 · 𝐴𝐵.
+    • Pythagoras by similarity: From 𝐴𝐶 2 = 𝐴𝐻 · 𝐴𝐵 and 𝐵𝐶 2 = 𝐻𝐵 · 𝐴𝐵, add to get 𝐴𝐶 2 + 𝐵𝐶 2 =

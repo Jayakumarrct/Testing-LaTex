@@ -1,0 +1,65 @@
+                                          AB   AC
+Step 1: From △ABC ∼ △DEF , we get            =    and ∠A = ∠D.                        (similar triangles)
+                                          DE   DF
+Step 2: Since BM, EN are medians, AM = 12 AC and DN = 12 DF .                     (definition of median)
+                      1
+                AM      AC   AC
+Step 3: Hence      = 12    =    .                                          (halves of proportional sides)
+                DN   2  DF   DF
+                                            AB   AM
+Step 4: Combining steps 1 and 3, we have       =    .                               (transitive property)
+                                            DE   DN
+                                                          AB   AM
+Step 5: In △ABM and △DEN , we have ∠A = ∠D and               =    .                (from steps 1 and 4)
+                                                          DE   DN
+Step 6: Conclude △ABM ∼ △DEN .                                                          (SAS similarity)
+                                BM   AB
+Step 7: From this similarity,      =    .                      (corresponding sides in similar triangles)
+                                EN   DE
+                AB   AC                                BM   AC
+Step 8: Since      =    (from step 1), we can conclude    =    .                    (transitive property)
+                DE   DF                                EN   DF
+
+                                     BM   AC
+Answer: (i) △ABM ∼ △DEN ; (ii)          =    .
+                                     EN   DF
+
+
+
+Question 6
+
+Question: In the given figure, △ABC is isosceles with AC = BC and AP × BQ = AC 2 . Prove that
+△ACP ∼ △BCQ.
+Solution Given: △ABC is isosceles with AC = BC and AP · BQ = AC 2 .
+To Prove: △ACP ∼ △BCQ.
+
+
+                                                   C
+
+
+                                                         Q
+                                            P
+
+
+
+                                      A                         B
+
+
+Step 1: Note: The condition AP · BQ = AC 2 together with AC = BC is not sufficient to conclude
+        △ACP ∼ △BCQ.
+Step 2: The previous version incorrectly used ∠CAP = ∠CBQ; this is generally false because P ∈ AC
+        and Q ∈ BC make ∠CAP degenerate.
+                                            AP   AC
+Step 3: From AP · BQ = AC · BC we get          =    , but this ratio alone does not fix the angles at C
+                                            BC   BQ
+        in △ACP and △BCQ.
+Step 4: A common correct variant assumes additional angle/ratio information (for example, equal angles
+        at C), after which SAS can be applied.
+
+Answer: As stated, the data are insufficient to prove the claimed similarity without an extra condition
+at C.
+
+
+
+
+                                                   3

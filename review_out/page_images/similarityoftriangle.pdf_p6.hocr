@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 5.5.1' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_dir ocrp_lang ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "./review_out/page_images/similarityoftriangle.pdf_p6.png"; bbox 0 0 1241 1754; ppageno 0; scan_res 150 150'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 150 82 1089 443">
+    <p class='ocr_par' id='par_1_1' lang='eng' title="bbox 150 82 1089 443">
+     <span class='ocr_line' id='line_1_1' title="bbox 150 82 1089 103; baseline 0 -5; x_size 21; x_descenders 5; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_1' title='bbox 150 82 239 103; x_wconf 96'>Similarity</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 246 83 266 103; x_wconf 96'>of</span>
+      <span class='ocrx_word' id='word_1_3' title='bbox 270 82 352 103; x_wconf 93'>Triangles</span>
+      <span class='ocrx_word' id='word_1_4' title='bbox 359 92 379 94; x_wconf 93'>—</span>
+      <span class='ocrx_word' id='word_1_5' title='bbox 385 82 438 102; x_wconf 97'>Quick</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 443 83 494 98; x_wconf 96'>Notes</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 502 82 566 102; x_wconf 96'>(Grade</span>
+      <span class='ocrx_word' id='word_1_8' title='bbox 575 82 603 102; x_wconf 96'>10)</span>
+      <span class='ocrx_word' id='word_1_9' title='bbox 1079 83 1089 98; x_wconf 96'>5</span>
+     </span>
+     <span class='ocr_line' id='line_1_2' title="bbox 211 169 435 193; baseline 0 -4; x_size 24; x_descenders 4; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_10' title='bbox 211 173 252 193; x_wconf 96'>(AH</span>
+      <span class='ocrx_word' id='word_1_11' title='bbox 258 177 270 189; x_wconf 69'>+</span>
+      <span class='ocrx_word' id='word_1_12' title='bbox 276 173 315 193; x_wconf 69'>HB)</span>
+      <span class='ocrx_word' id='word_1_13' title='bbox 324 182 327 185; x_wconf 73'>-</span>
+      <span class='ocrx_word' id='word_1_14' title='bbox 334 174 364 189; x_wconf 84'>AB</span>
+      <span class='ocrx_word' id='word_1_15' title='bbox 372 180 384 186; x_wconf 84'>=</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 391 169 435 189; x_wconf 78'>AB?.</span>
+     </span>
+     <span class='ocr_line' id='line_1_3' title="bbox 508 253 520 266; baseline 0 0; x_size 17.205883; x_descenders 4.2058821; x_ascenders 4.8006535">
+      <span class='ocrx_word' id='word_1_17' title='bbox 508 253 520 266; x_wconf 72'>Cc</span>
+     </span>
+     <span class='ocr_line' id='line_1_4' title="bbox 446 430 794 443; baseline -0.003 0; x_size 15.882353; x_descenders 3.8823526; x_ascenders 4.4313726">
+      <span class='ocrx_word' id='word_1_18' title='bbox 446 431 457 443; x_wconf 96'>A</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 675 430 688 442; x_wconf 81'>H</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 783 430 794 442; x_wconf 91'>B</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

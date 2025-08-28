@@ -1,0 +1,35 @@
+Step 5: (v) True. An isosceles right triangle must have angles 90-45-45. Any two such triangles are similar
+
+by AAA similarity.
+Step 6: (vi) True. In a trapezium ABCD with AB || DC, the diagonals intersect at O, forming AAOB and
+
+ACOD. These triangles are similar (AA similarity), so their sides are proportional: AG = $2.
+Answer: (i) False, (ii) True, (iii) True, (iv) False, (v) True, (vi) True.
+Question 12
+Question: D is a point on the side BC of triangle ABC such that ZADC = ZBAC. Prove that
+CA? =CB-CD.
+Solution Given: In AABC, D is on BC such that ZADC = ZBAC.
+To Prove: AC? = CB-CD.
+
+A
+B D c
+
+Step 1: Consider AADC and ABAC.
+Step 2: ZADC = ZBAC. (given)
+Step 3: ZACD = ZBCA (or ZC). (common angle)
+Step 4: Therefore, AADC ~ ABAC. (AA similarity)
+Step 5: The ratio of corresponding sides must be equal. Match vertices: A B, DG A,C oC.
+
+_ AC DC AD .
+Step 6: 80, BG = 4G = Ba: (corresponding sides)
+
+_ AC DC
+Step 7: From the first two parts of the proportion, BO- AC:
+Step 8: Cross-multiply to get AC x AC = BC x DC, which is AC? = CB-CD. (algebra)
+Answer: AC? = CB-CD.
+Question 13
+Question: AABC and AAMP are right-angled at B and M respectively. A is a common vertex. AC =
+10 cm, AP = 15 cm, PM = 12 cm. (i) Prove AABC ~ AAMP. (ii) Find AB and BC.
+Solution Given: 2B = 2M = 90°, A is a common vertex. AC=10, AP=15, PM=12.
+To Prove: (i) similarity; (ii) find AB, BC.
+ll

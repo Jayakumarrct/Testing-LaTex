@@ -1,0 +1,23 @@
+Step 1: Part (i):
+Step 2: In AABC, BP is the bisector of angle ZB.
+Step 3: By the Angle Bisector Theorem, the bisector divides the opposite side in the ratio of the other
+two sides.
+CB CP woe A
+Step 4: Therefore, 55 = Fy. This is equivalent to CB:BA = CP:PA.
+Step 5: Part (ii):
+Step 6: Let ZACB = y. Then the given condition is ZABC = 2y.
+Step 7: Since BP bisects ZABC, we have ZABP = ZPBC = y.
+Step 8: Now consider ABPC. We have ZPBC = y and ZPCB = y.
+Step 9: Since two angles are equal, ABPC is an isosceles triangle with BP = PC.
+Step 10: Now consider AABC and AAPB.
+Step ll: ZBAC = ZPAB (Common Angle A).
+Step 12: ZACB = y and ZABP = y. So, ZACB = ZABP.
+Step 13: Therefore, AABC ~ AAPB. (AA similarity)
+AB BC _ AC
+14: The ratio of corresponding sides is —> = = = ——,
+Step he ratio of corresponding sides is AP PB AB
+BC AC .
+Step 15: From 55 = Pp, we cross-multiply to get AB- BC = PB- AC.
+Step 16: Note: The question has BP - CA, which is the same.
+Answer: Both parts are proved.
+21

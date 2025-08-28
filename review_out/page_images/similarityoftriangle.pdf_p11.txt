@@ -1,0 +1,36 @@
+Similarity of Triangles — Quick Notes (Grade 10) 10
+Pitfalls and Checks
+* Wrong order: Always match letters correctly when writing ratios.
++ SAS uses included angle: The equal angle must be between the two compared sides.
+* k vs k?: Perimeter uses k, area uses k?.
+* Rounding: Keep sufficient precision; round only at the end.
+* Not to scale: Diagrams may mislead; rely on given measures.
+Practice Problems
+1. In AABC, DE || BC, AD = 3, AB =9, AE =5. Find AC.
+2. Two similar triangles have k = 4. If the smaller area is 27, find the larger area.
+3. In AABC, AD bisects ZA. If AB = 8, AC = 10, BC = 18, find BD and DC.
+4. Inright AABC with right angle at C, altitude to hypotenuse meets at H, AH = 5, HB = 9. Find CH,
+AC, BC.
+5. AABC ~ ADEF with AB =7, BC = 9, DE = 14. Find EF.
+6. A model uses scale 1 : 50. A real building is 45 m tall. How tall is the model?
+7. If AABC ~ APQR and ZA = 40°, ZC = 65°, find 2Q.
+8. In AABC, DE || BC with AD = 4, DB = 8, AE = 6. Find EC.
+9. AABC ~ AA’B'C’ and k = 2.5. If Pagc = 28, find Pargc’.
+10. If AB = BC = cA = 3, what is the area ratio [DEF],
+DE EF FD [ABC]
+11. Sides AB = 6, AC = 10. If AD bisects ZA meeting BC at D and BD = 7.2, find BC.
+12. Points A(0,0), B(3, 1), C(0,2). Points D(0,0), E(6,2), F(0,4). Are AABC and ADEF similar?
+State k.
+13. In AABC, a line through A meets BC at D with aa = 3. Prove the line is parallel to AB or AC?
+Which?
+14. AABC ~ APQR with AB = 12, BC = 15, CA = 9 and PQ = 16. Find k and QR, RP.
+15. In right AABC with ZC = 90°, AC = 9, BC = 12. Find AB using similarity (not directly by
+Pythagoras).
+16. A2 m stick casts 1.6 m shadow. A building casts 24 m shadow at the same time. Find the building
+height.
+17. If AABC ~ ADEF and AB = BC = k, express [DEF] in terms of k.
+DE EF [ABC]
+18. In AABC, DE || BC with AD =7, AE = 10, AC = 15. Find AB.
+19. In AABC, AD bisects ZA and meets BC at D. If AB: AC = 5: 7 and BC = 18, find BD and DC.
+20. Coordinates: A(1, 1), B(5,3), C(2, 6) and A’(2, 2), B’(10, 6), C’(4, 12). Check similarity and find k.
+Answers are listed at the end.

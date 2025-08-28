@@ -1,0 +1,60 @@
+ Question 7
+
+Question: In △ABC, ∠B = 90◦ and BD ⊥ AC. (i) If CD = 10 cm and BD = 8 cm; find AD. (ii) If
+AC = 18 cm and AD = 6 cm; find BD. (iii) If AC = 9 cm and AB = 7 cm; find AD.
+ Solution Given: Right △ABC (∠B = 90◦ ) with altitude BD ⊥ AC.
+ To Prove: Find specified segment lengths.
+
+
+                                      A
+
+
+                                                    D
+
+
+
+
+                                      B                              C
+
+ Step 1: First, establish the key similarity relationship: △ADB ∼ △BDC. This gives the geometric mean
+                                     AD       BD
+         theorem for the altitude:         =      , or BD2 = AD × CD.
+                                     BD       CD
+                                                AC   AB
+ Step 2: Also, △ABC ∼ △ADB, which gives            =    , or AB 2 = AD × AC.
+                                                AB   AD
+ Step 3: Part (i): Given CD = 10, BD = 8.
+ Step 4: Use BD2 = AD × CD =⇒ 82 = AD × 10.                                                    (substitution)
+
+ Step 5: 64 = 10 × AD =⇒       AD = 6.4 cm .                                                       (algebra)
+
+ Step 6: Part (ii): Given AC = 18, AD = 6.
+ Step 7: First find CD: CD = AC − AD = 18 − 6 = 12 cm.                                (segment subtraction)
+ Step 8: Use BD2 = AD × CD =⇒ BD2 = 6 × 12 = 72.                                               (substitution)
+                √
+ Step 9: BD = 6 2 cm .                                                                  (simplifying radical)
+
+Step 10: Part (iii): Given AC = 9, AB = 7.
+Step 11: Use AB 2 = AD × AC =⇒ 72 = AD × 9.                                                    (substitution)
+
+                                     49
+Step 12: 49 = 9 × AD =⇒       AD =      cm .                                                       (algebra)
+                                      9
+
+                                     √                 49
+ Answer: (i) AD = 6.4 cm, (ii) BD = 6 2 cm, (iii) AD =    cm.
+                                                        9
+
+
+
+ Question 9
+
+ Question: In the given figure, DE —— BC, AE = 15 cm, EC = 9 cm, NC = 6 cm and BN = 24 cm. M
+ is the intersection of BE and DN. (i) Write all possible pairs of similar triangles. (ii) Find lengths of ME
+ and DM.
+ Solution Given: D on AB, E on AC, DE ∥ BC. N on BC. M is intersection of BE and DN.
+ To Prove: (i) List similar triangles. (ii) Find ME and DM.
+
+
+
+                                                        8

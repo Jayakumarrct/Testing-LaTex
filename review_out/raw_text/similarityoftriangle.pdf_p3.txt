@@ -1,0 +1,36 @@
+Similarity of Triangles — Quick Notes (Grade 10)                                                     2
+
+
+Core Definitions and Similarity Criteria
+   Definition
+   Similar triangles: △𝐴𝐵𝐶 ∼ △𝐴′ 𝐵′ 𝐶 ′ if ∠ 𝐴 = ∠ 𝐴′ , ∠𝐵 = ∠𝐵′ , ∠𝐶 = ∠𝐶 ′ (AAA), or if certain
+   side-angle conditions hold (SAS, SSS).
+
+
+   Theorem/Rule                      Theorem/Rule                      Theorem/Rule
+   AAA Similarity                    SAS Similarity                    SSS Similarity
+    • If three angles of a tri-       • Two sides in proportion         • All three side pairs are
+      angle match the three             and the included angle            in the same ratio 𝑘.
+      angles of another, the            equal imply similarity.            𝐴𝐵
+                                                                        • ′ ′ =
+                                                                                         𝐵𝐶
+                                                                                                 =
+      triangles are similar.             𝐴𝐵          𝐴𝐶                    𝐴𝐵           𝐵′ 𝐶 ′
+                                      • ′ ′ =              and             𝐶𝐴
+    • Ratios of correspond-             𝐴𝐵          𝐴′ 𝐶 ′                       = 𝑘.
+                                        ∠𝐴 = ∠𝐴 .′                        𝐶 ′ 𝐴′
+      ing sides are equal.
+
+                                                                             𝑘          𝑘
+
+                                                                                    𝑘
+
+
+
+
+   Warning
+
+   Common mistakes
+    • Using a non-included angle for SAS.
+    • Mismatching corresponding sides when writing ratios.
+    • Forgetting that areas scale by 𝑘 2 , not by 𝑘.

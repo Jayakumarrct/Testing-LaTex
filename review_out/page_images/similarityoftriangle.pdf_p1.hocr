@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <meta name='ocr-system' content='tesseract 5.5.1' />
+  <meta name='ocr-capabilities' content='ocr_page ocr_carea ocr_par ocr_line ocrx_word ocrp_dir ocrp_lang ocrp_wconf'/>
+ </head>
+ <body>
+  <div class='ocr_page' id='page_1' title='image "./review_out/page_images/similarityoftriangle.pdf_p1.png"; bbox 0 0 1241 1754; ppageno 0; scan_res 150 150'>
+   <div class='ocr_carea' id='block_1_1' title="bbox 229 346 1005 1603">
+    <p class='ocr_par' id='par_1_1' lang='eng' title="bbox 229 346 1005 1603">
+     <span class='ocr_line' id='line_1_1' title="bbox 403 346 727 354; baseline 0 0; x_size 22.708729; x_descenders 5.5450821; x_ascenders 5.6785712">
+      <span class='ocrx_word' id='word_1_1' title='bbox 403 346 411 354; x_wconf 55'>°</span>
+      <span class='ocrx_word' id='word_1_2' title='bbox 461 346 469 354; x_wconf 53'>°</span>
+      <span class='ocrx_word' id='word_1_3' title='bbox 538 346 546 354; x_wconf 50'>°</span>
+      <span class='ocrx_word' id='word_1_4' title='bbox 719 346 727 354; x_wconf 50'>°</span>
+     </span>
+     <span class='ocr_line' id='line_1_2' title="bbox 374 346 867 393; baseline 0 -11; x_size 47; x_descenders 11; x_ascenders 11">
+      <span class='ocrx_word' id='word_1_5' title='bbox 374 346 592 393; x_wconf 96'>Similarity</span>
+      <span class='ocrx_word' id='word_1_6' title='bbox 606 346 651 383; x_wconf 96'>of</span>
+      <span class='ocrx_word' id='word_1_7' title='bbox 662 347 867 393; x_wconf 96'>Triangles</span>
+     </span>
+     <span class='ocr_line' id='line_1_3' title="bbox 471 407 770 433; baseline 0 -4; x_size 26; x_descenders 4; x_ascenders 7">
+      <span class='ocrx_word' id='word_1_8' title='bbox 471 407 547 433; x_wconf 96'>Quick</span>
+      <span class='ocrx_word' id='word_1_9' title='bbox 555 408 625 429; x_wconf 95'>Notes</span>
+      <span class='ocrx_word' id='word_1_10' title='bbox 634 407 724 433; x_wconf 95'>(Grade</span>
+      <span class='ocrx_word' id='word_1_11' title='bbox 734 407 770 433; x_wconf 96'>10)</span>
+     </span>
+     <span class='ocr_line' id='line_1_4' title="bbox 482 510 759 533; baseline 0 -6; x_size 20; x_descenders 3; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_12' title='bbox 482 510 544 530; x_wconf 96'>Clean,</span>
+      <span class='ocrx_word' id='word_1_13' title='bbox 552 510 636 530; x_wconf 93'>colorful,</span>
+      <span class='ocrx_word' id='word_1_14' title='bbox 644 510 759 533; x_wconf 92'>exam-ready</span>
+     </span>
+     <span class='ocr_line' id='line_1_5' title="bbox 229 913 1001 939; baseline 0 -10; x_size 21; x_descenders 5; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_15' title='bbox 229 914 262 930; x_wconf 96'>Use</span>
+      <span class='ocrx_word' id='word_1_16' title='bbox 269 913 298 929; x_wconf 96'>for:</span>
+      <span class='ocrx_word' id='word_1_17' title='bbox 308 913 370 934; x_wconf 96'>precise</span>
+      <span class='ocrx_word' id='word_1_18' title='bbox 376 913 460 934; x_wconf 96'>meanings</span>
+      <span class='ocrx_word' id='word_1_19' title='bbox 467 913 498 929; x_wconf 96'>and</span>
+      <span class='ocrx_word' id='word_1_20' title='bbox 504 913 581 929; x_wconf 96'>notation.</span>
+      <span class='ocrx_word' id='word_1_21' title='bbox 662 919 696 934; x_wconf 96'>Use</span>
+      <span class='ocrx_word' id='word_1_22' title='bbox 703 918 733 934; x_wconf 95'>for:</span>
+      <span class='ocrx_word' id='word_1_23' title='bbox 744 918 809 934; x_wconf 97'>worked</span>
+      <span class='ocrx_word' id='word_1_24' title='bbox 816 918 900 939; x_wconf 96'>examples</span>
+      <span class='ocrx_word' id='word_1_25' title='bbox 907 918 946 934; x_wconf 96'>with</span>
+      <span class='ocrx_word' id='word_1_26' title='bbox 953 921 1001 939; x_wconf 96'>steps.</span>
+     </span>
+     <span class='ocr_line' id='line_1_6' title="bbox 229 1016 958 1044; baseline 0.003 -7; x_size 22; x_descenders 5; x_ascenders 6">
+      <span class='ocrx_word' id='word_1_27' title='bbox 229 1017 263 1033; x_wconf 96'>Use</span>
+      <span class='ocrx_word' id='word_1_28' title='bbox 270 1016 299 1032; x_wconf 96'>for:</span>
+      <span class='ocrx_word' id='word_1_29' title='bbox 310 1016 340 1037; x_wconf 96'>key</span>
+      <span class='ocrx_word' id='word_1_30' title='bbox 347 1017 391 1032; x_wconf 96'>rules</span>
+      <span class='ocrx_word' id='word_1_31' title='bbox 398 1016 429 1032; x_wconf 96'>and</span>
+      <span class='ocrx_word' id='word_1_32' title='bbox 436 1016 505 1032; x_wconf 96'>criteria.</span>
+      <span class='ocrx_word' id='word_1_33' title='bbox 662 1024 697 1039; x_wconf 96'>Use</span>
+      <span class='ocrx_word' id='word_1_34' title='bbox 703 1023 733 1039; x_wconf 96'>for:</span>
+      <span class='ocrx_word' id='word_1_35' title='bbox 743 1023 793 1044; x_wconf 96'>quick</span>
+      <span class='ocrx_word' id='word_1_36' title='bbox 799 1023 848 1039; x_wconf 96'>tricks</span>
+      <span class='ocrx_word' id='word_1_37' title='bbox 855 1023 887 1039; x_wconf 96'>and</span>
+      <span class='ocrx_word' id='word_1_38' title='bbox 893 1023 958 1039; x_wconf 96'>checks.</span>
+     </span>
+     <span class='ocr_line' id='line_1_7' title="bbox 229 1123 1005 1151; baseline 0 -1; x_size 21.310884; x_descenders 5.3108845; x_ascenders 5">
+      <span class='ocrx_word' id='word_1_39' title='bbox 229 1124 299 1140; x_wconf 0'>Wse/for:</span>
+      <span class='ocrx_word' id='word_1_40' title='bbox 310 1128 433 1144; x_wconf 47'>[consequences</span>
+      <span class='ocrx_word' id='word_1_41' title='bbox 440 1123 525 1139; x_wconf 16'>andifacts)</span>
+      <span class='ocrx_word' id='word_1_42' title='bbox 662 1135 697 1151; x_wconf 96'>Use</span>
+      <span class='ocrx_word' id='word_1_43' title='bbox 703 1134 733 1150; x_wconf 96'>for:</span>
+      <span class='ocrx_word' id='word_1_44' title='bbox 743 1139 822 1150; x_wconf 96'>common</span>
+      <span class='ocrx_word' id='word_1_45' title='bbox 829 1134 906 1150; x_wconf 96'>mistakes</span>
+      <span class='ocrx_word' id='word_1_46' title='bbox 913 1134 945 1150; x_wconf 96'>and</span>
+      <span class='ocrx_word' id='word_1_47' title='bbox 952 1134 1005 1150; x_wconf 96'>alerts.</span>
+     </span>
+     <span class='ocr_line' id='line_1_8' title="bbox 336 1502 907 1521; baseline 0 -5; x_size 19; x_descenders 5; x_ascenders 4">
+      <span class='ocrx_word' id='word_1_48' title='bbox 336 1502 379 1516; x_wconf 96'>Sides</span>
+      <span class='ocrx_word' id='word_1_49' title='bbox 385 1502 400 1516; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_50' title='bbox 407 1502 497 1521; x_wconf 92'>RoyalBlue,</span>
+      <span class='ocrx_word' id='word_1_51' title='bbox 504 1502 548 1521; x_wconf 97'>angle</span>
+      <span class='ocrx_word' id='word_1_52' title='bbox 554 1502 603 1516; x_wconf 96'>marks</span>
+      <span class='ocrx_word' id='word_1_53' title='bbox 610 1502 625 1516; x_wconf 93'>in</span>
+      <span class='ocrx_word' id='word_1_54' title='bbox 631 1502 737 1519; x_wconf 93'>ForestGreen,</span>
+      <span class='ocrx_word' id='word_1_55' title='bbox 743 1502 812 1521; x_wconf 96'>parallels</span>
+      <span class='ocrx_word' id='word_1_56' title='bbox 819 1502 834 1516; x_wconf 96'>in</span>
+      <span class='ocrx_word' id='word_1_57' title='bbox 840 1502 907 1516; x_wconf 96'>Fuchsia.</span>
+     </span>
+     <span class='ocr_line' id='line_1_9' title="bbox 588 1589 649 1603; baseline 0 0; x_size 18.522999; x_descenders 4.5229988; x_ascenders 4.6318827">
+      <span class='ocrx_word' id='word_1_58' title='bbox 588 1589 603 1603; x_wconf 95'>©</span>
+      <span class='ocrx_word' id='word_1_59' title='bbox 610 1589 649 1603; x_wconf 95'>2025</span>
+     </span>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

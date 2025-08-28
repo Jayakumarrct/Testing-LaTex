@@ -1,0 +1,40 @@
+A B
+D c
+
+Step 1: In AAOB and ACOD, ZOAB = ZOCD and ZOBA=ZODC. (alternate interior angles,
+
+AB || DC)
+Step 2: Also, ZAOB = ZCOD. (vertically opposite angles)
+Step 3: Hence AAOB ~ ACOD. (AAA similarity)
+
+OA _ OB .
+
+Step 4: Therefore Ga = Gy: 80 OA-OD = OB-OC. (corresponding sides)
+Step 5: The given numerics (BO = 6, DQ = 8) do not determine BP-DO without additional relationships
+
+between P,@ and the diagonals.
+Answer: AAOB ~ ACOD and OA-OD = OB- OC. The product BP - DO cannot be found from the
+given data alone.
+Question 4
+Question: In AABC, BM 1 AC and CN 1 AB; show that 48 = 8Y = 44.
+Solution Given: In AABC, BM 1 AC and CN 1 AB.
+To Prove: 22 — BM _ AM
+———= AC CN AN”
+
+c
+VW
+B
+N
+A
+Step 1: Consider AAMB and AANC.
+Step 2: ZAMB = 90° and ZANC = 90°. (given, BM 1 AC,CN 1 AB)
+Step 3: ZMAB = ZNAC (or ZA). (common angle)
+Step 4: Therefore, AAMB ~ AANC. (AA similarity)
+AB_ BM _ AM
+
+Step 5: The ratio of corresponding sides must be equal: 37 = Gyr = Gar (cormesponding sides of
+
+similar triangles)
+Answer: The relationship is proved.
+
+5

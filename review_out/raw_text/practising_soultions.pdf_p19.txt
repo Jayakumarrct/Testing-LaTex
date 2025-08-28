@@ -1,0 +1,57 @@
+Step 11: From AB ↔ DF and BC ↔ DE, vertex B must correspond to vertex D.
+Step 12: From BC ↔ DE and AC ↔ F E, vertex C must correspond to vertex E.
+Step 13: This leaves vertex A corresponding to vertex F.
+Step 14: Therefore, the correct similarity statement is △ABC ∼ △F DE.
+
+ Answer: The triangles are similar by SSS. The correct correspondence is △ABC ∼ △F DE.
+
+
+
+
+ Question 6
+
+Question: In trapezium ABCD with AB ∥ DC, diagonals intersect at P. Prove (i) △AP B ∼ △CP D;
+(ii) P A · P D = P B · P C.
+ Solution Given: Trapezium ABCD with AB ∥ DC, diagonals AC and BD intersect at P.
+ To Prove: (i) △AP B ∼ △CP D; (ii) P A · P D = P B · P C.
+
+
+                                      A                                B
+
+
+                                                  P
+
+
+                                          D                 C
+
+ Step 1: Part (i): Consider △AP B and △CP D.
+ Step 2: Since AB ∥ DC, ∠P AB = ∠P CD.                                          (alternate interior angles)
+ Step 3: Similarly, ∠P BA = ∠P DC.                                              (alternate interior angles)
+ Step 4: Also, ∠AP B = ∠CP D.                                                  (vertically opposite angles)
+ Step 5: Therefore, △AP B ∼ △CP D.                                                       (AAA similarity)
+ Step 6: Part (ii): From the similarity proved in part (i), the ratio of corresponding sides is equal.
+           PA   PB   AB
+ Step 7:      =    =    .
+           PC   PD   CD
+                                                           PA   PB
+ Step 8: Taking the first two parts of the proportion:        =    .
+                                                           PC   PD
+ Step 9: Cross-multiply to get P A · P D = P B · P C.                                            (algebra)
+
+ Answer: (i) The triangles are similar. (ii) The product equality is proved.
+
+
+
+
+ Question 7
+
+ Question: In parallelogram ABCD, P is a point on BC. DP is extended to meet AB extended at L.
+ Prove: (i) DP:PL = DC:BL (ii) DL:DP = AL:DC.
+ Solution Given: Parallelogram ABCD, P on BC, L is the intersection of extended DP and extended
+ AB.
+               DP   DC          DL   AL
+ To Prove: (i)    =      ; (ii)    =    .
+               PL    BL         DP   DC
+
+
+                                                      19

@@ -1,0 +1,27 @@
+# Contents
+
+- Problem 1: WhatsApp Image 2025-08-25 at 18.32.14 (1).jpeg p1 prob 3 — fixes: Evidence, Missing units, Suggestion
+- Problem 2: WhatsApp Image 2025-08-25 at 18.32.14.jpeg p1 prob 1 — fixes: Evidence, Suggestion, Undefined symbol
+- Problem 3: WhatsApp Image 2025-08-25 at 18.32.15 (1).jpeg p1 prob 1 — fixes: Evidence, Missing units, Suggestion
+- Problem 4: WhatsApp Image 2025-08-25 at 18.32.15 (1).jpeg p1 prob iv — fixes: Evidence, Missing units, Suggestion
+- Problem 5: WhatsApp Image 2025-08-25 at 18.32.15 (2).jpeg p1 prob 10 — fixes: Evidence, Missing units, Suggestion
+- Problem 6: WhatsApp Image 2025-08-25 at 18.32.15 (2).jpeg p1 prob 12 — fixes: Evidence, Missing units, Suggestion
+- Problem 7: practising soultions.pdf p1 prob 3 — fixes: Evidence, Missing units, Suggestion
+- Problem 8: practising soultions.pdf p4 prob 2 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 9: practising soultions.pdf p8 prob 7 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 10: practising soultions.pdf p11 prob 13 — fixes: Evidence, Missing units, Suggestion
+- Problem 11: practising soultions.pdf p12 prob 14 — fixes: Evidence, Missing units, Suggestion
+- Problem 12: practising soultions.pdf p13 prob 15 — fixes: Evidence, Missing units, Rounding/precision, Suggestion
+- Problem 13: practising soultions.pdf p14 prob 16 — fixes: Evidence, Missing units, Suggestion
+- Problem 14: practising soultions.pdf p19 prob 7 — fixes: Evidence, Missing units, Suggestion
+- Problem 15: similarityoftriangle.pdf p8 prob 2 — fixes: Evidence, Missing units, Rounding/precision, Suggestion
+- Problem 16: similarityoftriangle.pdf p9 prob 2 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 17: similarityoftriangle.pdf p11 prob 9 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 18: similarityoftriangle.pdf p11 prob 11 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 19: similarityoftriangle.pdf p11 prob 16 — fixes: Evidence, Missing units, Suggestion
+- Problem 20: similarityoftriangle.pdf p12 prob 6 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 21: similarityoftriangle.pdf p12 prob 9 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 22: similarityoftriangle.pdf p12 prob 11 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 23: similarityoftriangle.pdf p12 prob 16 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 24: similarityoftriangle.pdf p12 prob 18 — fixes: Evidence, Rounding/precision, Suggestion
+- Problem 25: similarityoftriangle.pdf p12 prob 19 — fixes: Evidence, Rounding/precision, Suggestion

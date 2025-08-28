@@ -1,0 +1,67 @@
+                                   A                            B
+
+
+                                                O
+
+
+                                       D                  C
+
+
+Step 1: In △AOB and △COD, ∠OAB = ∠OCD and ∠OBA = ∠ODC.                     (alternate interior angles,
+        AB ∥ DC)
+
+Step 2: Also, ∠AOB = ∠COD.                                                (vertically opposite angles)
+
+Step 3: Hence △AOB ∼ △COD.                                                         (AAA similarity)
+                    OA   OB
+Step 4: Therefore      =    , so OA · OD = OB · OC.                            (corresponding sides)
+                    OC   OD
+Step 5: The given numerics (BO = 6, DQ = 8) do not determine BP ·DO without additional relationships
+        between P, Q and the diagonals.
+
+Answer: △AOB ∼ △COD and OA · OD = OB · OC. The product BP · DO cannot be found from the
+given data alone.
+
+
+
+
+Question 4
+
+Question: In △ABC, BM ⊥ AC and CN ⊥ AB; show that AB   BM   AM
+                                                  AC = CN = AN .
+
+Solution Given: In △ABC, BM ⊥ AC and CN ⊥ AB.
+          AB     BM    AM
+To Prove:     =      =    .
+          AC     CN    AN
+
+
+                                               C
+                                              M
+
+
+
+                                                                B
+
+                                                    N
+                                   A
+
+
+Step 1: Consider △AM B and △AN C.
+
+Step 2: ∠AM B = 90◦ and ∠AN C = 90◦ .                                 (given, BM ⊥ AC, CN ⊥ AB)
+
+Step 3: ∠M AB = ∠N AC (or ∠A).                                                       (common angle)
+
+Step 4: Therefore, △AM B ∼ △AN C.                                                    (AA similarity)
+                                                          AB   BM   AM
+Step 5: The ratio of corresponding sides must be equal:      =    =    .     (corresponding sides of
+                                                          AC   CN   AN
+       similar triangles)
+
+Answer: The relationship is proved.
+
+
+
+
+                                                    5

@@ -1,0 +1,28 @@
+A
+N\ |
+P
+Step 1: Part (i): In AABC and AAMP.
+Step 2: ZABC = ZAMP = 90°. (given)
+Step 3: ZBAC = ZMAP (or ZA). (common angle)
+Step 4: Therefore, AABC ~ AAMP. (AA similarity)
+Step 5: Part (ii): First, find the length of AM in AAMP.
+Step 6: By Pythagoras’ theorem, AP? = AM? + PM?. (Pythagorean theorem)
+Step 7: 15° = AM? +12? => 225 = AM? + 144.
+Step 8: AM? = 225-144=81 => | AM =9cem |
+«: 5 a . a AB BC _ AC
+Step 9: Since the triangles are similar, the ratio of their sides is equal: 55> = 375 = Gp-
+Step 10: Use the ratio with ki hypotenuses; AC = 10 _] 2
+ep 10: Use the ratio with known hypotenuses: 75 = 77 =| 5 |
+. AB 2 AB 2
+Step U1: Find AB: T= 5 = a5 = [ AB =6em |
+. BC 2 BC 2
+Step 12: Find BC: F5=5 = Sp =5 > [ BC =8em|
+Answer: (i) AABC ~ AAMP. (ii) AB = 6 cm, BC = 8 cm.
+Question 14
+Question: In parallelogram PQRS with PQ = 16 cm, QR = 10 cm, point L lies on diagonal PR. such
+that RL:LP = 2:3. QL produced meets RS at M and PS produced at N. Find PN and RM.
+Solution Given: Parallelogram PQRS, PQ=16, QR=10, RL:LP=2:3.
+To Prove: Find lengths of PN and RM.
+N
+P Q
+12

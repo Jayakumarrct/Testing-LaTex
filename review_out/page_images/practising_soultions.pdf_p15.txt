@@ -1,0 +1,31 @@
+Bi S BQ_:
+3. 6 7x6
+Step 13: 7— oR = CR= >a 14cm.
+Step 14: The question asks for AR, which is not part of these triangles. Without more information about
+the line CD and point R, AR cannot be determined.
+Answer: (i) PQ:AC = 3:7. (ii) AR cannot be determined from the given information.
+Question 17
+Question: In triangle ABC, medians BD and CE meet at centroid G. Prove (i) AEGD ~ ACGB; (ii)
+BG =2GD.
+Solution Given: D is midpoint of AC, E is midpoint of AB; Medians BD and CE intersect at G.
+To Prove: (i) AEGD ~ ACGB; (ii) BG = 2GD.
+A
+B Cc
+Step 1: In AABC, E and D are midpoints of AB and AC respectively.
+Step 2: By the Midpoint Theorem, ED || BC and ED = 4BC. (midpoint theorem)
+Step 3: Part (i): Consider AEGD and ACGB.
+Step 4: Since ED || BC, we have Z@ED = ZGCB and ZGDE = ZGBC. (alternate interior angles)
+Step 5: Also, ZEGD = ZCGB. (vertically opposite angles)
+Step 6: Therefore, AEGD ~ ACGB. (AAA similarity)
+Step 7: Part (ii): From the similarity, the ratio of corresponding sides is equal.
+EG GD ED
+Step 8: Gq = GB > OB
+Step 9: Using the ratio involving the sides we need and the one we know from the midpoint theorem:
+GD ED
+GB CB’
+ar GD }BC 1 ;
+Step 10: Substitute ED = $BC: cpt aC =3 (substitution)
+GD 1 .
+Step 11: From Zp = 5, we crossamultiply to get BG = 2GD. (algebra)
+Answer: (i) The triangles are similar. (ii) BG = 2GD is proved.
+15

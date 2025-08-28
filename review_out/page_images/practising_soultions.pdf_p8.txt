@@ -1,0 +1,32 @@
+Question 7
+Question: In AABC, ZB = 90° and BD 1 AC. (i) If CD = 10 cm and BD = 8 cm; find AD. (ii) If
+AC = 18 cm and AD = 6 em; find BD. (iii) If AC = 9 cm and AB = 7 cm; find AD.
+Solution Given: Right AABC (ZB = 90°) with altitude BD L AC.
+To Prove: Find specified segment lengths.
+A
+vail
+B Cc
+Step 1: First, establish the key similarity relationship: AADB ~ ABDC. This gives the geometric mean
+. AD BD >
+theorem for the altitude: 7 = Gp. or BD* = AD x CD.
+AC _ AB 5
+Step 2: Also, AABC ~ AADB, which gives 5 = 55, or AB? = AD x AC.
+Step 3: Part (i): Given CD = 10, BD = 8.
+Step 4: Use BD? = AD x CD => 8° = AD x 10. (substitution)
+Step 5: 64= 10x AD = | AD=64em |. (algebra)
+Step 6: Part (ii): Given AC = 18, AD = 6.
+Step 7: First find CD: CD = AC — AD = 18-6 = 12 cm. (segment subtraction)
+Step 8: Use BD? = AD x CD => BD? =6x 12=72. (substitution)
+Step 9: | BD = 6V2cm |. (simplifying radical)
+Step 10: Part (iii): Given AC = 9, AB = 7.
+Step 11: Use AB? = AD x AC = 7? =ADx 9. (substitution)
+49
+Step 12: 49=9 x AD => | AD = > cm} (algebra)
+Answer: (i) AD = 6.4 cm, (ii) BD = 6V2 cm, (iii) AD = > om
+Question 9
+Question: In the given figure, DE —— BC, AE = 15 em, EC = 9 cm, NC = 6 em and BN = 24 cm. M
+is the intersection of BE and DN. (i) Write all possible pairs of similar triangles. (ii) Find lengths of ME
+and DM.
+Solution Given: D on AB, E on AC, DE || BC. N on BC. M is intersection of BE and DN.
+To Prove: (i) List similar triangles. (ii) Find ME and DM.
+8

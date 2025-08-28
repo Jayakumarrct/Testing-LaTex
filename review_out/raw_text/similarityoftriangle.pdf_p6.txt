@@ -1,0 +1,13 @@
+Similarity of Triangles — Quick Notes (Grade 10)           5
+
+
+
+      ( 𝐴𝐻 + 𝐻𝐵) · 𝐴𝐵 = 𝐴𝐵2 .
+
+
+                                     𝐶
+
+
+
+
+                                𝐴                  𝐻   𝐵

@@ -1,0 +1,19 @@
+Similarity of Triangles — Quick Notes (Grade 10) 3
+Consequences of Similarity
+If AABC ~ AA’B’C’ with scale factor k (so A’B’ = k AB), then:
+* Corresponding angles are equal.
+o AY _ Be AH
+A'B’ BIC’ C/A ik
++ Perimeter ratio is Pasi =k.
+Pasc
+* Area ratio is (AVC) KR,
+[ABC]
++ Altitudes, medians, and angle bisectors scale by k.
+A 0 Ao q AB hap .
+A quick proof (altitudes scale by k): In similar triangles, We because both pairs
+‘A'B!
+are opposite equal angles and form similar right triangles when dropping perpendiculars. Hence
+Dip = hap.
+c
+A
+Area shortcut: If sides scale by k, areas scale by k?. If perimeters scale by 3, areas scale by 9.

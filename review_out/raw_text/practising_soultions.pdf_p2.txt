@@ -1,0 +1,57 @@
+Step 5: Conclude △ABL ∼ △DEM .                                                   (SAS similarity)
+                AL   AB   BC
+Step 6: Hence      =    =    .                          (corresponding sides in similar triangles)
+                DM   DE   EF
+          BC   AL
+Answer:      =    .
+          EF   DM
+
+
+
+Question 4
+
+Question: In △ABC, AD is perpendicular to side BC and AD2 = BD × CD. Prove that ∠BAC = 90◦ .
+Solution Given: AD ⊥ BC and AD2 = BD · CD.
+To Prove: ∠BAC = 90◦ .
+
+
+                                            A
+
+
+
+
+                                B           D               C
+
+Step 1: In △ADB, AB 2 = AD2 + BD2 .                                 (Pythagoras in right △ADB)
+Step 2: In △ADC, AC 2 = AD2 + CD2 .                                 (Pythagoras in right △ADC)
+Step 3: Add: AB 2 + AC 2 = 2AD2 + BD2 + CD2 .                                     (add equations)
+
+Step 4: Substitute AD2 = BD · CD to get AB 2 + AC 2 = (BD + CD)2 = BC 2 .              (given and
+       BC = BD + CD)
+Step 5: Conclude ∠BAC = 90◦ .                                            (converse of Pythagoras)
+
+Answer: ∠BAC = 90◦ .
+
+
+
+
+Question 5
+
+Question: In the given figure, △ABC and △DEF are similar. BM and EN are their medians. Prove
+that: (i) △ABM ∼ △DEN (ii) BM       AC
+                               EN = DF
+
+Solution Given: △ABC ∼ △DEF and BM, EN are medians.
+                                 BM   AC
+To Prove: (i) △ABM ∼ △DEN ; (ii)    =    .
+                                 EN   DF
+
+                                    B                                E
+
+
+
+
+                   A        M           C           D           N           F
+
+
+                                                2

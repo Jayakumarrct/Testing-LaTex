@@ -1,0 +1,31 @@
+Similarity of Triangles — Quick Notes (Grade 10)                                                         9
+
+
+Formula and Fact Sheet
+   Property
+
+   Topic                         Key Facts / Formulas
+   Similarity notation           △𝐴𝐵𝐶 ∼ △𝐴′ 𝐵′ 𝐶 ′ ; keep vertex order.
+                                       𝐴′ 𝐵 ′ 𝐵 ′ 𝐶 ′ 𝐶 ′ 𝐴′
+   Scale factor                  𝑘=            =      =       .
+                                        𝐴𝐵       𝐵𝐶       𝐶𝐴
+   Angle equality                ∠ 𝐴 = ∠ 𝐴 , ∠𝐵 = ∠𝐵 , ∠𝐶 = ∠𝐶 ′ .
+                                             ′         ′
+
+   AAA                           Three equal angles ⇒ triangles similar.
+   SAS                           Two side ratios equal and included angle equal ⇒ similar.
+   SSS                           Three side ratios equal (same 𝑘) ⇒ similar.
+   Perimeter                     𝑃2 = 𝑘 𝑃1 .
+   Area                          [△2 ] = 𝑘 2 [△1 ].
+   Medians/altitudes/bisectors   Scale by 𝑘 in similar triangles.
+                                                                𝐴𝐷     𝐴𝐸          𝐴𝐷      𝐴𝐸
+   BPT                           If 𝐷𝐸 ∥ 𝐵𝐶 in △𝐴𝐵𝐶, then           =        and       =       .
+                                                                𝐷𝐵 𝐸𝐶              𝐴𝐵      𝐴𝐶
+   Converse BPT                  If a line cuts two sides proportionally, it is parallel to the third.
+                                              𝐵𝐷    𝐴𝐵              𝐵𝐸      𝐴𝐵
+   Angle Bisector Thm            Internal:       =      . External:     =        .
+                                              𝐷𝐶    𝐴𝐶              𝐸𝐶      𝐴𝐶
+   Right-triangle similarity     With altitude to hypotenuse: 𝐶𝐻 2 = 𝐴𝐻 · 𝐻𝐵, 𝐴𝐶 2 = 𝐴𝐻 · 𝐴𝐵,
+                                 𝐵𝐶 2 = 𝐻𝐵 · 𝐴𝐵.
+   Pythagoras (via similarity)   𝐴𝐶 2 + 𝐵𝐶 2 = 𝐴𝐵2 .
+   Word problems                 Heights/shadows or scale models: use height/shadow ratios.

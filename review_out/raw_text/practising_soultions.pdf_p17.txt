@@ -1,0 +1,65 @@
+Step 1: For the triangles to be similar by SAS, the sides including the equal angles must be proportional.
+
+Step 2: The sides including ∠B are AB and BC. The sides including ∠E are DE and EF.
+                                 AB   BC
+Step 3: Set up the proportion:      =    .                                    (SAS similarity condition)
+                                 DE   EF
+                                        7.5    9
+Step 4: Substitute the given values:        =    .                                          (substitution)
+                                       x+3    12
+                               9  3
+Step 5: Simplify the ratio:      = .
+                              12  4
+                               7.5  3
+Step 6: Solve the equation         = .
+                              x+3   4
+Step 7: Cross-multiply: 7.5 × 4 = 3 × (x + 3).                                                  (algebra)
+
+Step 8: 30 = 3x + 9 =⇒ 3x = 21 =⇒ x = 7.
+                                                                                AC  6 3
+Step 9: Consistency Check: Let’s check the ratio of the third sides, AC and DF.    = = . Since
+                                                                                DF  8 4
+        this ratio is the same, the triangles are indeed similar by SSS.
+
+Answer: x = 7.
+
+
+
+
+Question 4
+
+Question: In the given figure, BC —— DE. Find the lengths of the sides of both the triangles. Sides are
+given as expressions in x. △ADE: AD=18, AE=6x, DE=3(x+1). △ABC: AB=2x+1, AC=4x, BC=?.
+Solution Given: A is the top vertex, DE is a horizontal line below BC, and BC ∥ DE. Side lengths in
+terms of x.
+To Prove: Find the value of x and the lengths of all sides.
+
+
+                                                     A
+
+
+
+
+                                           B                    C
+
+
+                                       D                            E
+
+
+Step 1: Since BC ∥ DE, by the property of similar triangles, △ABC ∼ △ADE.                (AA similarity)
+                                                             AB   AC   BC
+Step 2: The ratio of corresponding sides must be equal:         =    =    .
+                                                             AD   AE   DE
+                                             2x + 1   4x
+Step 3: Substitute the given expressions:           =    .
+                                               18     6x
+                                                                                  4x  4 2
+Step 4: From the second part of the ratio, we can find the similarity constant:      = = .
+                                                                                  6x  6 3
+                                             2x + 1  2
+Step 5: Now use this ratio to solve for x:          = .
+                                               18    3
+Step 6: Cross-multiply: 3(2x + 1) = 18 × 2.                                                     (algebra)
+
+
+                                                     17

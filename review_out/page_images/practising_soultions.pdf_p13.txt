@@ -1,0 +1,35 @@
+Step 1: Find PN: Consider AN PL and ARQL.
+Step 2: Since PS || QR, then PN || QR.
+Step 3: ZPNL = ZRQL and ZNPL = ZQRL. (alternate interior angles)
+Step 4: ZNLP = ZRLQ. (vertically opposite)
+Step 5: Therefore, ANPL ~ ARQL. (AAA similarity)
+PN PL
+Step 6: The ratio of sides is OR = RL
+. RL 2 PL 3
+Step 7: Given Tp 3 so RE
+_PN _3 v3 ae.
+Step 8: 72 = PN= 3 x 10= 15 cm.
+Step 9: Find RM: Consider AMRL and APQL.
+Step 10: Since RS || PQ.
+Step 11: ZRML = ZPQL and ZMRL = ZQPL. (alternate interior angles)
+Step 12: Therefore, AMRL ~ APQL. (AA similarity)
+RM — RL
+13: The ratio of sides is —— = —.
+Step 13: The ratio of sides is PQ > PL
+RM 2 2 32
+4 == M == x16= = cm.
+Step 16 3 = R 3 x 16 3 cm.
+, 32
+Answer: PN = 15 cm, RM = z cm.
+Question 15
+Question: In the figure, AB || EF || DC in trapezium ABCD. Given AB = 67.5 cm, DC = 40.5 cm
+and AE = 52.5 cm, with E on AD and F on BC. Find the lengths of EC and EF’. Note: The statement
+appears incomplete. Without how E divides AD (i.c., AE: ED or AD), EC and EF are not uniquely
+determined. Below is the standard relationship when a line segment EF is drawn parallel to the bases in
+a trapezium.
+Solution Given: Trapezium ADCB with AB || EF || DC. AB=67.5, DC=40.5, AE=52.5. E is on AD.
+To Prove: Find ED and EF. (Assuming EC was a typo for ED).
+A B
+B/------------------\F
+D Cc
+13

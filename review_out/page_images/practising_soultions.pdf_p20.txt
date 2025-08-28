@@ -1,0 +1,32 @@
+A L B
+D Cc
+Step 1: Part (i): Consider ADPC and ALPB.
+Step 2: Since AL is an extension of AB, and AB || DC, we have AL || DC.
+Step 3: ZPDC = ZPLB (or ZPLA). (alternate interior angles)
+Step 4: ZPCD = ZPBL. (alternate interior angles, since AD || BC)
+Step 5: Therefore, ADPC ~ ALPB. (AA similarity)
+: . . . DP PC DC
+Step 6: The ratio of corresponding sides is 55 = Be = FR:
+. . : DP DC
+Step 7: From this, we get the required relation: => = >
+PL BL
+Step 8: Part (i): Start with the result from part (i): 55 = Fo (inverting the ratio)
+: PL BL
+Step 9: Add 1 to both sides: 5 +1= GG +1. (algebra)
+PL+DP BL+DC
+10: bine terms: ——— = <7
+Step 10: Combine terms: DP DG
+Step 11: Since D, P, L are collinear, PL + DP = DL.
+Step 12: Since A, B, L are collinear, BL + AB = AL. Also, AB = DC in a parallelogram.
+cs . _ DL BL+AB_ AL
+Step 13: Substitute these into the equation: 5G = —Ba— = po
+Answer: Both proportions are proved.
+Question 8
+Question: In AABC, ZABC = 2ZACB. The bisector of ZABC, BP, meets AC at P. Show: (i) CB:BA
+= CP:PA (ii) AB- BC = BP-CA.
+Solution Given: BP bisects ZABC; ZABC = 2ZACB.
+To Prove: (i) CB:BA = CP:PA; (ii) AB- BC = BP-CA.
+A
+LX
+B Cc
+20
