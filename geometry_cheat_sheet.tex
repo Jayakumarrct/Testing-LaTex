@@ -1,0 +1,280 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage[normalem]{ulem}
+\usepackage{tikz}
+\usetikzlibrary{angles,quotes,arrows.meta,calc,intersections,positioning,decorations.markings}
+\geometry{a4paper, margin=0.8in}
+
+% Colors and typography theme
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{0B5394}    % deep blue
+\definecolor{secondary}{HTML}{38761D}  % deep green
+\definecolor{accent}{HTML}{990000}     % dark red
+\definecolor{darktext}{HTML}{222222}
+\definecolor{highlight}{HTML}{FFF2CC}  % light yellow
+\color{darktext}
+
+% Section heading styles
+\titleformat*{\section}{\Large\bfseries\color{primary}}
+\titleformat*{\subsection}{\large\bfseries\color{secondary}}
+\titleformat*{\subsubsection}{\normalsize\bfseries\color{accent}}
+
+% Boxed content
+\newcommand{\keybox}[1]{\fcolorbox{primary!60!black}{primary!5}{\parbox{\linewidth-4pt}{\strut#1\strut}}}
+\newcommand{\theorbox}[1]{\fcolorbox{secondary!60!black}{secondary!5}{\parbox{\linewidth-4pt}{\strut#1\strut}}}
+\newcommand{\formulabox}[1]{\fcolorbox{accent!60!black}{accent!5}{\parbox{\linewidth-4pt}{\strut#1\strut}}}
+
+% Spacing
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\linespread{1.05}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge GEOMETRY CHEAT SHEET} \\
+\textbf{\large Triangle Similarity \& Related Theorems} \\
+\textit{Quick Reference Guide for Exercises 15A, 15B, 15C}
+\end{center}
+
+\section*{🔑 SIMILARITY CRITERIA}
+
+\subsection*{AAA (Angle-Angle-Angle)}
+\keybox{
+\textbf{Theorem:} If three angles of one triangle are equal to three angles of another triangle, the triangles are similar.
+
+\textbf{Conditions:} $\angle A = \angle X$, $\angle B = \angle Y$, $\angle C = \angle Z$
+
+\textbf{Result:} $\triangle ABC \sim \triangle XYZ$
+
+\textbf{Consequence:} All corresponding sides are proportional.
+}
+
+\subsection*{SAS (Side-Angle-Side)}
+\keybox{
+\textbf{Theorem:} If two sides of one triangle are proportional to two sides of another triangle and the included angles are equal, the triangles are similar.
+
+\textbf{Conditions:} $\dfrac{AB}{XY} = \dfrac{AC}{XZ}$ and $\angle A = \angle X$
+
+\textbf{Result:} $\triangle ABC \sim \triangle XYZ$
+
+\textbf{Proportionality:} $\dfrac{AB}{XY} = \dfrac{BC}{YZ} = \dfrac{CA}{ZX}$
+}
+
+\subsection*{SSS (Side-Side-Side)}
+\keybox{
+\textbf{Theorem:} If three sides of one triangle are proportional to three sides of another triangle, the triangles are similar.
+
+\textbf{Conditions:} $\dfrac{AB}{XY} = \dfrac{BC}{YZ} = \dfrac{CA}{ZX}$
+
+\textbf{Result:} $\triangle ABC \sim \triangle XYZ$
+
+\textbf{Consequence:} All corresponding angles are equal.
+}
+
+\section*{📐 KEY THEOREMS}
+
+\subsection*{Angle Bisector Theorem}
+\theorbox{
+\textbf{Theorem:} The angle bisector divides the opposite side in the ratio of the other two sides.
+
+\textbf{Statement:} In $\triangle ABC$, if $AD$ bisects $\angle BAC$, then: \\
+$\dfrac{AB}{AC} = \dfrac{BD}{DC}$ or equivalently $\dfrac{AB}{BD} = \dfrac{AC}{DC}$
+
+\textbf{Extended:} For angle bisector from vertex $B$: $\dfrac{AC}{BC} = \dfrac{AB}{BD} = \dfrac{AP}{PD}$
+}
+
+\subsection*{Midpoint Theorem}
+\theorbox{
+\textbf{Theorem:} The line segment joining the midpoints of two sides of a triangle is parallel to the third side and half its length.
+
+\textbf{Statement:} If $M$ is midpoint of $AB$ and $N$ is midpoint of $AC$, then $MN \parallel BC$ and $MN = \frac{1}{2}BC$
+}
+
+\subsection*{Geometric Mean Theorems}
+\theorbox{
+\textbf{Right Triangle Altitude Theorem:} In right $\triangle ABC$ with $\angle C = 90^\circ$ and $CD \perp AB$, then:
+\begin{enumerate}
+\item $CD^2 = AD \cdot DB$
+\item $AC^2 = AD \cdot AB$
+\item $BC^2 = DB \cdot AB$
+\end{enumerate}
+}
+
+\subsection*{Trapezium Properties}
+\theorbox{
+\textbf{Diagonal Proportionality:} In trapezium $ABCD$ with $AB \parallel CD$, diagonals $AC$ and $BD$ intersect at $O$, then:
+\begin{enumerate}
+\item $\triangle AOB \sim \triangle COD$
+\item $\dfrac{AO}{CO} = \dfrac{BO}{DO}$ or $AO \cdot OD = BO \cdot OC$
+\end{enumerate}
+}
+
+\section*{🧮 ESSENTIAL FORMULAS}
+
+\subsection*{Basic Proportionality}
+\formulabox{
+\textbf{Similar Triangles Ratio:} If $\triangle ABC \sim \triangle XYZ$, then:
+\[\dfrac{AB}{XY} = \dfrac{BC}{YZ} = \dfrac{CA}{ZX} = k\]
+
+\textbf{Area Ratio:} $\dfrac{\text{Area of }\triangle ABC}{\text{Area of }\triangle XYZ} = k^2$
+
+\textbf{Perimeter Ratio:} $\dfrac{\text{Perimeter of }\triangle ABC}{\text{Perimeter of }\triangle XYZ} = k$
+}
+
+\subsection*{Median Properties}
+\formulabox{
+\textbf{Median Length:} In $\triangle ABC$, median $AM$ to side $BC$:
+\[\dfrac{AM}{BM} = \dfrac{AM}{MC} = \dfrac{2}{3}\]
+
+\textbf{Centroid Division:} Medians intersect at centroid $G$ where:
+\[AG : GD = 2 : 1\]
+}
+
+\subsection*{Angle Relationships}
+\formulabox{
+\textbf{Isosceles Triangle:} If $AB = AC$, then $\angle B = \angle C$
+
+\textbf{Exterior Angle:} $\angle ACD = \angle ABC + \angle BAC$
+
+\textbf{Parallel Lines:} If $AB \parallel CD$, then:
+\begin{itemize}
+\item Alternate interior angles equal
+\item Corresponding angles equal
+\item Consecutive interior angles supplementary
+\end{itemize}
+}
+
+\section*{🛠 PROBLEM-SOLVING STRATEGIES}
+
+\subsection*{Step-by-Step Approach}
+\begin{enumerate}
+\item \textbf{Read carefully:} Identify given information and what needs to be proved
+\item \textbf{Draw diagram:} Sketch the figure with all given information
+\item \textbf{Identify similarity:} Look for parallel lines, equal angles, proportional sides
+\item \textbf{Apply theorems:} Use appropriate similarity criteria (AAA, SAS, SSS)
+\item \textbf{Set up proportions:} Write ratios of corresponding sides
+\item \textbf{Solve:} Cross-multiply and solve for unknowns
+\item \textbf{Verify:} Check if all conditions are satisfied
+\end{enumerate}
+
+\subsection*{Common Problem Types}
+
+\subsubsection*{Parallel Lines Problems}
+\keybox{
+\textbf{Strategy:} When parallel lines cut transversals, corresponding angles are equal.
+
+\textbf{Example:} If $DE \parallel BC$ and $AD, AE$ are transversals, then:
+\[\triangle ADE \sim \triangle ABC \implies \dfrac{AD}{AB} = \dfrac{AE}{AC} = \dfrac{DE}{BC}\]
+}
+
+\subsubsection*{Angle Bisector Problems}
+\keybox{
+\textbf{Strategy:} Use Angle Bisector Theorem directly.
+
+\textbf{Example:} If $BD$ bisects $\angle ABC$, then $\dfrac{AB}{AC} = \dfrac{BD}{DC}$
+}
+
+\subsubsection*{Median Problems}
+\keybox{
+\textbf{Strategy:} Midpoints create parallel segments.
+
+\textbf{Example:} If $D, E$ are midpoints of $AB, AC$, then $DE \parallel BC$ and $DE = \frac{1}{2}BC$
+}
+
+\subsubsection*{Right Triangle Problems}
+\keybox{
+\textbf{Strategy:} Use Pythagorean theorem and geometric mean.
+
+\textbf{Example:} In right $\triangle ABC$ ($\angle C = 90^\circ$), $CD \perp AB$:
+\[CD^2 = AD \cdot DB \implies CD = \sqrt{AD \cdot DB}\]
+}
+
+\section*{📊 QUICK REFERENCE CHART}
+
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Situation} & \textbf{Theorem/Criterion} & \textbf{Result} \\
+\hline
+Three angles equal & AAA & Similar triangles \\
+\hline
+Two sides proportional + included angle equal & SAS & Similar triangles \\
+\hline
+Three sides proportional & SSS & Similar triangles \\
+\hline
+Parallel lines & Corresponding angles & Similar triangles \\
+\hline
+Angle bisector & Angle Bisector Theorem & Side division ratio \\
+\hline
+Midpoints connected & Midpoint Theorem & Parallel segments \\
+\hline
+Right triangle + altitude & Geometric Mean & $CD^2 = AD \cdot DB$ \\
+\hline
+Trapezium diagonals & Diagonal proportionality & $AO \cdot OD = BO \cdot OC$ \\
+\hline
+\end{tabular}
+
+\section*{⚡ QUICK CHECKLIST}
+
+\subsection*{For Similarity Problems}
+\begin{itemize}
+\item[$\square$] Are there parallel lines? (→ AAA)
+\item[$\square$] Are there equal angles with proportional sides? (→ SAS)
+\item[$\square$] Are all sides proportional? (→ SSS)
+\item[$\square$] Are there transversals to parallels? (→ Proportional segments)
+\end{itemize}
+
+\subsection*{Common Mistakes to Avoid}
+\begin{itemize}
+\item Don't assume triangles are congruent when they're only similar
+\item Check that corresponding vertices match when writing similarity
+\item Remember that similarity preserves angles but not sizes
+\item Area ratios are squares of side ratios
+\item Perimeter ratios equal side ratios
+\end{itemize}
+
+\section*{🎯 PRACTICE TIPS}
+
+\begin{enumerate}
+\item \textbf{Label diagrams clearly} with all given information
+\item \textbf{Mark equal angles} with the same symbols (e.g., $\angle$ marks)
+\item \textbf{Use color coding} for corresponding parts in similar triangles
+\item \textbf{Write proportions} systematically for all corresponding sides
+\item \textbf{Cross-multiply carefully} and check your algebra
+\item \textbf{Verify answers} by substituting back into original equations
+\end{enumerate}
+
+\section*{📝 SYMBOLS \& NOTATION}
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Meaning} \\
+\hline
+$\sim$ & Similar to \\
+\hline
+$\parallel$ & Parallel to \\
+\hline
+$\perp$ & Perpendicular to \\
+\hline
+$\angle$ & Angle \\
+\hline
+$\triangle$ & Triangle \\
+\hline
+$\dfrac{a}{b}$ & Ratio of a to b \\
+\hline
+$\therefore$ & Therefore \\
+\hline
+$\because$ & Because \\
+\hline
+\end{tabular}
+
+\begin{center}
+\textbf{Remember: Practice makes perfect! Keep solving problems and reviewing these concepts regularly.}
+\end{center}
+
+\end{document}
